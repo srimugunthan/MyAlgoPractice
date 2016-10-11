@@ -1,19 +1,19 @@
 # MyAlgoPractice
 Algorithm and Data structure practice Problems
 Lists, Arrays, Stack
-	- Midpoint in list
-	- 2-SUM problem
-	- Queues with Stack
-	- Expression evaluation
+	Midpoint in list
+	2-SUM problem
+	Queues with Stack
+	Expression evaluation
 Tree Problems
-	- Mirroring a tree
-	- CTCode probs
+	Mirroring a tree
+	CTCode probs
 AVL tree
 B and B+ tree
-Trie
-Segment trees
-Binary Indexed tree/Fenwick tree
-Interval tree
+~~Trie~~
+~~Segment trees~~
+~~Binary Indexed tree/Fenwick tree~~
+~~Interval tree~~
 Range minimum queries
 
 Disjoint sets
@@ -29,71 +29,72 @@ all possible subsets
 all possible partitions
 
 Backtracking
-	- Tower of hanoi
-	- 8 queens
-	- Maze problem
+	 Tower of hanoi
+	 8 queens
+	 ~~Maze problem~~
 
 Sorting
-	- Merge sort
-	- Quick sort
-	- selection sort
-	- radix sort
-	- count sort
+	Merge sort
+	Quick sort
+	selection sort
+	radix sort
+	count sort
 
 Miscell
-	- Bloom filter
-	- FFT
-	- Huffman coding
+	Bloom filter
+	FFT
+	Huffman coding
 
 Computational geometry
-	- Convex hull
-	- Line sweep
+	Convex hull
+	Line sweep
 
 Prefix sum array
 Greedy
-	- Activity selection
+	Activity selection
 Dynamic programming
-	- Longest common subsequence
-	- Longest increasing subsequence
-	- Edit distance
-	- Minimum partition
-	- Longest path in matrix
-	- Subset sum
-	- Assembly line scheduling
-	- Knapsack problem
-	- Rod cutting
-	- Matrix chain multiplication
+	~~Longest common subsequence~~
+	Longest increasing subsequence
+	Edit distance
+	Minimum partition
+	Longest path in matrix
+	Subset sum
+	Assembly line scheduling
+	Knapsack problem
+	Rod cutting
+	Matrix chain multiplication
 
 Median finding
 Spark&Scala
-	- Page rank
-	- Matrix multiplication
+	Page rank
+	Matrix multiplication
 Parse regular expression
 Strings
-	- KMP search
-	- Z algorithm
-	- Suffix arrays. Suffix trees
+	KMP search
+	Z algorithm
+	Suffix arrays. Suffix trees
 
 Number theory
-	- Sieve of eratosthenes
-	- GCD
-	- euler's totient function
-	- Fermat's theorem, modular arithmetic, chinese remainder theorem
+	Sieve of eratosthenes
+	GCD
+	euler's totient function
+	Fermat's theorem, modular arithmetic, chinese remainder theorem
 
 State space search
-	- Depth first search, 
-	- Breadth first, double BFS
-	- A*
+	Depth first search, 
+	Breadth first, double BFS
+	A*
 
 Graph
-	- Dijstra's algorithm
-	- Directed acyclic word graph
-	- MST, Kruskal &Prim
-	- Bipartite matching
-	- Strongly connected components
-	- Topological sort
-	- Max cut, Dicnic's algorithm, Edmands-Karp
-	- Max flow, Ford fulkerson, or a pre-flow push algorithm
-	- Min cut
+	Dijstra's algorithm
+	Directed acyclic word graph
+	MST, Kruskal &Prim
+	Bipartite matching
+	Strongly connected components
+	Topological sort
+	Max cut, Dicnic's algorithm, Edmands-Karp
+	Max flow, Ford fulkerson, or a pre-flow push algorithm
+	Min cut
+
 
 
