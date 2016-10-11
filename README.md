@@ -22,6 +22,17 @@ Binary search
 Ternary search
 Meet in the middle
 
+Permutation generator
+generate mCn combinations
+generate 2^n bit strings
+all possible subsets
+all possible partitions
+
+Backtracking
+	- Tower of hanoi
+	- 8 queens
+	- Maze problem
+
 Sorting
 	- Merge sort
 	- Quick sort
@@ -43,6 +54,12 @@ Greedy
 	- Activity selection
 Dynamic programming
 	- Longest common subsequence
+	- Longest increasing subsequence
+	- Edit distance
+	- Minimum partition
+	- Longest path in matrix
+	- Subset sum
+	- Assembly line scheduling
 	- Knapsack problem
 	- Rod cutting
 	- Matrix chain multiplication
