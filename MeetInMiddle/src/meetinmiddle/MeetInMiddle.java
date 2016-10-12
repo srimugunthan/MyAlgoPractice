@@ -5,7 +5,11 @@ import java.util.Arrays;
 
 /**
  *
- * @author sdhandap
+ * https://www.quora.com/What-is-meet-in-the-middle-algorithm-w-r-t-competitive-programming
+ * http://www.infoarena.ro/blog/meet-in-the-middle
+ * http://www.geeksforgeeks.org/meet-in-the-middle/
+ * http://users.informatik.uni-halle.de/~ahyjb/krypto/English/4.5.1.e.html
+
  */
 public class MeetInMiddle {
 
