@@ -20,7 +20,7 @@ Disjoint sets
 Union find
 Binary search
 Ternary search
-Meet in the middle
+~~Meet in the middle~~
 
 Permutation generator
 generate mCn combinations
