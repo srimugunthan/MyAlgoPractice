@@ -75,7 +75,8 @@ public class MaxHeap {
     public int deleteMax() {
         int popped = Heap[FRONT];
         Heap[FRONT] = Heap[size--];
-        siftDown(FRONT);
+        if(size > 0) 
+            siftDown(FRONT);
         return popped;
     }
     

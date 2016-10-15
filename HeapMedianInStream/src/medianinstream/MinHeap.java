@@ -37,6 +37,7 @@ public class MinHeap {
 
     private boolean isLeaf(int pos) {
         
+        
         //if ((2*pos > size) && ((2*pos)+1 > size))
         if (pos >= (size / 2) && pos <= size) {
             return true;
@@ -85,9 +86,14 @@ public class MinHeap {
 
     /* complexit is O(logn)*/
     public int deleteMin() {
+        
+        
         int popped = Heap[FRONT];
         Heap[FRONT] = Heap[size--];
-        siftDown(FRONT);
+        if(size > 0) 
+            siftDown(FRONT);
+        
+        
         return popped;
     }
     
@@ -215,30 +221,34 @@ Moreover, if you are using a Max-heap to do some sort of sorting where you pop
     
     */
 
-//    public static void main(String args[]) {
-//        System.out.println("The Min Heap is ");
-//        MinHeap minHeap = new MinHeap(100);
-//        
+    public static void main(String args[]) {
+        System.out.println("The Min Heap is ");
+        MinHeap minHeap = new MinHeap(100);
+        
 //        int A[] = {5, 15, 1, 3, 2, 8, 7, 9, 10, 6, 11, 4};
 //        for(int i = 0; i < A.length; i++){
 //            minHeap.insert(A[i]);
 //        }
-//        
-//        
-////        minHeap.insert(5);
-////        minHeap.insert(3);
-////        minHeap.insert(17);
-////        minHeap.insert(10);
-////        minHeap.insert(84);
-////        minHeap.insert(19);
-////        minHeap.insert(6);
-////        minHeap.insert(22);
-////        minHeap.insert(9);
-////        minHeap.minHeapify();
-//
-//        minHeap.print();
-//        System.out.println("The Min val is " + minHeap.deleteMin());
-//    }
+        
+        
+        minHeap.insert(5);
+        System.out.println(minHeap.isLeaf(1));
+        minHeap.extractTop();
+
+//        minHeap.insert(5);
+//        minHeap.insert(3);
+//        minHeap.insert(17);
+//        minHeap.insert(10);
+//        minHeap.insert(84);
+//        minHeap.insert(19);
+//        minHeap.insert(6);
+//        minHeap.insert(22);
+//        minHeap.insert(9);
+//        minHeap.minHeapify();
+
+        minHeap.print();
+        System.out.println("The Min val is " + minHeap.deleteMin());
+    }
     /*
     heapsort(){
         Idea:
