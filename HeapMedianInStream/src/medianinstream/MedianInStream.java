@@ -5,10 +5,16 @@
  */
 package medianinstream;
 
-
+/*
+http://www.spoj.com/problems/XMEDIAN/
+not the same output as the solution in :
+ http://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/
+*/
 
 public class MedianInStream {
 
+    
+    
     // Signum function
     // = 0  if a == b  - heaps are balanced
     // = -1 if a < b   - left contains less elements than right
