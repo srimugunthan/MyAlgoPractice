@@ -1,7 +1,7 @@
 # MyAlgoPractice
 
 Warning!!!
-Half of the code is WRONG. I will fix the solutions by Jan 2017. 
+Half of the code is WRONG. the solutions will being improved and fixed. 
 If you want to use these codes, use at your own risk.
 
 
