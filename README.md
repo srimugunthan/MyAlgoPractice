@@ -1,4 +1,11 @@
 # MyAlgoPractice
+
+Warning!!!
+Half of the code is WRONG. I will fix the solutions by Jan 2017. 
+If you want to use these codes, use at your own risk.
+
+
+
 Algorithm and Data structure practice Problems
 Lists, Arrays, Stack
 	Midpoint in list
@@ -7,8 +14,12 @@ Lists, Arrays, Stack
 	Expression evaluation
 Tree Problems
 	Mirroring a tree
+	Least common ancestor
 	CTCode probs
+
 AVL tree
+RB tree
+
 B and B+ tree
 ~~Trie~~
 ~~Segment trees~~
@@ -64,7 +75,7 @@ Dynamic programming
 	Rod cutting
 	Matrix chain multiplication
 
-Median finding
+~~Median finding~~
 Spark&Scala
 	Page rank
 	Matrix multiplication
@@ -72,7 +83,7 @@ Parse regular expression
 Strings
 	KMP search
 	Z algorithm
-	Suffix arrays. Suffix trees
+	~~Suffix arrays~~. Suffix trees
 
 Number theory
 	Sieve of eratosthenes
