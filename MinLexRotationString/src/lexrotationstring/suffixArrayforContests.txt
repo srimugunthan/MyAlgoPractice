@@ -1,0 +1,27 @@
+http://web.stanford.edu/class/cs97si/suffix-array.pdf
+
+
+
+
+
+
+
+
+=================================================
+
+/**
+ * References:
+ * Suffix array imple:
+ * http://www.geeksforgeeks.org/suffix-array-set-1-introduction/
+ * http://www.geeksforgeeks.org/suffix-array-set-2-a-nlognlogn-algorithm/
+ * http://www.geeksforgeeks.org/suffix-tree-application-4-build-linear-time-suffix-array/
+ * http://algo2.iti.kit.edu/documents/jacm05-revised.pdf
+ * https://en.wikipedia.org/wiki/LCP_array
+ * 
+ * SPOJ example:
+ * http://www.spoj.com/problems/BEADS/
+ * http://spoj-solutions.blogspot.in/2014/10/beads-glass-beads.html
+ * 
+ * All Problems:
+ * https://www.quora.com/What-are-some-of-the-good-sources-to-understand-suffix-tree-suffix-array-and-their-implementation
+ */
