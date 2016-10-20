@@ -9,6 +9,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
+ * http://poj.org/problem?id=2823
  * http://codercareer.blogspot.in/2012/02/no-33-maximums-in-sliding-windows.html
  * 
  *
