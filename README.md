@@ -1,7 +1,7 @@
 # MyAlgoPractice
 
 Warning!!!
-Half of the code is WRONG. the solutions will being improved and fixed. 
+Half of the code maybe WRONG. The solutions are being improved and fixed. 
 If you want to use these codes, use at your own risk.
 
 
@@ -15,7 +15,12 @@ Lists, Arrays, Stack
 Tree Problems
 	Mirroring a tree
 	Least common ancestor
-	CTCode probs
+	check if tree is balanced
+	check if route is there between two nodes of directed graph
+	create a binary tree with min height
+	print the in-order successor
+	given two trees, check if one is subtree of another
+	print all paths that sum to a value
 
 AVL tree
 RB tree
@@ -27,6 +32,7 @@ B and B+ tree
 ~~Interval tree~~
 Range minimum queries
 
+~~LRU Implementation~~
 Disjoint sets
 Union find
 Binary search
@@ -62,7 +68,7 @@ Computational geometry
 
 Prefix sum array
 Greedy
-	Activity selection
+	~~Activity selection~~
 Dynamic programming
 	~~Longest common subsequence~~
 	Longest increasing subsequence
