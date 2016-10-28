@@ -110,7 +110,7 @@ If you want to use these codes, use at your own risk.
 	* MST, Kruskal &Prim
 	* Bipartite matching
 	* Strongly connected components
-	* Topological sort
+	* ~~Topological sort~~
 	* Max cut, Dicnic's algorithm, Edmands-Karp
 	* Max flow, Ford fulkerson, or a pre-flow push algorithm
 	* Min cut
