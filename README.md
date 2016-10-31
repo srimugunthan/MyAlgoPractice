@@ -34,7 +34,7 @@ If you want to use these codes, use at your own risk.
 * Range minimum queries
 
 * ~~LRU Implementation~~
-* ~~Dictionary implementation~~
+* ~~Dictionary implementation~~ ~~(Anagram solver)~~
 * Disjoint sets
 * Union find
 * ~~Binary search~~
@@ -90,7 +90,7 @@ If you want to use these codes, use at your own risk.
 * Parse regular expression
 * Strings
 	* KMP search
-	* Z algorithm
+	* ~~Z algorithm~~
 	* ~~Suffix arrays~~. Suffix trees
 
 * Number theory
