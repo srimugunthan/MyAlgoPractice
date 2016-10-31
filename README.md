@@ -34,7 +34,7 @@ If you want to use these codes, use at your own risk.
 * Range minimum queries
 
 * ~~LRU Implementation~~
-
+* ~~Dictionary implementation~~
 * Disjoint sets
 * Union find
 * ~~Binary search~~
