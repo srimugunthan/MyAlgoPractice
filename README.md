@@ -13,6 +13,8 @@ If you want to use these codes, use at your own risk.
 	* 2-SUM problem
 	* Queues with Stack
 	* Expression evaluation
+	* ~~LRU list (queue +hash)~~
+	* ~~double ended queue (Sliding window)~~
 * Tree Problems
 	* Mirroring a tree
 	* Least common ancestor
@@ -26,6 +28,7 @@ If you want to use these codes, use at your own risk.
 * AVL tree
 * RB tree
 
+* ~~Heap (MedianInStream)~~
 * B and B+ tree
 * ~~Trie~~
 * ~~Segment trees~~
