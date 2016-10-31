@@ -13,6 +13,7 @@ If you want to use these codes, use at your own risk.
 	* 2-SUM problem
 	* Queues with Stack
 	* Expression evaluation
+	* ~~SubArraySum (Programming pearls chap8)~~
 	* ~~LRU list (queue +hash)~~
 	* ~~double ended queue (Sliding window)~~
 * Tree Problems
