@@ -11,7 +11,8 @@ package countingsort;
  * The 0-based index of an element is the number of elements less than it.
  * 
  * https://www.quora.com/What-would-be-the-best-sorting-algorithm-to-solve-TSORT-question-in-codechef
- * 
+ *
+http://www.geeksforgeeks.org/counting-sort/ 
  */
 public class CountingSort {
 

@@ -7,7 +7,7 @@ package unionfind;
 
 /**
  *
- * @author sdhandap
+ * http://www.geeksforgeeks.org/union-find/
  */
 public class Unionfind {
 
