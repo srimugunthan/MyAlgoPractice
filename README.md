@@ -40,7 +40,8 @@ If you want to use these codes, use at your own risk.
 * ~~LRU Implementation~~
 * ~~Dictionary implementation~~ ~~(Anagram solver)~~
 * Disjoint sets
-* Union find
+* ~~Union find (Cycle in graph)~~
+* Union find by rank (Path compression)
 * ~~Binary search~~
 * Ternary search
 * ~~Meet in the middle~~
