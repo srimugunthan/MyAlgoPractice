@@ -19,7 +19,7 @@ If you want to use these codes, use at your own risk.
 * Tree Problems
 	* Mirroring a tree
 	* Least common ancestor
-	* check if tree is balanced
+	* ~~check if tree is balanced~~
 	* check if route is there between two nodes of directed graph
 	* create a binary tree with min height
 	* print the in-order successor
@@ -62,7 +62,7 @@ If you want to use these codes, use at your own risk.
 	* Quick sort
 	* selection sort
 	* radix sort
-	* count sort
+	* ~~count sort~~
 
 * Miscell
 	* Bloom filter
