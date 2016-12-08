@@ -7,7 +7,7 @@ package kmpsearch;
 
 /**
  *
- * @author sdhandap
+ * https://www.quora.com/What-are-some-good-problems-that-uses-Knuth-Morris-Pratt-Algorithm-on-TopCoder-Codeforces-CodeChef-and-SPOJ
  */
 public class KMPSearch {
     
