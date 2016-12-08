@@ -94,7 +94,7 @@ If you want to use these codes, use at your own risk.
 	* Matrix multiplication
 * Parse regular expression
 * Strings
-	* KMP search
+	* ~~KMP search~~
 	* ~~Z algorithm~~
 	* ~~Suffix arrays~~. Suffix trees
 
