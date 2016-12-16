@@ -7,7 +7,7 @@ package subsetsum;
 
 /**
  *
- * @author sdhandap
+ * http://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/
  */
 public class SubsetSum {
 
