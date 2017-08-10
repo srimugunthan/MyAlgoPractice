@@ -99,7 +99,7 @@ If you want to use these codes, use at your own risk.
 	* ~~Suffix arrays~~. Suffix trees
 
 * Number theory
-	* Sieve of eratosthenes
+	* ~~sieve of eratosthenes~~
 	* GCD
 	* euler's totient function
 	* Fermat's theorem, modular arithmetic, chinese remainder theorem
