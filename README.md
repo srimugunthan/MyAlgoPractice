@@ -18,7 +18,7 @@ If you want to use these codes, use at your own risk.
 	* ~~double ended queue (Sliding window)~~
 * Tree Problems
 	* Mirroring a tree
-	* Least common ancestor
+	* ~~Least common ancestor~~
 	* ~~check if tree is balanced~~
 	* check if route is there between two nodes of directed graph
 	* create a binary tree with min height
@@ -96,7 +96,7 @@ If you want to use these codes, use at your own risk.
 * Strings
 	* ~~KMP search~~
 	* ~~Z algorithm~~
-	* ~~Suffix arrays~~. Suffix trees
+	* Suffix arrays. Suffix trees
 
 * Number theory
 	* ~~sieve of eratosthenes~~
@@ -110,7 +110,8 @@ If you want to use these codes, use at your own risk.
 	* A*
 
 * Graph
-	* Dijstra's algorithm
+	* ~~Dijstra's algorithm~~
+	* ~~All pairs shortest path~~
 	* Directed acyclic word graph
 	* MST, Kruskal &Prim
 	* Bipartite matching
