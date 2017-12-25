@@ -20,8 +20,6 @@ If you want to use these codes, use at your own risk.
 	* ~~Mirroring a tree~~
 	* Least common ancestor
 	* ~~check if tree is balanced~~
-	* check if route is there between two nodes of directed graph
-	* create a binary tree with min height
 	* print the in-order successor
 	* given two trees, check if one is subtree of another
 	* ~~print all paths that sum to a value~~
@@ -112,6 +110,7 @@ If you want to use these codes, use at your own risk.
 * Graph
 	* ~~Dijstra's algorithm~~
 	* ~~All pairs shortest path~~
+	* check if route is there between two nodes of directed graph
 	* Directed acyclic word graph
 	* MST, Kruskal &Prim
 	* Bipartite matching
