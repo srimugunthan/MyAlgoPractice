@@ -20,6 +20,7 @@ If you want to use these codes, use at your own risk.
 	* ~~Mirroring a tree~~
 	* Least common ancestor
 	* ~~check if tree is balanced~~
+	* Level order and reverse level order traversal
 	* print the in-order successor
 	* given two trees, check if one is subtree of another
 	* ~~print all paths that sum to a value~~
