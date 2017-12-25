@@ -17,14 +17,14 @@ If you want to use these codes, use at your own risk.
 	* ~~LRU list (queue +hash)~~
 	* ~~double ended queue (Sliding window)~~
 * Tree Problems
-	* Mirroring a tree
-	* ~~Least common ancestor~~
+	* ~~Mirroring a tree~~
+	* Least common ancestor
 	* ~~check if tree is balanced~~
 	* check if route is there between two nodes of directed graph
 	* create a binary tree with min height
 	* print the in-order successor
 	* given two trees, check if one is subtree of another
-	* print all paths that sum to a value
+	* ~~print all paths that sum to a value~~
 
 * AVL tree
 * RB tree
