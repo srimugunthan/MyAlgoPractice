@@ -17,14 +17,13 @@ If you want to use these codes, use at your own risk.
 	* ~~LRU list (queue +hash)~~
 	* ~~double ended queue (Sliding window)~~
 * Tree Problems
-	* Mirroring a tree
-	* ~~Least common ancestor~~
+	* ~~Mirroring a tree~~
+	* Least common ancestor
 	* ~~check if tree is balanced~~
-	* check if route is there between two nodes of directed graph
-	* create a binary tree with min height
+	* Level order and reverse level order traversal
 	* print the in-order successor
 	* given two trees, check if one is subtree of another
-	* print all paths that sum to a value
+	* ~~print all paths that sum to a value~~
 
 * AVL tree
 * RB tree
@@ -112,6 +111,7 @@ If you want to use these codes, use at your own risk.
 * Graph
 	* ~~Dijstra's algorithm~~
 	* ~~All pairs shortest path~~
+	* check if route is there between two nodes of directed graph
 	* Directed acyclic word graph
 	* MST, Kruskal &Prim
 	* Bipartite matching
