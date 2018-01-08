@@ -21,11 +21,12 @@ If you want to use these codes, use at your own risk.
 	* Least common ancestor
 	* ~~check if tree is balanced~~
 	* ~~Level order and reverse level order traversal~~
-	* print the in-order successor
-	* given two trees, check if one is subtree of another
+	* ~~print the in-order successor~~
+	* ~~given two trees, check if one is subtree of another~~
 	* ~~print all paths that sum to a value~~
 	* ~~find path with sum~~
 	* find path with max sum
+	* top view and bottom view of a tree
 
 * AVL tree
 * RB tree
