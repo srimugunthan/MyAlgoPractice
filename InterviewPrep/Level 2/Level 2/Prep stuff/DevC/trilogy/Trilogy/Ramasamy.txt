@@ -1,0 +1,38 @@
+Hi friends,
+following is the set of non-repeated questions.
+
+Interview 1(Mr Jim singh)
+
+1.A code was gn to be debugged.It had a few problems
+with the pointer manipualtion.
+
+2.Tree deletion
+
+3.Given an array of +ve & -ve integers,find the sub
+array with maximum sum
+
+4.Non recursive in-order traversal.(One recursive call
+was to be eliminated without a stack)
+
+Interview 2:
+(Dharma)
+
+1.Common ancestor of gn 2 nodes in a tree.No extra
+space to be used.Gave default solns immediately.Asked
+to improve upon them.
+
+2.Heaps-their representation & root deletion.
+
+3.Gn a trie,insert a string & retrieve it. The
+insertion shud return a key & the key shud be
+independent of the string being stored.Minimal space
+is to be used.The retrieval shud involve the passing
+of the key.Gave 2 different solns(which either had
+overhead or approximation problems) & finally with a
+few clues,bumped on the optimal soln.
+
+That's it,
+bye,
+Rams.
+
+ 

@@ -1,0 +1,17 @@
+To sridhar,
+(dei enda torture panre)
+
+6.i havent said that your answers are wrong..
+The magic number 15 can be eliminated by using the
+                sizeof(int)
+(from this we can get the number of bits of  the 
+platform)..
+
+10. i haven't said that there is only one solution..
+but i just appreciated the elegance of the solution..
+(that i sent (and also shivashankar's)  )..
+
+I think these minutes mistakes wont make any
+difference...(ok?)
+(sorry guys if any of the answers are wrong..i typed
+the answers at 1 a.m.(midnight) )

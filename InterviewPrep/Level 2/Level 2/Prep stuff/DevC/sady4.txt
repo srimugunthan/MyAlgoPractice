@@ -1,0 +1,195 @@
+hai friends,
+    The answers for the questions(sent in the previous
+
+mail ) are given below..
+
+Answers:
+
+1.   The main problem is to find the value of n..
+(  there is no need to find the exact value .. but
+some nearest value..)
+The solution:
+      Start with first index and compare the value in that
+with infinity and if not equal..
+then double the index...so for each time you get a
+number other than infinity double the
+index...
+At sometime say at power(2,k) index we get the
+infinity...
+Then this means that n lies between power(2,k)  and
+power(2,k-1)..
+There is no need to find the exact n here..
+so far we have taken  logn   jumps...
+Then perform the binary search to find the given
+element ...( logn steps for this  ...)
+So totally the numbers of steps  is   2logn  (  O(log
+n)   )  
+
+2.   Solution:
+comb( a,low,high,  r)
+{
+      //   this prints all the nCr combinations... 
+      n = high-low+1
+      if ( r == 0 )      return;
+      if( n==r )
+      {
+            print a[low]...a[high] ;
+            return;
+      }
+      for( i = 0  to n-r)
+      {
+            print a[i];
+            comb( a, i+1, high, r-1);
+      }
+}
+            Order:   nCr
+main( )
+{
+      //    a[0  ....  n-1]  is the array..
+      for( r =0 to n)
+      {
+            comb( a, 0, n-1, r );
+      }
+}
+      Order:  power(2,n)
+
+3.    The following is the algorithm...
+      mypower( x, n )
+      {
+            a = n;
+            ans = 1;
+            b = x;
+            while( m>0) do
+            {
+                  while( (a % 2) == 0) do
+                  {
+                  a=a/2;
+                  b=b*b;
+                  }
+                  a=a-1;
+                  ans=ans*b;
+            }
+            return ans;
+      }
+//     this will take O(logn) multiplications  or we
+can say that the number of multiplications
+//     is equal to the number of binary digits of n..
+
+4.     There are two solutions for this:
+     ( a )
+      Any two traversals (combined) of a tree will uniquely
+identify the tree...
+      So store inorder and preorder traversals of a tree in
+a file ...
+      We can retrieve it easily....
+      Order of the solution is O(n)   -- both timewise and
+spacewise..    n- number of nodes of the tree
+      ( b )
+      If we assume that the tree is a full tree then the
+level order( like a BFS) traversal is enough to
+identify the tree..    O(n)  if the tree is full or
+complete..
+      Even if the tree is not full we can assume it as full
+and store 0 in the remaining places..
+(  But worst case space complexity of this is O(
+power(2,n) )..   )  . The method is that..
+      Store the root node in the place 1.( assume place
+here means a record in a file..)
+if a node is stored at place i then store its left
+child in the location 2i and the right children in the
+location 
+2i+1...  while retrieving follow the reverse
+procedure...
+
+5.    Assume a and b are the two numbers...
+      then max = a%b + b%a; 
+
+6.   C program:
+      void main( )
+      {
+            char str[2][12] = {"A is bigger","B is bigger"};
+            int A,B;
+            int i;  
+            scanf( "%d %d",&A,&B);
+            i = A - B;                  //     sign bit is set
+in i if A is less not set if B is less
+            i>>15;                      //     extract that sign
+bit
+            printf("%s",str[i]);
+      }
+
+7.  The solution is to store the elements as a binary
+search tree and have an extra field called left_size
+that
+contains the number of nodes in its left subtree...
+      While insertion itself we can compute these values
+for each node...( the order is O( square(n) ) --worst
+case)
+  The following is the algo for retrieving the element
+given a rank...
+      my_algo( tree T, inr rank )
+      {
+            if ( rank = left_size(T) )
+                  return T;
+            else
+            {
+            if(rank < left_size(T) )
+                  my_algo( left(T), rank);
+            else
+                       my_algo( right(T), rank - left_size(T) );
+            }
+      }
+
+8.  You may have heard about the partition function in
+the quicksort algotirhm..
+      That function is the solution for this problem...
+      For any given element to find the rank first find its
+position in the original array( O(n) ).. and swap that
+element with the first element.. then call that
+partiton function.. the function rearranges the array(
+in the O(n) )
+so that all its leftside elements are smaller than it
+and all its right elements are greater than this.....
+   so the index of the element give the rank of the
+element..( so this algo takes O(n) complexity..)
+
+9.  This is the standard solution:
+      permutation( a,k,n )
+      {
+            if( k == n )
+                  then print  a[1]... a[n];
+            else
+            {
+            for( i = k to n )
+            {
+                  swap(a[k],a[i]);
+                  permutation(a,k+1,n);
+                  swap( a[k],a[i]);
+            }
+      }
+            Order:  n!
+
+10.  Solution:
+      inorder(T)
+      {
+            while( T!=null )               // if replaced by
+while----------------------change 1
+            {
+                  inorder( left(T) );     // first  recursive call
+                  Write(T);
+                  T = right(T);          // second recursive call
+eliminated by this statement...-------change 2
+            }
+      }
+
+            
+      
+      
+      
+            
+            
+
+=====
+enjoy every moments of life
+              saddy
+

@@ -42,7 +42,7 @@ public class Main {
                 return  false;
 
         }
-     
+
         return (checkBST(root.left) && checkBST(root.right));
 
     }

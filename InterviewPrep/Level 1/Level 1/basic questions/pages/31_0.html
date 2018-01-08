@@ -1,0 +1,3065 @@
+
+<HTML>
+
+<!-- Mirrored from www.cracktheinterview.com/pages/31_0.html by HTTrack Website Copier/3.x [XR&CO'2005], Tue, 27 Dec 2005 17:52:44 GMT -->
+<HEAD>
+<TITLE>CRACK THE INTERVIEW - Introduction to perl  (www.cracktheinterview.com)</TITLE><style type="text/css">
+<!--
+.breakhere     {page-break-before: always}
+
+A:link         {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:9pt; color:#996633} 
+A:active       {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:9pt; color:#000000} 
+A:visited      {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:9pt; color:#996633} 
+
+H1             {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:12pt; font-weight:bold; color:#336699} 
+H2             {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:small; font-weight:bold} 
+.normal        {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:9pt; color:#000000} 
+.announce      {font-family:Verdana, Arial, Helvetica, Geneva,
+                sans-serif; color:#000000} 
+.announceLink  {font-family:Verdana, Arial, Helvetica, Geneva,
+                sans-serif; color:#336699} 
+.note          {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:8pt ! important; font-weight:normal} 
+.system        {font-family:Courier New, Courier; font-size:x-small;
+                font-weight:normal} 
+.stayblue      {color:#336699 ! important}
+.title         {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:larger ! important} 
+.error         {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:small; color:#aa0000; font-weight:bold} 
+.notelink      {font-family:Arial, Helvetica, Geneva, sans-serif;
+                color:#336699 ! important; font-weight:normal;
+                font-size:9pt ! important} 
+.tableHeader   {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:10pt; color:#336699; font-weight: bold;
+                background-color:#3284FF} 
+.tableHeaderSmall {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:8pt; color:#336699; font-weight: bold;
+                background-color:#3284FF} 
+.tableRow      {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:10pt; color:black; font-weight: normal;
+                background-color:#f7f7e7} 
+.tableBlank    {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:10pt; color:black; font-weight: normal;
+                background-color:#ffffff} 
+.hardlink      {font-family:Arial, Helvetica, Geneva, sans-serif;
+                color:#336699 ! important; font-weight:bold;
+                font-size:8pt ! important} 
+.boxlink       {font-family:Arial, Helvetica, Geneva, sans-serif;
+                color:#000000 ! important; font-weight:normal;
+                font-size:8pt ! important} 
+.hardnote      {font-family:Arial, Helvetica, Geneva, sans-serif;
+                color:black ! important; font-weight:normal;
+                font-size:8pt ! important} 
+.tableRowSmall {font-family:Verdana, Arial, Helvetica, Geneva,
+                sans-serif; font-size:8pt; color:black; font-weight:
+                normal} 
+.tableRowSmallBold {font-family:Verdana, Arial, Helvetica, Geneva,
+                sans-serif; font-size:8pt; color:black; font-weight:
+                bold} 
+.blueHeading   {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:12pt! important; font-weight:bold;
+                color:#336699! important} 
+.blueHeadingLarge {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:16pt! important; font-weight:normal;
+                color:#336699} 
+.blueHeadingMid {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:12pt! important; font-weight:normal;
+                color:#336699}
+.blueHeadingSmall {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:10pt! important; font-weight:bold;
+                color:#336699} 
+.tableHeaderV  {font-family:Verdana,Arial, Helvetica, Geneva, sans-serif;
+                font-size:8pt; color:#336699; font-weight: bold;
+                background-color:#3284FF} 
+.tableRowV     {font-family:Verdana,Arial, Helvetica, Geneva,
+                sans-serif; font-size:8pt; color:black; font-weight:
+                normal; background-color:#f7f7e7} 
+.just          {text-align: justify}
+-->
+</style>
+
+<META NAME="keywords" CONTENT="interview,FAQ,frequently,questions,answers,perl,scripting">
+<META NAME="description" CONTENT="Introduction to perl ">
+<META NAME="robots" CONTENT="FOLLOW,INDEX">
+<META HTTP-EQUIV="no-cache">
+<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT">
+
+</HEAD>
+<BODY background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew >
+<TABLE background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  BORDER=0 cellpadding=10>
+
+
+
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=100%% valign=top colspan=2><CENTER><A HREF="../index.html"  webstripperwas="../index.html" ><IMG SRC="../images/logo2.jpg"  webstripperwas="../images/logo2.jpg" border=0></img></A></CENTER></TD>
+
+
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=100%% valign=top colspan=2>
+<CENTER>
+
+
+<!--START:ADS0-->
+
+<script type="text/javascript">
+<!--
+google_ad_client = "pub-4208362929074433";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666.html";
+google_color_text = "333333";
+//-->
+</script>
+<script type="text/javascript"
+  webstripperattrwas="src"  webstripperlinkwas="../../pagead2.googlesyndication.com/pagead/show_ads.js" >
+</script>
+
+
+
+<!--END-->
+
+
+</CENTER>
+</TD>
+</TR>
+
+
+
+
+
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=100%% valign=top colspan=2><CENTER>
+
+<!--START:LINKS-->
+
+
+<TABLE background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  BORDER=0 cellpadding=10>
+<TR><TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A HREF="../index.html"  webstripperwas="../index.html" target="_top"><font class=announcelink>Home</font></A><BR>
+</TD>
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A HREF="../adfaqpublish.html"  webstripperwas="../adfaqpublish.html" target="_top"><font class=announcelink>Questions</font></A><BR>
+</TD>
+
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A href="Dial Protected"  webstripperwas="../search.html"  onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../search.html?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../search.html'}else{href='javascript:void(0)'}" target="_top"><font class=announcelink>Search</font></A><BR>
+</TD>
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A HREF="Dial Protected"  webstripperwas="../forum/index.html"  onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../forum/index.html?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../forum/index.html'}else{href='javascript:void(0)'}" target="_top"><font class=announcelink>Forum</font></A><BR>
+</TD>
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A href="mailto:cracktheinterview@gmail.com?subject=Hi!"><font class=announcelink>Contact</font></A><BR>
+</TD>
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A href="Dial Protected"  webstripperwas="../forum/viewforum12a312a3.html?f=2"  onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../forum/viewforum12a312a3.html?f=2?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../forum/viewforum12a312a3.html?f=2'}else{href='javascript:void(0)'}" target="_top"><font class=announcelink>Guest Book</font></A><BR>
+</TD>
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A href="Dial Protected"  webstripperwas="../forum/viewforum4d6b4d6b.html?f=3"  onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../forum/viewforum4d6b4d6b.html?f=3?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../forum/viewforum4d6b4d6b.html?f=3'}else{href='javascript:void(0)'}" target="_top"><font class=announcelink>Polls!</font></A><BR>
+</TD>
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A href="Dial Protected"  webstripperwas="../forum/viewforum31e631e6.html?f=4"  onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../forum/viewforum31e631e6.html?f=4?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../forum/viewforum31e631e6.html?f=4'}else{href='javascript:void(0)'}" target="_top"><font class=announcelink>Got a Question?</font></A><BR>
+</TD>
+
+</TABLE>
+
+<!--END-->
+
+</CENTER></TD>
+</TR>
+
+
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=100%% valign=top colspan=2><CENTER> &nbsp; </CENTER></TD>
+</TR>
+
+
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=90%% valign=top>
+
+
+
+
+
+<!--START : DATA-->
+
+
+
+<TABLE background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  BORDER=0>
+
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%><CENTRE><font class=notelink><A HREF="30_0.html"  webstripperwas="30_0.html" >PREV</A></font></CENTRE></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=90%%><center><font class=blueHeading>Scripting basics</font></center></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%><CENTRE><font class=notelink><A HREF="../adfaqpublish.html"  webstripperwas="../adfaqpublish.html" >NEXT</A></font></CENTRE></TD></TR>
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%><CENTRE>&nbsp;</CENTRE></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=90%%><CENTER><font class=blueHeading>(301 / 301)</font></center></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%><CENTRE>&nbsp;</CENTRE></TD></TR>
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=90%%><center>&nbsp;</center></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%></TD></TR>
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  COLSPAN=3 width=700 align=left>
+<font class=announceLink><BR><BR><BR>
+<!--THE QUESTION-->
+
+Introduction to perl <BR>
+<!--END-->
+<BR></font></TD></TR>
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  COLSPAN=3 width=700 align=left>
+<font class=normal>
+<!--THE ANSWER--><BR>
+<!--META:START--><!--interview,FAQ,frequently,questions,answers,perl,scripting--><!--META:END--><BR>
+<!--NEW--><BR>
+<BR>
+<BR>
+<font class=announcelink>PERL</font> stands for <font class=announcelink>P</font>ractical <font class=announcelink>E</font>xtraction and <font class=announcelink>R</font>eport <font class=announcelink>L</font>anguage. Perl is a full-fledged Programming language, providing APIs for numerous Functionalities, such as Database Access, Web Access (SOAP, HTML, WDDX, XML ..etc), CGI Programming, GUI Programming ..etc. Perl is also optimized for scanning arbitrary text files, extracting information from those text files, and printing reports based on that information.<BR>
+<BR>
+This tutorial introduces the basic concepts of <font class=announcelink>Perl</font>. At the end of the tutorial, it also provides a lot of code snippets required to do the trivial tasks (<font class=announcelink>cheat sheet</font>). <BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#################################################################<BR>
+# The "use" directive<BR>
+#################################################################<BR>
+</font><BR>
+<BR>
+<BR>
+<CODE><BR>
+use&nbsp;warnings;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;This&nbsp;is&nbsp;used&nbsp;to&nbsp;detect&nbsp;errors&nbsp;like&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;>&nbsp;Redeclaration&nbsp;of&nbsp;variables.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;>&nbsp;Mis-spelt&nbsp;variable&nbsp;names.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;>&nbsp;Syntactic&nbsp;warnings.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;>&nbsp;Obsolete&nbsp;ways&nbsp;of&nbsp;programming.&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;>&nbsp;Problems&nbsp;with&nbsp;regexp.&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;>&nbsp;Issues&nbsp;with&nbsp;input&nbsp;and&nbsp;output.<BR>
+<BR>
+<BR>
+use&nbsp;strict;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Among&nbsp;other&nbsp;things,&nbsp;checks&nbsp;if&nbsp;we&nbsp;have&nbsp;declared&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;all&nbsp;variables&nbsp;(i.e,&nbsp;strict&nbsp;on&nbsp;variables,&nbsp;strict&nbsp;on&nbsp;references&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;and&nbsp;Strict&nbsp;on&nbsp;subroutines).<BR>
+<BR>
+<BR>
+use&nbsp;diagnostics;&nbsp;&nbsp;&nbsp;#&nbsp;Used&nbsp;to&nbsp;show&nbsp;explanatory&nbsp;text&nbsp;from&nbsp;the&nbsp;"perldiag"&nbsp;documentation.<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Adding any perl modules that we will be using for this script using the "use" command..</font><BR>
+<BR>
+<CODE><BR>
+use&nbsp;Cwd&nbsp;'chdir';&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;To&nbsp;use&nbsp;the&nbsp;command&nbsp;:&nbsp;chdir&nbsp;$incdir;&nbsp;<BR>
+use&nbsp;File::Copy;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;To&nbsp;use&nbsp;the&nbsp;command&nbsp;:&nbsp;copy&nbsp;"1.c",&nbsp;"2.c"&nbsp;<BR>
+use&nbsp;Win32::File&nbsp;'SetAttributes';&nbsp;&nbsp;&nbsp;#&nbsp;To&nbsp;use&nbsp;the&nbsp;command&nbsp;:&nbsp;SetAttributes(&nbsp;"1.c",&nbsp;&nbsp;"-READONLY"&nbsp;);<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#################################################################<BR>
+# Important perl switches<BR>
+#################################################################<BR>
+</font><BR>
+<BR>
+<BR>
+<CODE><BR>
+-e&nbsp;:&nbsp;To&nbsp;quickly&nbsp;write&nbsp;small&nbsp;perl&nbsp;programs<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example&nbsp;:&nbsp;perl&nbsp;-e&nbsp;'print&nbsp;"Hello&nbsp;world\n";'<BR>
+<BR>
+-c&nbsp;:&nbsp;Just&nbsp;compile&nbsp;the&nbsp;program,&nbsp;dont&nbsp;run.<BR>
+<BR>
+-I&nbsp;:&nbsp;Include&nbsp;directories&nbsp;apart&nbsp;from&nbsp;those&nbsp;pointed&nbsp;to&nbsp;by&nbsp;@INC<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example&nbsp;:&nbsp;perl&nbsp;-I/private/perl/&nbsp;&lt;program_name><BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#################################################################<BR>
+# The "require" command. <BR>
+#################################################################<BR>
+</font><BR>
+<BR>
+<BR>
+<font class=stayblue># Set the required perl version for this script to run..</font><BR>
+<CODE><BR>
+require&nbsp;5.003;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<font class=stayblue># Add any perl pl files that you will be using...</font><BR>
+<CODE><BR>
+require&nbsp;Exporter;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<CODE><BR>
+BEGIN&nbsp;<BR>
+{<BR>
+&nbsp;&nbsp;require&nbsp;5.004;<BR>
+&nbsp;&nbsp;push(@INC,&nbsp;$ENV{NEWBIN});&nbsp;&nbsp;#&nbsp;Adding&nbsp;to&nbsp;@INC&nbsp;(include&nbsp;path)<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#################################################################<BR>
+# Perl variables and their declarations<BR>
+# <BR>
+#   > Explicit declaration is not needed.<BR>
+#   > Variables are case Sensitive.<BR>
+#   > The type is given by the first character ($ , @ or %).<BR>
+<BR>
+#################################################################<BR>
+</font><BR>
+<BR>
+<BR>
+<CODE><BR>
+#&nbsp;Scalar&nbsp;Variables&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$name<BR>
+#&nbsp;Lists&nbsp;(Arrays)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@records<BR>
+#&nbsp;Hashes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%employee<BR>
+</CODE><BR>
+<BR>
+<BR>
+<font class=stayblue># Scalar Variables</font><BR>
+<BR>
+<BR>
+<CODE><BR>
+>&nbsp;Scalar&nbsp;Variables&nbsp;will&nbsp;start&nbsp;with&nbsp;$&nbsp;symbol.&nbsp;<BR>
+>&nbsp;The&nbsp;name&nbsp;can&nbsp;begin&nbsp;with&nbsp;an&nbsp;alphabet&nbsp;or&nbsp;_&nbsp;&nbsp;<BR>
+>&nbsp;The&nbsp;variable&nbsp;name&nbsp;may&nbsp;contain&nbsp;letters,&nbsp;_&nbsp;and&nbsp;digits<BR>
+>&nbsp;A&nbsp;variable&nbsp;can&nbsp;store&nbsp;the&nbsp;following&nbsp;values<BR>
+&nbsp;&nbsp;>&nbsp;An&nbsp;Integer.<BR>
+&nbsp;&nbsp;>&nbsp;A&nbsp;Floating&nbsp;point&nbsp;value.<BR>
+&nbsp;&nbsp;>&nbsp;A&nbsp;string.<BR>
+&nbsp;&nbsp;>&nbsp;A&nbsp;Boolean.<BR>
+&nbsp;&nbsp;>&nbsp;A&nbsp;reference.<BR>
+<BR>
+Examples:<BR>
+<BR>
+$x&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;7;<BR>
+$str&nbsp;&nbsp;=&nbsp;?hello&nbsp;World!\n?;<BR>
+$str&nbsp;&nbsp;=&nbsp;?hello&nbsp;World!\n?;<BR>
+$no&nbsp;&nbsp;&nbsp;=&nbsp;345.65;<BR>
+$null&nbsp;=&nbsp;??;&nbsp;<BR>
+$null&nbsp;=&nbsp;undef();<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<CODE><BR>
+our&nbsp;$myglobalvar&nbsp;=&nbsp;"Perl";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;This&nbsp;is&nbsp;a&nbsp;global&nbsp;variable.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;To&nbsp;access&nbsp;global&nbsp;variables&nbsp;from&nbsp;other&nbsp;packages,&nbsp;use<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;$Package::myvar<BR>
+<BR>
+my&nbsp;&nbsp;$myname&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;"King&nbsp;Kong";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;This&nbsp;is&nbsp;a&nbsp;local&nbsp;variable.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+<BR>
+my&nbsp;&nbsp;($x,&nbsp;$y,&nbsp;$z)&nbsp;=&nbsp;(1,2,3);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Multiple&nbsp;assignements,&nbsp;()&nbsp;required.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#################################################################<BR>
+# Printing the name of the perl file<BR>
+#################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+my&nbsp;$prgname=$0;<BR>
+print&nbsp;"$prgname";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;This&nbsp;will&nbsp;print&nbsp;"perl.pl"&nbsp;(i.e,&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;file).<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#################################################################<BR>
+# Print statements<BR>
+#################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+print&nbsp;"Hello&nbsp;world.\n";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+printf&nbsp;"Hello&nbsp;world.\n";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+print&nbsp;25_000_000,&nbsp;",",&nbsp;-4,&nbsp;"\n";<BR>
+<BR>
+print&nbsp;255,&nbsp;"\n";<BR>
+print&nbsp;0377,&nbsp;"\n";<BR>
+print&nbsp;0b11111111,&nbsp;"\n";<BR>
+print&nbsp;0xFF,&nbsp;"\n";<BR>
+<BR>
+print&nbsp;hex("0x30"),&nbsp;"\n";<BR>
+print&nbsp;oct("030"),&nbsp;"\n";<BR>
+print&nbsp;oct("0b11010"),&nbsp;"\n";	<BR>
+</CODE><BR>
+<BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<BR>
+<CODE><BR>
+Hello&nbsp;world.<BR>
+Hello&nbsp;world.<BR>
+25000000,-4<BR>
+255<BR>
+255<BR>
+255<BR>
+255<BR>
+48<BR>
+24<BR>
+26<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue><BR>
+# These three statements below will throw warnings (because you are trying <BR>
+# to add strings to numbers)<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+print&nbsp;"12&nbsp;Monkeys"&nbsp;+&nbsp;0&nbsp;+&nbsp;"\n";&nbsp;&nbsp;&nbsp;#&nbsp;Prints&nbsp;12&nbsp;without&nbsp;"\n".<BR>
+print&nbsp;"Monkeys"&nbsp;+&nbsp;0&nbsp;+&nbsp;"\n";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Prints&nbsp;0&nbsp;&nbsp;without&nbsp;"\n".&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+print&nbsp;"0X30"&nbsp;+&nbsp;0&nbsp;+&nbsp;"\n";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Prints&nbsp;0&nbsp;wihout&nbsp;"\n".&nbsp;Use&nbsp;hex();<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#################################################################<BR>
+# Single and double quoted strings<BR>
+#################################################################<BR>
+</font><BR>
+                         <BR>
+<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+print&nbsp;"Hello&nbsp;:&nbsp;$myname\n";<BR>
+print&nbsp;"$myglobalvar&nbsp;is&nbsp;great!\n";<BR>
+print&nbsp;'Hello&nbsp;:&nbsp;$myname',&nbsp;"\n";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Notice&nbsp;how&nbsp;the&nbsp;"\n"&nbsp;has&nbsp;been&nbsp;seperated.&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;This&nbsp;will&nbsp;NOT&nbsp;evaluate&nbsp;the&nbsp;variable,&nbsp;because<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;of&nbsp;the&nbsp;single&nbsp;quote.<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># The statements above would print</font><BR>
+<BR>
+<CODE><BR>
+Hello&nbsp;:&nbsp;King&nbsp;Kong<BR>
+Perl&nbsp;is&nbsp;great!<BR>
+Hello&nbsp;:&nbsp;$myname<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#################################################################<BR>
+# Alternative delimiters<BR>
+#################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+#&nbsp;print&nbsp;"Hello&nbsp;"&nbsp;World\n";&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;This&nbsp;will&nbsp;fail!<BR>
+print&nbsp;qq@Hello&nbsp;"&nbsp;World\n@;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;This&nbsp;WONT&nbsp;fail,&nbsp;it&nbsp;will&nbsp;print&nbsp;&nbsp;Hello&nbsp;"&nbsp;World<BR>
+<BR>
+my&nbsp;$mytimevar=8;<BR>
+#print&nbsp;"This&nbsp;is&nbsp;the&nbsp;$mytimevarth&nbsp;time.";&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;This&nbsp;WONT&nbsp;work.	<BR>
+print&nbsp;"This&nbsp;is&nbsp;the&nbsp;${mytimevar}th&nbsp;time.";&nbsp;&nbsp;&nbsp;#&nbsp;This&nbsp;is&nbsp;the&nbsp;right&nbsp;way&nbsp;of&nbsp;doing&nbsp;it&nbsp;and&nbsp;will<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;print&nbsp;"This&nbsp;is&nbsp;the&nbsp;8th&nbsp;time."<BR>
+<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#################################################################<BR>
+# The "Here" document<BR>
+#################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+print&lt;&lt;EOF;<BR>
+This&nbsp;is&nbsp;a&nbsp;here-document.&nbsp;It&nbsp;starts&nbsp;here<BR>
+and&nbsp;ends&nbsp;there.&nbsp;Write&nbsp;whatever&nbsp;you&nbsp;want&nbsp;to&nbsp;<BR>
+write&nbsp;inbetween...<BR>
+EOF<BR>
+</CODE>  <BR>
+<BR>
+<font class=stayblue># The above "Here" document will print the following text as-it-is!</font><BR>
+<BR>
+<CODE><BR>
+This&nbsp;is&nbsp;a&nbsp;here-document.&nbsp;It&nbsp;starts&nbsp;here<BR>
+and&nbsp;ends&nbsp;there.&nbsp;Write&nbsp;whatever&nbsp;you&nbsp;want&nbsp;to&nbsp;<BR>
+write&nbsp;inbetween...<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue><BR>
+# The "here" document is very useful in writing "usages" for files.<BR>
+# Here is an example...<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+sub&nbsp;Usage&nbsp;<BR>
+{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;&lt;&lt;EOB;<BR>
+<BR>
+Usage:&nbsp;utility.exe&nbsp;-option1=&lt;value>&nbsp;-option2=&lt;value>&nbsp;-option3=&lt;value><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;blah><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;blah><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;blah><BR>
+<BR>
+EOB<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;exit&nbsp;1;<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Perl Operators<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+print&nbsp;"The&nbsp;modulo&nbsp;15%6&nbsp;&nbsp;=&nbsp;",&nbsp;15%6,&nbsp;"\n";<BR>
+print&nbsp;"51&nbsp;ANDed&nbsp;with&nbsp;85&nbsp;=&nbsp;",&nbsp;51&85,&nbsp;"\n";<BR>
+print&nbsp;"51&nbsp;XORed&nbsp;with&nbsp;85&nbsp;=&nbsp;",&nbsp;51^85,&nbsp;"\n";<BR>
+print&nbsp;"51&nbsp;&nbsp;ORed&nbsp;with&nbsp;85&nbsp;=&nbsp;",&nbsp;51|85,&nbsp;"\n";<BR>
+print&nbsp;"51&nbsp;NEGated&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;",&nbsp;~51,&nbsp;"\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<BR>
+<CODE><BR>
+The&nbsp;modulo&nbsp;15%6&nbsp;&nbsp;=&nbsp;3<BR>
+51&nbsp;ANDed&nbsp;with&nbsp;85&nbsp;=&nbsp;17<BR>
+51&nbsp;XORed&nbsp;with&nbsp;85&nbsp;=&nbsp;102<BR>
+51&nbsp;&nbsp;ORed&nbsp;with&nbsp;85&nbsp;=&nbsp;119<BR>
+51&nbsp;NEGated&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;4294967244<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue><BR>
+# &lt;=> operator<BR>
+# Returns  0, if both sides are equal.<BR>
+#         -1, if right hand side is bigger.<BR>
+#          1, if left hand side is bigger.<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+print&nbsp;"6&lt;=>6&nbsp;:&nbsp;["&nbsp;,&nbsp;6&lt;=>6&nbsp;,&nbsp;"]\n5&lt;=>6&nbsp;:&nbsp;[",&nbsp;5&lt;=>6,&nbsp;"]\n6&lt;=>5&nbsp;:&nbsp;[",&nbsp;6&lt;=>5,&nbsp;"]\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+6&lt;=>6&nbsp;:&nbsp;[0]<BR>
+5&lt;=>6&nbsp;:&nbsp;[-1]<BR>
+6&lt;=>5&nbsp;:&nbsp;[1]<BR>
+</CODE> <BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Concatenation operator is .</font><BR>
+<CODE><BR>
+print&nbsp;"Hello"."&nbsp;World!\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+Hello&nbsp;World!<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Repetition operator is x</font><BR>
+<CODE><BR>
+print&nbsp;"Hello!"x3,&nbsp;"\n";<BR>
+print&nbsp;"\n"x5;<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+Hello!Hello!Hello!<BR>
+&lt;New&nbsp;Line><BR>
+&lt;New&nbsp;Line><BR>
+&lt;New&nbsp;Line><BR>
+&lt;New&nbsp;Line><BR>
+&lt;New&nbsp;Line><BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># The ord() function</font><BR>
+<CODE><BR>
+print&nbsp;"Order&nbsp;of&nbsp;A,B&nbsp;=&nbsp;["&nbsp;,&nbsp;ord('A'),&nbsp;","&nbsp;,&nbsp;ord("a"),&nbsp;"]\n";&nbsp;<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+Order&nbsp;of&nbsp;A,B&nbsp;=&nbsp;[65,97]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># String comparison operators</font><BR>
+<CODE><BR>
+print&nbsp;"\"ABC\"&nbsp;cmp&nbsp;\"ZYX\"&nbsp;:&nbsp;[",&nbsp;"ABC"&nbsp;cmp&nbsp;"ZYX",&nbsp;"]\n";&nbsp;#&nbsp;O/P&nbsp;:&nbsp;-1<BR>
+print&nbsp;"\"ZYX\"&nbsp;cmp&nbsp;\"ABC\"&nbsp;:&nbsp;[",&nbsp;"ZYX"&nbsp;cmp&nbsp;"ABC",&nbsp;"]\n";&nbsp;#&nbsp;O/P&nbsp;:&nbsp;1<BR>
+print&nbsp;"\"ABC\"&nbsp;cmp&nbsp;\"ABC\"&nbsp;:&nbsp;[",&nbsp;"ABC"&nbsp;cmp&nbsp;"ABC",&nbsp;"]\n";&nbsp;#&nbsp;O/P&nbsp;:&nbsp;0<BR>
+print&nbsp;"\"ABC\"&nbsp;gt&nbsp;\"ZYX\"&nbsp;:&nbsp;[",&nbsp;"ABC"&nbsp;gt&nbsp;"ZYX",&nbsp;"]\n";&nbsp;&nbsp;&nbsp;#&nbsp;O/P&nbsp;:&nbsp;NULL<BR>
+print&nbsp;"\"ABC\"&nbsp;lt&nbsp;\"ZYX\"&nbsp;:&nbsp;[",&nbsp;"ABC"&nbsp;lt&nbsp;"ZYX",&nbsp;"]\n";&nbsp;&nbsp;&nbsp;#&nbsp;O/P&nbsp;:&nbsp;1<BR>
+print&nbsp;"\"ABC\"&nbsp;eq&nbsp;\"ABC\"&nbsp;:&nbsp;[",&nbsp;"ABC"&nbsp;eq&nbsp;"ABC",&nbsp;"]\n";&nbsp;&nbsp;&nbsp;#&nbsp;O/P&nbsp;:&nbsp;1<BR>
+print&nbsp;"\"ABC\"&nbsp;eq&nbsp;\"ZYX\"&nbsp;:&nbsp;[",&nbsp;"ABC"&nbsp;eq&nbsp;"ZYX",&nbsp;"]\n";&nbsp;&nbsp;&nbsp;#&nbsp;O/P&nbsp;:&nbsp;NULL<BR>
+print&nbsp;"\"ABC\"&nbsp;ne&nbsp;\"ZYX\"&nbsp;:&nbsp;[",&nbsp;"ABC"&nbsp;ne&nbsp;"ZYX",&nbsp;"]\n";&nbsp;&nbsp;&nbsp;#&nbsp;O/P&nbsp;:&nbsp;1<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+"ABC"&nbsp;cmp&nbsp;"ZYX"&nbsp;:&nbsp;[-1]<BR>
+"ZYX"&nbsp;cmp&nbsp;"ABC"&nbsp;:&nbsp;[1]<BR>
+"ABC"&nbsp;cmp&nbsp;"ABC"&nbsp;:&nbsp;[0]<BR>
+"ABC"&nbsp;gt&nbsp;"ZYX"&nbsp;&nbsp;:&nbsp;[]<BR>
+"ABC"&nbsp;lt&nbsp;"ZYX"&nbsp;&nbsp;:&nbsp;[1]<BR>
+"ABC"&nbsp;eq&nbsp;"ABC"&nbsp;&nbsp;:&nbsp;[1]<BR>
+"ABC"&nbsp;eq&nbsp;"ZYX"&nbsp;&nbsp;:&nbsp;[]<BR>
+"ABC"&nbsp;ne&nbsp;"ZYX"&nbsp;&nbsp;:&nbsp;[1]<BR>
+</CODE>                                                                 <BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># The autoincrement operator.</font><BR>
+<CODE><BR>
+my&nbsp;$myvar="A9";<BR>
+print&nbsp;'++$myvar&nbsp;:&nbsp;[',&nbsp;++$myvar,&nbsp;"]\n";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+++$myvar&nbsp;:&nbsp;[B0]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># The "chomp" operator</font><BR>
+<CODE><BR>
+my&nbsp;$mychompvar&nbsp;=&nbsp;"Hello\n";<BR>
+print&nbsp;'Before&nbsp;chomping&nbsp;:&nbsp;['&nbsp;,&nbsp;$mychompvar,&nbsp;"]\n";<BR>
+chomp($mychompvar);<BR>
+print&nbsp;'After&nbsp;chomping&nbsp;:&nbsp;['&nbsp;,&nbsp;$mychompvar,&nbsp;"]\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+Before&nbsp;chomping&nbsp;:&nbsp;[Hello<BR>
+]<BR>
+After&nbsp;chomping&nbsp;:&nbsp;[Hello]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Logical operators<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+if((1==1)&nbsp;&&&nbsp;(2==2))<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;"AND&nbsp;condition&nbsp;is&nbsp;satisfied!\n";<BR>
+}	<BR>
+<BR>
+if((1==1)&nbsp;and&nbsp;(2==2))<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;"AND&nbsp;condition&nbsp;is&nbsp;satisfied!\n";<BR>
+}	<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# The "die" operator<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+my&nbsp;$abcdefg;<BR>
+<BR>
+die&nbsp;"I&nbsp;am&nbsp;dying"&nbsp;if&nbsp;not&nbsp;defined&nbsp;$abcdefg;&nbsp;&nbsp;&nbsp;#&nbsp;This&nbsp;will&nbsp;die&nbsp;with&nbsp;line&nbsp;number&nbsp;&&nbsp;filename.<BR>
+<BR>
+die&nbsp;"I&nbsp;am&nbsp;dying\n"&nbsp;if&nbsp;not&nbsp;defined&nbsp;$abcdefg;&nbsp;#&nbsp;This&nbsp;will&nbsp;die&nbsp;without&nbsp;anything.<BR>
+<BR>
+defined&nbsp;$abcdefg&nbsp;or&nbsp;die&nbsp;"I&nbsp;am&nbsp;dying"&nbsp;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;This&nbsp;will&nbsp;also&nbsp;die&nbsp;without&nbsp;anything.<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# The "split" and the "join" operators...<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+$_&nbsp;=&nbsp;'king&nbsp;kong&nbsp;people&nbsp;hello&nbsp;world&nbsp;oracle&nbsp;sense&nbsp;monkey';<BR>
+<BR>
+foreach&nbsp;my&nbsp;$myword&nbsp;(split)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;"[$myword]\n";<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+[king]<BR>
+[kong]<BR>
+[people]<BR>
+[hello]<BR>
+[world]<BR>
+[oracle]<BR>
+[sense]<BR>
+[monkey]<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Another example</font><BR>
+<BR>
+<CODE><BR>
+@parts&nbsp;=&nbsp;split&nbsp;/\|/,&nbsp;$lastline;&nbsp;&nbsp;#&nbsp;split&nbsp;on&nbsp;pipe&nbsp;symbol<BR>
+</CODE><BR>
+<BR>
+<BR>
+<font class=stayblue># Another example for the "split" operator</font><BR>
+<CODE><BR>
+my&nbsp;$mysplitarray&nbsp;=&nbsp;"kake:x:10018:10020::/home/kake:/bin/bash";<BR>
+print&nbsp;'$mysplitarray&nbsp;:&nbsp;[',&nbsp;$mysplitarray,&nbsp;"]\n";<BR>
+my&nbsp;@fields&nbsp;=&nbsp;split&nbsp;/:/,&nbsp;$mysplitarray;<BR>
+<BR>
+for&nbsp;(@fields)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;'$_&nbsp;->&nbsp;[',&nbsp;$_,&nbsp;"]\n";<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+$myfilepath&nbsp;:&nbsp;[/home/sgadag/adadmin/]<BR>
+$mysplitarray&nbsp;:&nbsp;[kake:x:10018:10020::/home/kake:/bin/bash]<BR>
+$_&nbsp;->&nbsp;[kake]<BR>
+$_&nbsp;->&nbsp;[x]<BR>
+$_&nbsp;->&nbsp;[10018]<BR>
+$_&nbsp;->&nbsp;[10020]<BR>
+$_&nbsp;->&nbsp;[]<BR>
+$_&nbsp;->&nbsp;[/home/kake]<BR>
+$_&nbsp;->&nbsp;[/bin/bash]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># The "join" operator.</font><BR>
+<CODE><BR>
+print&nbsp;"After&nbsp;joining&nbsp;->&nbsp;",&nbsp;join&nbsp;"#",&nbsp;@fields;<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+After&nbsp;joining&nbsp;->&nbsp;kake#x#10018#10020##/home/kake#/bin/bash<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Another example for the "join" operator...</font><BR>
+<CODE><BR>
+@rec&nbsp;=&nbsp;($login,$passwd,$uid,$gid,$gcos,$home,$shell);<BR>
+$str&nbsp;=&nbsp;join(':',&nbsp;@rec);<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Special variables in Perl<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<font class=stayblue><BR>
+# The $_ variable.<BR>
+# This is the default input and pattern-searching space.<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+for&nbsp;(@fields)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;'$_&nbsp;->&nbsp;[',&nbsp;$_,&nbsp;"]\n";<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<CODE><BR>
+$_&nbsp;=&nbsp;'king&nbsp;kong&nbsp;people&nbsp;hello&nbsp;world&nbsp;oracle&nbsp;sense&nbsp;monkey';<BR>
+<BR>
+foreach&nbsp;my&nbsp;$myword&nbsp;(split)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;"[$myword]\n";<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue><BR>
+# The $. variable. This holds the current input line number of the last file handle that was read.<BR>
+</font><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue><BR>
+# The $" variable.<BR>
+# The separator that joins elements of arrays interpolated in strings.<BR>
+</font><BR>
+<CODE><BR>
+print&nbsp;'@arr';&nbsp;	$?&nbsp;=&nbsp;'\n';&nbsp;	print&nbsp;'@arr';<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue><BR>
+# The $! variable.<BR>
+# If used in a numeric context, yields the current value of errno. <BR>
+# If used in a string context, yields the corresponding error string.<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+$err&nbsp;=&nbsp;"Error&nbsp;value:&nbsp;$!\n";<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue><BR>
+# The $/ variable.<BR>
+# This variable holds the delimiting character when reading lines from a file..<BR>
+</font><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue><BR>
+# The $| variable.<BR>
+# This variable is used  for I/O buffering...<BR>
+</font><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># The $@ variable.</font><BR>
+<BR>
+<CODE><BR>
+eval&nbsp;{mkpath($NEWBIN,&nbsp;0,&nbsp;0755)};<BR>
+if&nbsp;($@)<BR>
+{<BR>
+&nbsp;print&nbsp;"Failed&nbsp;to&nbsp;create&nbsp;the&nbsp;directory:\n$NEWBIN";<BR>
+&nbsp;exit&nbsp;1;<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue><BR>
+# The $? variable.<BR>
+# The status returned by the last `...` command, pipe close or 	system operator.<BR>
+</font><BR>
+<CODE><BR>
+copy&nbsp;("$copyfrom_dir/readme.txt",&nbsp;"$NEWBIN/readme.txt");<BR>
+if($?&nbsp;!=&nbsp;0)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;"Copying&nbsp;failed!";<BR>
+&nbsp;&nbsp;exit&nbsp;1;<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Some more special variables..</font><BR>
+<CODE><BR>
+$@&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	The&nbsp;Perl&nbsp;error&nbsp;message&nbsp;from&nbsp;the&nbsp;last&nbsp;eval&nbsp;or&nbsp;do&nbsp;EXPR&nbsp;command.<BR>
+$0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;file&nbsp;containing&nbsp;the&nbsp;Perl&nbsp;script&nbsp;being&nbsp;executed.<BR>
+$$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;process&nbsp;ID&nbsp;of&nbsp;the&nbsp;currently&nbsp;executing&nbsp;Perl&nbsp;program.&nbsp;<BR>
+$<&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;real&nbsp;user&nbsp;ID&nbsp;of&nbsp;this&nbsp;process.<BR>
+$>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;effective&nbsp;user&nbsp;ID&nbsp;of&nbsp;this&nbsp;process.<BR>
+$(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;real&nbsp;group&nbsp;ID&nbsp;of&nbsp;this&nbsp;process.<BR>
+$)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;effective&nbsp;group&nbsp;ID&nbsp;of&nbsp;this&nbsp;process.<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Input from STDIN<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+my&nbsp;$mystdinvar;<BR>
+print&nbsp;"Enter&nbsp;a&nbsp;number&nbsp;please&nbsp;:&nbsp;";<BR>
+$mystdinvar=&lt;STDIN>;<BR>
+print&nbsp;"You&nbsp;entered&nbsp;:&nbsp;$mystdinvar";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+Enter&nbsp;a&nbsp;number&nbsp;please&nbsp;:&nbsp;1<BR>
+You&nbsp;entered&nbsp;:&nbsp;1<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Perl Lists<BR>
+# <BR>
+# Name of a list starts with '@'. A list may contain 0 or more scalars.<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+print&nbsp;qw("one",&nbsp;"two",&nbsp;"three");&nbsp;&nbsp;#&nbsp;Gives&nbsp;warnings&nbsp;for&nbsp;comma&nbsp;use.<BR>
+print&nbsp;qw(one&nbsp;two&nbsp;three);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;No&nbsp;warnings.&nbsp;No&nbsp;need&nbsp;to&nbsp;use&nbsp;comma.<BR>
+print&nbsp;(("A","B","C","D")[2]);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;<BR>
+print&nbsp;(("A","B","C","D")[-1]);&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+"one","two","three"<BR>
+onetwothree<BR>
+C<BR>
+D<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># List slices.</font><BR>
+<CODE><BR>
+print&nbsp;(("A","B","C","D")[1,2]);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+print&nbsp;(("A","B","C","D")[0..3]);&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+print&nbsp;(("A","B","C","D")[0,2..3]);&nbsp;&nbsp;<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+BC<BR>
+ABCD<BR>
+ACD<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Swapping</font><BR>
+<CODE><BR>
+my&nbsp;($myswapvar1,&nbsp;$myswapvar2)&nbsp;=&nbsp;(1,10);<BR>
+print&nbsp;"(var1,&nbsp;var2)&nbsp;:&nbsp;[",&nbsp;&nbsp;$myswapvar1,&nbsp;",",&nbsp;$myswapvar2,&nbsp;"]\n";<BR>
+($myswapvar1,&nbsp;$myswapvar2)&nbsp;=&nbsp;($myswapvar2,&nbsp;$myswapvar1);<BR>
+print&nbsp;"(var1,&nbsp;var2)&nbsp;:&nbsp;[",&nbsp;&nbsp;$myswapvar1,&nbsp;",",&nbsp;$myswapvar2,&nbsp;"]\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+(var1,&nbsp;var2)&nbsp;:&nbsp;[1,10]<BR>
+(var1,&nbsp;var2)&nbsp;:&nbsp;[10,1]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Range operator</font><BR>
+<CODE><BR>
+print&nbsp;"Counting&nbsp;up&nbsp;&nbsp;&nbsp;:&nbsp;",&nbsp;(1..6),&nbsp;"\n";<BR>
+print&nbsp;"Counting&nbsp;down&nbsp;:&nbsp;",&nbsp;(6..1),&nbsp;"\n";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;No&nbsp;O/P.&nbsp;Thats&nbsp;because,&nbsp;RHS&nbsp;should&nbsp;be&nbsp;>&nbsp;LHS.&nbsp;<BR>
+print&nbsp;"Counting&nbsp;down&nbsp;:&nbsp;",&nbsp;reverse(1..6),&nbsp;"\n";&nbsp;&nbsp;<BR>
+print&nbsp;"Counting&nbsp;up&nbsp;&nbsp;&nbsp;:&nbsp;",&nbsp;('a'..'k'),&nbsp;"\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+Counting&nbsp;up&nbsp;&nbsp;&nbsp;:&nbsp;123456<BR>
+Counting&nbsp;down&nbsp;:<BR>
+Counting&nbsp;down&nbsp;:&nbsp;654321<BR>
+Counting&nbsp;up&nbsp;&nbsp;&nbsp;:&nbsp;abcdefghijk<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Assigning arrays</font><BR>
+<CODE><BR>
+my&nbsp;@myarray1=qw(one&nbsp;two&nbsp;three);<BR>
+my&nbsp;$myarray1=1;&nbsp;				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Valid!<BR>
+print&nbsp;"My&nbsp;array&nbsp;:&nbsp;[",&nbsp;@myarray1,&nbsp;"]\n";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+print&nbsp;"My&nbsp;array&nbsp;(scalar)&nbsp;:&nbsp;[",&nbsp;$myarray1,&nbsp;"]\n";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+$myarray1=@myarray1;<BR>
+print&nbsp;'$myarray1=@myarray1&nbsp;:&nbsp;[',&nbsp;$myarray1,&nbsp;"]\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+My&nbsp;array&nbsp;:&nbsp;[onetwothree]<BR>
+My&nbsp;array&nbsp;(scalar)&nbsp;:&nbsp;[1]<BR>
+$myarray1=@myarray1&nbsp;:&nbsp;[3]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Handling arrays</font><BR>
+<CODE><BR>
+my&nbsp;@myarray2&nbsp;=&nbsp;(1,&nbsp;@myarray1,&nbsp;2);<BR>
+print&nbsp;'@myarray2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[',&nbsp;@myarray2,&nbsp;"]\n";<BR>
+print&nbsp;'$myarray2[1]&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[',&nbsp;$myarray2[1]&nbsp;,&nbsp;"]\n";<BR>
+print&nbsp;'@myarray2[2..4]&nbsp;:&nbsp;[',&nbsp;@myarray2[2..4],&nbsp;"]\n";<BR>
+@myarray2[1..3]=("three",&nbsp;"two",&nbsp;"one");<BR>
+print&nbsp;'@myarray2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[',&nbsp;@myarray2,&nbsp;"]\n";<BR>
+print&nbsp;'Index&nbsp;of&nbsp;highest&nbsp;element&nbsp;in&nbsp;@myarray2&nbsp;is&nbsp;$#myarray2&nbsp;:&nbsp;[',&nbsp;$#myarray2,&nbsp;"]\n\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+@myarray2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[1onetwothree2]<BR>
+$myarray2[1]&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[one]<BR>
+@myarray2[2..4]&nbsp;:&nbsp;[twothree2]<BR>
+@myarray2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[1threetwoone2]<BR>
+Index&nbsp;of&nbsp;highest&nbsp;element&nbsp;in&nbsp;@myarray2&nbsp;is&nbsp;$#myarray2&nbsp;:&nbsp;[4]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Looping through lists</font><BR>
+<CODE><BR>
+for&nbsp;my&nbsp;$element&nbsp;(@myarray2)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;'$element[]:&nbsp;[',&nbsp;$element,&nbsp;"]\n";<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+$element[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[1]<BR>
+$element[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[three]<BR>
+$element[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[two]<BR>
+$element[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[one]<BR>
+$element[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[2]<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+for&nbsp;(@myarray2)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;'$_&nbsp;:&nbsp;[',&nbsp;$_,&nbsp;"]\n";<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+$_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[1]<BR>
+$_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[three]<BR>
+$_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[two]<BR>
+$_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[one]<BR>
+$_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[2]<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+for&nbsp;(0..$#myarray2)&nbsp;&nbsp;#&nbsp;Cannot&nbsp;use&nbsp;$myarray2&nbsp;directly.<BR>
+{<BR>
+&nbsp;&nbsp;&nbsp;print&nbsp;'$myarray2[',&nbsp;$_,&nbsp;']&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[',&nbsp;$myarray2[$_],&nbsp;"]\n";<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+$myarray2[0]&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[1]<BR>
+$myarray2[1]&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[three]<BR>
+$myarray2[2]&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[two]<BR>
+$myarray2[3]&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[one]<BR>
+$myarray2[4]&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[2]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Pop and Push operators. (TOP END).</font><BR>
+<CODE><BR>
+print&nbsp;'@myarray2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;['&nbsp;,&nbsp;@myarray2,&nbsp;"]\n";<BR>
+my&nbsp;$mypopvar&nbsp;=&nbsp;pop&nbsp;@myarray2;<BR>
+print&nbsp;'After&nbsp;POP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;['&nbsp;,&nbsp;@myarray2,&nbsp;"]\n";<BR>
+push&nbsp;@myarray2,&nbsp;2;<BR>
+print&nbsp;'After&nbsp;PUSH&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;['&nbsp;,&nbsp;@myarray2,&nbsp;"]\n\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+@myarray2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[1threetwoone2]<BR>
+After&nbsp;POP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[1threetwoone]<BR>
+After&nbsp;PUSH&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[1threetwoone2]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Shift and Unshift operators. (BOTTOM END).</font><BR>
+<CODE><BR>
+print&nbsp;'@myarray2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;['&nbsp;,&nbsp;@myarray2,&nbsp;"]\n";<BR>
+unshift&nbsp;@myarray2,&nbsp;3;<BR>
+print&nbsp;'After&nbsp;UNSHIFT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;['&nbsp;,&nbsp;@myarray2,&nbsp;"]\n";<BR>
+print&nbsp;'After&nbsp;SHIFT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;['&nbsp;,&nbsp;shift&nbsp;@myarray2,&nbsp;"]\n\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+@myarray2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[1threetwoone2]<BR>
+After&nbsp;UNSHIFT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[31threetwoone2]<BR>
+After&nbsp;SHIFT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[3]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># The "splice" operator</font><BR>
+<CODE><BR>
+#&nbsp;splice&nbsp;ARRAY,OFFSET,LENGTH,LIST<BR>
+splice(@days,&nbsp;1,&nbsp;4,&nbsp;@rep);<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Sort operator</font><BR>
+<CODE><BR>
+my&nbsp;@mysortedarray&nbsp;=&nbsp;qw(AZ&nbsp;AB&nbsp;AG&nbsp;AA&nbsp;AC);<BR>
+print&nbsp;"Before&nbsp;sorting&nbsp;:&nbsp;[",&nbsp;"@mysortedarray",&nbsp;"]\n";<BR>
+print&nbsp;"After&nbsp;sorting&nbsp;&nbsp;:&nbsp;[",&nbsp;sort&nbsp;@mysortedarray,&nbsp;"]\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+Before&nbsp;sorting&nbsp;:&nbsp;[AZ&nbsp;AB&nbsp;AG&nbsp;AA&nbsp;AC]<BR>
+After&nbsp;sorting&nbsp;&nbsp;:&nbsp;[AAABACAGAZ]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Sort strings and numbers</font><BR>
+<CODE><BR>
+my&nbsp;@myunsortedarray&nbsp;=&nbsp;(1,2,11,24,3,26,40,4);<BR>
+print&nbsp;"Before&nbsp;sorting&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[",&nbsp;"@myunsortedarray",&nbsp;"]\n";<BR>
+@mysortedarray&nbsp;=&nbsp;sort&nbsp;@myunsortedarray;<BR>
+print&nbsp;"After&nbsp;sorting&nbsp;(sort):&nbsp;[",&nbsp;"@mysortedarray"&nbsp;,&nbsp;"]\n";<BR>
+@mysortedarray&nbsp;=&nbsp;sort&nbsp;{$a&nbsp;cmp&nbsp;$b}&nbsp;@myunsortedarray;<BR>
+print&nbsp;"After&nbsp;sorting&nbsp;(cmp)&nbsp;:&nbsp;[",&nbsp;"@mysortedarray"&nbsp;,&nbsp;"]\n";<BR>
+@mysortedarray&nbsp;=&nbsp;sort&nbsp;{$a&nbsp;&lt;=>&nbsp;$b}&nbsp;@myunsortedarray;<BR>
+print&nbsp;"After&nbsp;sorting&nbsp;(&lt;=>)&nbsp;:&nbsp;[",&nbsp;"@mysortedarray"&nbsp;,&nbsp;"]\n";<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+Before&nbsp;sorting&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[1&nbsp;2&nbsp;11&nbsp;24&nbsp;3&nbsp;26&nbsp;40&nbsp;4]<BR>
+After&nbsp;sorting&nbsp;(sort):&nbsp;[1&nbsp;11&nbsp;2&nbsp;24&nbsp;26&nbsp;3&nbsp;4&nbsp;40]<BR>
+After&nbsp;sorting&nbsp;(cmp)&nbsp;:&nbsp;[1&nbsp;11&nbsp;2&nbsp;24&nbsp;26&nbsp;3&nbsp;4&nbsp;40]<BR>
+After&nbsp;sorting&nbsp;(&lt;=>)&nbsp;:&nbsp;[1&nbsp;2&nbsp;3&nbsp;4&nbsp;11&nbsp;24&nbsp;26&nbsp;40]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue>The "grep" operator</font><BR>
+<CODE><BR>
+#&nbsp;The&nbsp;code&nbsp;below&nbsp;will&nbsp;return&nbsp;all&nbsp;lines&nbsp;which&nbsp;are&nbsp;not&nbsp;comments&nbsp;(i.e,&nbsp;starting&nbsp;with&nbsp;#)..<BR>
+@foo&nbsp;=&nbsp;grep(!/^#/,&nbsp;@bar);<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Perl Hashes<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+my&nbsp;%myhash&nbsp;=&nbsp;("1","ONE",<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"2","TWO",<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"3","THREE");<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue><BR>
+# Hash keys must be unique, else old one will be overwritten.<BR>
+# Hash values can be non-unque.<BR>
+</font><BR>
+<BR>
+<BR>
+<CODE><BR>
+print&nbsp;'Hash&nbsp;%myhash&nbsp;:&nbsp;[',&nbsp;%myhash,&nbsp;"]\n";&nbsp;&nbsp;&nbsp;<BR>
+print&nbsp;'Hash&nbsp;%myhash&nbsp;:&nbsp;[',&nbsp;"%myhash",&nbsp;"]\n";&nbsp;<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+Hash&nbsp;%myhash&nbsp;:&nbsp;[1ONE2TWO3THREE]<BR>
+Hash&nbsp;%myhash&nbsp;:&nbsp;[%myhash]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue><BR>
+# Converting from hash to array and vice versa.<BR>
+# Note that during such conversions, the order need not be maintained.<BR>
+</font><BR>
+<CODE><BR>
+my&nbsp;@myhasharray&nbsp;=&nbsp;%myhash;<BR>
+print&nbsp;'@myhasharray&nbsp;=&nbsp;%myhash&nbsp;:&nbsp;['&nbsp;,&nbsp;"@myhasharray",&nbsp;"]\n";<BR>
+%myhash&nbsp;=&nbsp;@myhasharray;<BR>
+print&nbsp;'%myhash&nbsp;=&nbsp;@myhasharray&nbsp;:&nbsp;['&nbsp;,&nbsp;%myhash,&nbsp;"]\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+@myhasharray&nbsp;=&nbsp;%myhash&nbsp;:&nbsp;[1&nbsp;ONE&nbsp;2&nbsp;TWO&nbsp;3&nbsp;THREE]<BR>
+%myhash&nbsp;=&nbsp;@myhasharray&nbsp;:&nbsp;[1ONE2TWO3THREE]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Accessing and changing hash values</font><BR>
+<CODE><BR>
+print&nbsp;'$myhash{1}&nbsp;:&nbsp;[',&nbsp;$myhash{1},&nbsp;"]\n";<BR>
+$myhash{1}&nbsp;=&nbsp;"ONE&nbsp;MY&nbsp;FOOT";<BR>
+print&nbsp;'$myhash{1}&nbsp;=&nbsp;"ONE&nbsp;MY&nbsp;FOOT"&nbsp;:&nbsp;[',&nbsp;$myhash{1},&nbsp;"]\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+$myhash{1}&nbsp;:&nbsp;[ONE]<BR>
+$myhash{1}&nbsp;=&nbsp;"ONE&nbsp;MY&nbsp;FOOT"&nbsp;:&nbsp;[ONE&nbsp;MY&nbsp;FOOT]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Deleting elements from the Hash</font><BR>
+<CODE><BR>
+delete&nbsp;$myhash{1};<BR>
+print&nbsp;'Deleted&nbsp;$myhash{1}',&nbsp;"\n";<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># print 'After deleting $myhash{1} : [' , $myhash{1}, "]\n";  # This will error!.</font><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Using the "exists" keyword</font><BR>
+<CODE><BR>
+if(exists($myhash{1}))<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;'$myhash{1}&nbsp;still&nbsp;exists!',"\n";<BR>
+}<BR>
+else<BR>
+{	<BR>
+&nbsp;&nbsp;#&nbsp;We&nbsp;can&nbsp;use&nbsp;if(not&nbsp;exists())&nbsp;here.<BR>
+&nbsp;&nbsp;print&nbsp;'$myhash{1}&nbsp;has&nbsp;been&nbsp;deleted!',"\n";<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Looping through a hash</font><BR>
+<BR>
+<BR>
+<font class=stayblue># for() loop</font><BR>
+<BR>
+<CODE><BR>
+for&nbsp;(keys&nbsp;%myhash)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;'$myhash{',&nbsp;$_,&nbsp;'}&nbsp;:&nbsp;['&nbsp;,&nbsp;$myhash{$_}&nbsp;,&nbsp;"]\n";<BR>
+}		<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+$myhash{2}&nbsp;:&nbsp;[TWO]<BR>
+$myhash{3}&nbsp;:&nbsp;[THREE]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># foreach() is same as for!</font><BR>
+<CODE><BR>
+foreach&nbsp;(keys&nbsp;%myhash)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;'$myhash{',&nbsp;$_,&nbsp;'}&nbsp;:&nbsp;['&nbsp;,&nbsp;$myhash{$_}&nbsp;,&nbsp;"]\n";<BR>
+}		<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+$myhash{2}&nbsp;:&nbsp;[TWO]<BR>
+$myhash{3}&nbsp;:&nbsp;[THREE]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Other Hash and List Functions</font><BR>
+<CODE><BR>
+delete&nbsp;$HASH{KEY}<BR>
+<BR>
+each&nbsp;%HASH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while(&nbsp;($key,&nbsp;$val)&nbsp;=&nbsp;each&nbsp;%hash1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+				<BR>
+exists&nbsp;EXPR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exists&nbsp;$hash{$key};&nbsp;&nbsp;&nbsp;&nbsp;exists&nbsp;&#8834;&nbsp;<BR>
+<BR>
+keys&nbsp;%HASH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;$key&nbsp;(&nbsp;keys&nbsp;%hash1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+<BR>
+reverse&nbsp;LIST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@rl&nbsp;=&nbsp;reverse&nbsp;@list1;<BR>
+<BR>
+shift&nbsp;[&nbsp;@ARRAY&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$x&nbsp;=&nbsp;shift&nbsp;@arr1;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># While loop for hashes...</font><BR>
+<CODE><BR>
+while&nbsp;(($key,&nbsp;$value)&nbsp;=&nbsp;each(%hash))&nbsp;<BR>
+{<BR>
+&nbsp;&nbsp;#&nbsp;Code&nbsp;here...<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# For and While Loops, IF Conditions...<BR>
+#########################################################################<BR>
+</font><BR>
+<font class=stayblue># Breaking through loops</font><BR>
+<CODE><BR>
+for&nbsp;(keys&nbsp;%myhash)<BR>
+{<BR>
+&nbsp;&nbsp;if($myhash{$_}&nbsp;eq&nbsp;"TWO")<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;"Breaking&nbsp;out&nbsp;of&nbsp;loop&nbsp;using&nbsp;last;,&nbsp;saw&nbsp;$myhash{$_}\n";<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;last;<BR>
+&nbsp;&nbsp;}<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue>#Continuing through loops</font><BR>
+<CODE><BR>
+for&nbsp;(keys&nbsp;%myhash)<BR>
+{<BR>
+&nbsp;&nbsp;if($myhash{$_}&nbsp;eq&nbsp;"TWO")<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;"Continuing&nbsp;the&nbsp;for&nbsp;loop&nbsp;using&nbsp;next;,&nbsp;saw&nbsp;$myhash{$_}\n";<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;next;<BR>
+&nbsp;&nbsp;}<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue>#Redoing through loops</font><BR>
+<CODE><BR>
+for&nbsp;(keys&nbsp;%myhash)<BR>
+{<BR>
+&nbsp;&nbsp;if($myhash{$_}&nbsp;eq&nbsp;"TWO")<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;"Redoing&nbsp;the&nbsp;for&nbsp;loop&nbsp;using&nbsp;redo;,&nbsp;saw&nbsp;$myhash{$_}\n";<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;#redo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Commented&nbsp;as&nbsp;this&nbsp;will&nbsp;result&nbsp;in&nbsp;infinite&nbsp;loop!<BR>
+&nbsp;&nbsp;}<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># While loops</font><BR>
+<CODE><BR>
+while&nbsp;(condition)&nbsp;{&nbsp;}<BR>
+<BR>
+until&nbsp;(condition)&nbsp;{&nbsp;}<BR>
+<BR>
+do/while<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Control Statements</font><BR>
+<CODE><BR>
+goto&nbsp;LABEL&nbsp;	Continue&nbsp;execution&nbsp;at&nbsp;the&nbsp;specified&nbsp;label.<BR>
+<BR>
+last&nbsp;[LABEL]	Immediately&nbsp;exits&nbsp;the&nbsp;loop&nbsp;in&nbsp;question.&nbsp;Skips&nbsp;			<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue&nbsp;block.<BR>
+<BR>
+next&nbsp;[LABEL]	Starts&nbsp;the&nbsp;next&nbsp;iteration&nbsp;of&nbsp;the&nbsp;loop.<BR>
+<BR>
+redo[LABEL]&nbsp;	Restarts&nbsp;the&nbsp;loop&nbsp;block&nbsp;without&nbsp;evaluating&nbsp;			<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;conditional&nbsp;again.<BR>
+<BR>
+</CODE><BR>
+<BR>
+<BR>
+<font class=stayblue># IF Statements</font><BR>
+<CODE><BR>
+if&nbsp;(condition)&nbsp;<BR>
+{<BR>
+&nbsp;&nbsp;#&nbsp;True&nbsp;Block<BR>
+}&nbsp;<BR>
+else&nbsp;<BR>
+{<BR>
+&nbsp;&nbsp;#&nbsp;False&nbsp;Block<BR>
+}<BR>
+<BR>
+#&nbsp;elsif&nbsp;is&nbsp;supported&nbsp;(multiple&nbsp;ifs)<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Getting the command line arguments.<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+print&nbsp;"Number&nbsp;of&nbsp;args&nbsp;:&nbsp;[",&nbsp;@ARGV+0,&nbsp;"]\n";<BR>
+foreach&nbsp;(@ARGV)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;'$_&nbsp;:&nbsp;[',&nbsp;$_,&nbsp;"]\n";<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue>#Another method to get the command line arguments</font><BR>
+<CODE><BR>
+my&nbsp;$myargvvar1&nbsp;=&nbsp;shift&nbsp;@ARGV;<BR>
+my&nbsp;$myargvvar2&nbsp;=&nbsp;shift&nbsp;@ARGV;<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Number of ARGS = $#ARGV</font><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# while &lt;STDIN> loop<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+while(&lt;STDIN>)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;"$_";<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Regular expressions in Perl<BR>
+# <BR>
+# A regular expression is a concise representation of one or more<BR>
+# strings, using normal characters (representing themselves) and<BR>
+# special ones:<BR>
+#  > One of PERL's strongest features<BR>
+#  > Can be used to match, substitute and split<BR>
+# <BR>
+# Examples<BR>
+# <BR>
+# /Th?om(as)? (Ch|K)rist(ia|e)ns{1,2}[eo]n/<BR>
+# ($h, $m, $s) = ($date = /(\d\d):(\d\d):(\d\d)/);<BR>
+# @words = split(/\W+/, $text);<BR>
+# <BR>
+# <BR>
+# [ EXPR =~ ] [ m ] /PATTERN/ [ g ] [ i ] [ m ] [ o ] [ s ] [ x ]<BR>
+#  Searches EXPR (default: $_) for a pattern. If you prepend an "m" you<BR>
+#  can use almost any pair of delimiters instead of the slashes. If used<BR>
+#  in array context, an array is returned consisting of the subexpressions<BR>
+#  matched by the parentheses in the pattern, i.e., ($1,$2,$3,...).    <BR>
+# <BR>
+# Optional modifiers: <BR>
+#   g matches as many times as possible; <BR>
+#   i searches in a case-insensitive manner; <BR>
+#   o interpolates variables only once. <BR>
+#   m treats the string as multiple lines; <BR>
+#   s treats the string as a single line; <BR>
+#   x allows for regular expression extensions. <BR>
+# <BR>
+#   \W, \w, \S, \s, \d, \D, \n, \r<BR>
+# <BR>
+#   / (Expression) / igom<BR>
+# <BR>
+#  '^'          Beginning of a String<BR>
+#  '$'          End of a string<BR>
+#  '.'          Any character<BR>
+#  '|'          Logical or<BR>
+#  '*'          Zero or more<BR>
+#  '+'          One or more<BR>
+#  \d           Any digit<BR>
+#  \D           Any non digit character<BR>
+#  \w           Matches alphanumeric, including _ <BR>
+#  \W           Non-alphanumeric.<BR>
+#  {N,M}        The minimum N and maximum M match count. <BR>
+#  {N}          N times<BR>
+#  {N,}         At least N times.<BR>
+# <BR>
+# <BR>
+# <BR>
+# [ $VAR =~ ] s/PATTERN/REPLACEMENT/ [ e ] [ g ] [ i ] [ m ] [ o ]<BR>
+# <BR>
+# Searches a string for a pattern, and if found, replaces that pattern with <BR>
+# the replacement text. It returns the number of substitutions made, if any; <BR>
+# if no substitutions are made, it returns false. <BR>
+# <BR>
+# Optional modifiers: <BR>
+# <BR>
+#   g replaces all occurrences of the pattern; <BR>
+# <BR>
+#   e evaluates the replacement string as a Perl expression; for any other modifiers<BR>
+# <BR>
+#   s squeezes all sequences of characters that are translated 	into the same target <BR>
+#     character into one occurrence of this character.<BR>
+# <BR>
+# <BR>
+# Single-character patterns<BR>
+# <BR>
+#   A character class is represented by a list of characters enclosed between [ ] <BR>
+#   For the pattern to match, one and only one of these characters must be present<BR>
+# <BR>
+#     [abcde]<BR>
+#     [0-9]<BR>
+#     [a-zA-Z0-9]<BR>
+# <BR>
+#   Negated character class<BR>
+# <BR>
+#     [^0-9]         Matches any character except a digit<BR>
+#     [^aeiouAEIOU]  Matches any single non-vowel<BR>
+# <BR>
+# <BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+my&nbsp;$myregexparray&nbsp;=&nbsp;"hello&nbsp;world&nbsp;plus&nbsp;cap&nbsp;kingkong";<BR>
+<BR>
+print&nbsp;"$myregexparray\n",'$myregexparray&nbsp;=~&nbsp;/world/',"\n";<BR>
+if($myregexparray&nbsp;=~&nbsp;/world/)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;"Match&nbsp;found!\n";<BR>
+}<BR>
+<BR>
+print&nbsp;'$myregexparray&nbsp;!~&nbsp;/worldplus/',"\n";<BR>
+if($myregexparray&nbsp;!~&nbsp;/worldplus/)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;"Match&nbsp;not&nbsp;found!\n";<BR>
+}<BR>
+<BR>
+print&nbsp;'$myregexparray&nbsp;=~&nbsp;/PLUS/i',"\n";<BR>
+if($myregexparray&nbsp;=~&nbsp;/PLUS/i)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;"Match&nbsp;found!\n";<BR>
+}<BR>
+<BR>
+print&nbsp;'$myregexparray&nbsp;=~&nbsp;/kingkong$/',"\n";<BR>
+if($myregexparray&nbsp;=~&nbsp;/kingkong$/)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;"Match&nbsp;found!\n";<BR>
+}<BR>
+<BR>
+print&nbsp;'$myregexparray&nbsp;!~&nbsp;/^kingkong$/',"\n";<BR>
+if($myregexparray&nbsp;!~&nbsp;/^kingkong$/)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;"Match&nbsp;not&nbsp;found!\n";<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+hello&nbsp;world&nbsp;plus&nbsp;cap&nbsp;kingkong<BR>
+$myregexparray&nbsp;=~&nbsp;/world/<BR>
+Match&nbsp;found!<BR>
+$myregexparray&nbsp;!~&nbsp;/worldplus/<BR>
+Match&nbsp;not&nbsp;found!<BR>
+$myregexparray&nbsp;=~&nbsp;/PLUS/i<BR>
+Match&nbsp;found!<BR>
+$myregexparray&nbsp;=~&nbsp;/kingkong$/<BR>
+Match&nbsp;found!<BR>
+$myregexparray&nbsp;!~&nbsp;/^kingkong$/<BR>
+Match&nbsp;not&nbsp;found!<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Special regular expression characters</font><BR>
+<CODE><BR>
+\d&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;->&nbsp;[0-9]<BR>
+\w&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;->&nbsp;[0-9A-Za-z]<BR>
+\s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;->&nbsp;[&nbsp;\t\n\r]<BR>
+\D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;->&nbsp;negation&nbsp;of&nbsp;\d<BR>
+\W&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;->&nbsp;negation&nbsp;of&nbsp;\w<BR>
+\S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;->&nbsp;negation&nbsp;of&nbsp;\s<BR>
+[[:alpha:]]&nbsp;->&nbsp;[a-zA-Z]<BR>
+[[:alnum:]]&nbsp;->&nbsp;[0-9A-Za-z]<BR>
+[[:digit:]]&nbsp;->&nbsp;\d<BR>
+[[:lower:]]&nbsp;->&nbsp;[a-z]<BR>
+[[:upper:]]&nbsp;->&nbsp;[A-Z]<BR>
+[[:punct:]]&nbsp;->&nbsp;[!"#$%&'()*+,-./:;&lt;=>?@\[\\\]^_`{|}~]<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Some examples</font><BR>
+<CODE><BR>
+/bea?t/&nbsp;Matches&nbsp;'beat'&nbsp;or&nbsp;'bet'.<BR>
+/bea+t/&nbsp;Matches&nbsp;'beat',&nbsp;'beaat',&nbsp;'beaaat',...<BR>
+/bea*t/&nbsp;Matches&nbsp;'bet',&nbsp;'beat',&nbsp;'beaat',...<BR>
+/bea{2}t/<BR>
+/bea{2,3}t/<BR>
+/beat{2,}t/<BR>
+/beat{,3}t/<BR>
+[abc]&nbsp;&nbsp;Any&nbsp;one&nbsp;of&nbsp;a&nbsp;b&nbsp;and&nbsp;c.<BR>
+[^abc]&nbsp;Anything&nbsp;other&nbsp;than&nbsp;a,b,c.<BR>
+(abc)&nbsp;The&nbsp;phrase&nbsp;'abc'&nbsp;as&nbsp;a&nbsp;group.<BR>
+\b&nbsp;The&nbsp;boundary&nbsp;between&nbsp;a&nbsp;\w&nbsp;character&nbsp;and&nbsp;a&nbsp;\W&nbsp;character.<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue>#Special characters.</font><BR>
+<CODE><BR>
+.&nbsp;*&nbsp;?&nbsp;+&nbsp;[&nbsp;]&nbsp;(&nbsp;)&nbsp;{&nbsp;}&nbsp;^&nbsp;$&nbsp;|&nbsp;\<BR>
+</CODE><BR>
+<BR>
+<BR>
+<font class=stayblue># Turn off special meanings using \Q, turn on again \E</font><BR>
+<BR>
+<BR>
+<font class=stayblue><BR>
+# Use ? to stop the greedy search.<BR>
+# Example, stop greedy search : ([a-z]+)(.*?)([a-z]+)<BR>
+</font>		<BR>
+<BR>
+<BR>
+<font class=stayblue># Searching and replacing.</font><BR>
+<CODE><BR>
+my&nbsp;$myreplacearray&nbsp;=&nbsp;"hello&nbsp;world&nbsp;king&nbsp;good&nbsp;jack";<BR>
+<BR>
+print&nbsp;'Before&nbsp;replacing&nbsp;$myreplacearray&nbsp;:&nbsp;[',&nbsp;"$myreplacearray",&nbsp;"]\n";<BR>
+$myreplacearray&nbsp;=~&nbsp;s/world/myworld/g;	<BR>
+print&nbsp;'After&nbsp;replacing&nbsp;&nbsp;$myreplacearray&nbsp;:&nbsp;[',&nbsp;"$myreplacearray",&nbsp;"]\n";<BR>
+$myreplacearray&nbsp;=~&nbsp;s/(\w+)&nbsp;myworld&nbsp;(\w+)/$2/g;	<BR>
+print&nbsp;'After&nbsp;replacing&nbsp;&nbsp;$myreplacearray&nbsp;:&nbsp;[',&nbsp;"$myreplacearray",&nbsp;"]\n";<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+Before&nbsp;replacing&nbsp;$myreplacearray&nbsp;:&nbsp;[hello&nbsp;world&nbsp;king&nbsp;good&nbsp;jack]<BR>
+After&nbsp;replacing&nbsp;&nbsp;$myreplacearray&nbsp;:&nbsp;[hello&nbsp;myworld&nbsp;king&nbsp;good&nbsp;jack]<BR>
+After&nbsp;replacing&nbsp;&nbsp;$myreplacearray&nbsp;:&nbsp;[king&nbsp;good&nbsp;jack]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Changing the delimiters</font><BR>
+<CODE><BR>
+my&nbsp;$myfilepath&nbsp;=&nbsp;"/home/user/patch/";<BR>
+print&nbsp;"\n",'$myfilepath&nbsp;:&nbsp;[',&nbsp;"$myfilepath]\n";<BR>
+$myfilepath&nbsp;=~&nbsp;s#/home/user/patch/#/home/user/admin/#g;<BR>
+print&nbsp;"\n",'$myfilepath&nbsp;:&nbsp;[',&nbsp;"$myfilepath]\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+$myfilepath&nbsp;:&nbsp;[/home/user/patch]<BR>
+$myfilepath&nbsp;:&nbsp;[/home/user/admin/]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Modifiers</font><BR>
+<CODE><BR>
+/i&nbsp;-&nbsp;CASE&nbsp;insensitive&nbsp;matching.<BR>
+<BR>
+/m&nbsp;-&nbsp;Treat&nbsp;the&nbsp;string&nbsp;as&nbsp;multiple&nbsp;lines.&nbsp;Normally,&nbsp;^&nbsp;and&nbsp;$&nbsp;match<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;very&nbsp;start&nbsp;and&nbsp;very&nbsp;end&nbsp;of&nbsp;the&nbsp;string.&nbsp;If&nbsp;the&nbsp;/m&nbsp;modifier&nbsp;is<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in&nbsp;play,&nbsp;then&nbsp;they&nbsp;will&nbsp;match&nbsp;the&nbsp;starts&nbsp;and&nbsp;the&nbsp;ends&nbsp;of&nbsp;individual&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lines&nbsp;(seperated&nbsp;by&nbsp;\n).&nbsp;For&nbsp;example,&nbsp;given&nbsp;the&nbsp;string:&nbsp;"one\ntwo",<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;pattern&nbsp;/^two$/&nbsp;will&nbsp;not&nbsp;match,&nbsp;but&nbsp;/^two$/m&nbsp;will.<BR>
+<BR>
+/s&nbsp;-&nbsp;Treat&nbsp;the&nbsp;string&nbsp;as&nbsp;a&nbsp;single&nbsp;line.&nbsp;Normally,&nbsp;.&nbsp;does&nbsp;not&nbsp;match&nbsp;a&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new&nbsp;line&nbsp;character;&nbsp;when&nbsp;/s&nbsp;is&nbsp;given,&nbsp;then&nbsp;it&nbsp;will.<BR>
+<BR>
+/g&nbsp;-&nbsp;Global&nbsp;replacer.<BR>
+<BR>
+/x&nbsp;-&nbsp;allow&nbsp;use&nbsp;of&nbsp;whitespace&nbsp;and&nbsp;comments&nbsp;inside&nbsp;a&nbsp;match.<BR>
+</CODE><BR>
+	 <BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># The Transliteration operator</font><BR>
+<CODE><BR>
+$_&nbsp;=&nbsp;"aieou";<BR>
+print&nbsp;"\n\nTransliteration&nbsp;operator\n\n",'$mytransarray&nbsp;:&nbsp;[',&nbsp;$_,&nbsp;"]\n";<BR>
+print&nbsp;"No&nbsp;of&nbsp;vowels&nbsp;:&nbsp;",&nbsp;tr/aeiouu//,&nbsp;"\n";<BR>
+my&nbsp;$mytransarray&nbsp;=&nbsp;"hello&nbsp;bhushan&nbsp;jack&nbsp;upper&nbsp;lack";<BR>
+$mytransarray&nbsp;=~&nbsp;tr/&nbsp;//d;<BR>
+print&nbsp;"After&nbsp;removing&nbsp;all&nbsp;spaces&nbsp;:&nbsp;",&nbsp;$mytransarray;<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+$mytransarray&nbsp;:&nbsp;[aieou]<BR>
+No&nbsp;of&nbsp;vowels&nbsp;:&nbsp;5<BR>
+After&nbsp;removing&nbsp;all&nbsp;spaces&nbsp;:&nbsp;hellobhushanjackupperlack<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue><BR>
+# The lookaheads and lookbehind operators<BR>
+# Look ahead and lookbehind operators : ?=, ?!, ?&lt;=, ?&lt;!<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+my&nbsp;$mylookarray&nbsp;=&nbsp;"fish&nbsp;cake&nbsp;and&nbsp;fish&nbsp;pie";<BR>
+print&nbsp;'Original&nbsp;array&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[',&nbsp;$mylookarray,&nbsp;"]\n\n";<BR>
+$mylookarray&nbsp;=~&nbsp;s/fish(?=&nbsp;cake)/cream/g;<BR>
+print&nbsp;'Positive&nbsp;lookahead&nbsp;:&nbsp;[',&nbsp;$mylookarray,&nbsp;"]\n\n";<BR>
+$mylookarray&nbsp;=&nbsp;"fish&nbsp;cake&nbsp;and&nbsp;fish&nbsp;pie";<BR>
+print&nbsp;'Original&nbsp;array&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[',&nbsp;$mylookarray,&nbsp;"]\n\n";<BR>
+$mylookarray&nbsp;=~&nbsp;s/fish(?!&nbsp;cake)/cream/g;<BR>
+print&nbsp;'Negative&nbsp;lookahead&nbsp;:&nbsp;[',&nbsp;$mylookarray,&nbsp;"]\n\n";<BR>
+<BR>
+$mylookarray&nbsp;=&nbsp;"fish&nbsp;cake&nbsp;and&nbsp;fish&nbsp;pie";<BR>
+print&nbsp;'Original&nbsp;array&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[',&nbsp;$mylookarray,&nbsp;"]\n\n";<BR>
+$mylookarray&nbsp;=~&nbsp;s/(?&lt;=fish&nbsp;)cake/cream/g;<BR>
+print&nbsp;'Positive&nbsp;lookback&nbsp;&nbsp;:&nbsp;[',&nbsp;$mylookarray,&nbsp;"]\n\n";<BR>
+$mylookarray&nbsp;=&nbsp;"fish&nbsp;cake&nbsp;and&nbsp;fish&nbsp;pie";<BR>
+print&nbsp;'Original&nbsp;array&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[',&nbsp;$mylookarray,&nbsp;"]\n\n";<BR>
+$mylookarray&nbsp;=~&nbsp;s/(?&lt;!fish&nbsp;)cake/cream/g;<BR>
+print&nbsp;'Negative&nbsp;lookback&nbsp;&nbsp;:&nbsp;[',&nbsp;$mylookarray,&nbsp;"]\n\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+Original&nbsp;array&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[fish&nbsp;cake&nbsp;and&nbsp;fish&nbsp;pie]<BR>
+Positive&nbsp;lookahead&nbsp;:&nbsp;[cream&nbsp;cake&nbsp;and&nbsp;fish&nbsp;pie]<BR>
+Original&nbsp;array&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[fish&nbsp;cake&nbsp;and&nbsp;fish&nbsp;pie]<BR>
+Negative&nbsp;lookahead&nbsp;:&nbsp;[fish&nbsp;cake&nbsp;and&nbsp;cream&nbsp;pie]<BR>
+Original&nbsp;array&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[fish&nbsp;cake&nbsp;and&nbsp;fish&nbsp;pie]<BR>
+Positive&nbsp;lookback&nbsp;&nbsp;:&nbsp;[fish&nbsp;cream&nbsp;and&nbsp;fish&nbsp;pie]<BR>
+Original&nbsp;array&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;[fish&nbsp;cake&nbsp;and&nbsp;fish&nbsp;pie]<BR>
+Negative&nbsp;lookback&nbsp;&nbsp;:&nbsp;[fish&nbsp;cake&nbsp;and&nbsp;fish&nbsp;pie]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue>Some example Regular expressions...</font><BR>
+<CODE><BR>
+my&nbsp;$rel&nbsp;=&nbsp;"11.5.10";<BR>
+($release_without_dots&nbsp;=&nbsp;$rel)&nbsp;=~&nbsp;s/\.//g;<BR>
+</CODE><BR>
+<BR>
+<CODE><BR>
+$param&nbsp;=~&nbsp;/utility_name=(.*)/i;<BR>
+if&nbsp;($1&nbsp;ne&nbsp;"")&nbsp;<BR>
+{<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<CODE><BR>
+if&nbsp;($preinstall_flag&nbsp;=~&nbsp;/^Y(ES)?$/)&nbsp;<BR>
+{<BR>
+}<BR>
+<BR>
+if&nbsp;($preinstall_flag&nbsp;=~&nbsp;/^NO?$/)&nbsp;<BR>
+{<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<CODE><BR>
+$curr_line&nbsp;=~&nbsp;/^output_file=(.*)/)&nbsp;<BR>
+$output_file&nbsp;=&nbsp;$1;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Get the number of lines in a string..</font><BR>
+<CODE><BR>
+@numLs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;(&nbsp;$file&nbsp;=~&nbsp;/(\n)/sg&nbsp;);<BR>
+</CODE><BR>
+<BR>
+<BR>
+<font class=stayblue># Swapping variables</font><BR>
+<CODE><BR>
+($VAR1,&nbsp;$VAR2)&nbsp;=&nbsp;($VAR2,&nbsp;$VAR1);&nbsp;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<font class=stayblue># Processing a String One Character at a Time</font><BR>
+<CODE><BR>
+while&nbsp;($str&nbsp;=~&nbsp;/(.)/g)&nbsp;<BR>
+{<BR>
+&nbsp;&nbsp;#&nbsp;process&nbsp;$1&nbsp;<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<font class=stayblue># Trim spaces</font><BR>
+<CODE><BR>
+$string&nbsp;=~&nbsp;s/^\s+//;&nbsp;<BR>
+$string&nbsp;=~&nbsp;s/\s+$//;&nbsp;<BR>
+$string&nbsp;=~&nbsp;s/\s+/&nbsp;/;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<font class=stayblue># Save match</font><BR>
+<CODE><BR>
+$line&nbsp;=~&nbsp;/(dbdrv:&nbsp;(.*?)&nbsp;(.*?)&nbsp;(.*?))/i;<BR>
+print&nbsp;$1;<BR>
+print&nbsp;$2.$3.$4;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Reading and Writing to Files...<BR>
+# <BR>
+# I/O Functions<BR>
+#  > open<BR>
+#  > close<BR>
+#  > append, copy, read modes<BR>
+# <BR>
+# Example<BR>
+# <BR>
+# open(FH, "< content.log") or die "Unable to open file - $!";<BR>
+# while ($line = &lt;FH>)	# FH is a file handler<BR>
+# {	<BR>
+#   print $line;<BR>
+# }<BR>
+# close(FH);<BR>
+# <BR>
+# Points:<BR>
+# <BR>
+# '&lt;' read mode, '>>' append mode, '>' write mode<BR>
+# <BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<font class=stayblue># File handles</font><BR>
+<CODE><BR>
+print&nbsp;STDERR&nbsp;"Hello&nbsp;world&nbsp;into&nbsp;STDERR\n";<BR>
+	<BR>
+open&nbsp;FH,&nbsp;"readme.txt.txt"&nbsp;or&nbsp;die&nbsp;$!;<BR>
+<BR>
+while(&lt;FH>)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;"$_";<BR>
+}<BR>
+	<BR>
+close&nbsp;FH;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Assigning the file contents to an array (memory intensive).</font><BR>
+<CODE><BR>
+my&nbsp;@myfilearray&nbsp;=&nbsp;&lt;FH>;<BR>
+print&nbsp;"Array&nbsp;contents&nbsp;:&nbsp;[@myfilearray]";<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># The $/ character is the record seperator character.</font><BR>
+<CODE><BR>
+print&nbsp;'$/&nbsp;:&nbsp;[',&nbsp;$/,&nbsp;"]\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+$/&nbsp;:&nbsp;[<BR>
+]<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Reads paragraphs at a time with the new assignment below.</font><BR>
+<CODE><BR>
+$/&nbsp;=&nbsp;""&nbsp;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Read entire file into a scalar.</font><BR>
+<CODE><BR>
+$/&nbsp;=&nbsp;undef;<BR>
+my&nbsp;$file&nbsp;=&nbsp;&lt;FH>;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Writing to a file</font><BR>
+<CODE><BR>
+open&nbsp;FH,&nbsp;"readme.txt"&nbsp;or&nbsp;die&nbsp;$!;<BR>
+open&nbsp;FW,&nbsp;">readmecopy.txt"&nbsp;or&nbsp;die&nbsp;$!;<BR>
+<BR>
+while(&lt;FH>)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;FW&nbsp;"$_";<BR>
+}<BR>
+	<BR>
+close&nbsp;FH;<BR>
+close&nbsp;FW;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Sorting the contents of a file.</font><BR>
+<CODE><BR>
+my&nbsp;@file&nbsp;=&nbsp;&lt;INPUT>;<BR>
+@file&nbsp;=&nbsp;sort&nbsp;@file;	<BR>
+print&nbsp;OUTPUT&nbsp;@file;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Assigning file handles</font><BR>
+<CODE><BR>
+*INPUT&nbsp;=&nbsp;*STDIN;<BR>
+</CODE><BR>
+<BR>
+<BR>
+	<BR>
+<font class=stayblue>#Binary mode</font><BR>
+<CODE><BR>
+binmode&nbsp;FILEHANDLE;<BR>
+</CODE><BR>
+	<BR>
+<BR>
+<font class=stayblue># Setting the default filehandle (So that you can just use print instead of print &lt;FILEHANDLE>)</font><BR>
+<BR>
+<CODE><BR>
+select&nbsp;FILEHANDLE;<BR>
+select(STDERR);<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># To turn on I/O bufferring.</font><BR>
+<CODE><BR>
+$|&nbsp;=&nbsp;0;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># To turn off I/O bufferring.</font><BR>
+<CODE><BR>
+$|&nbsp;=&nbsp;1;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<font class=stayblue># Setting file permissions (files after issuing this will have these permissions).</font><BR>
+<CODE><BR>
+umask(0666);<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># File tests</font><BR>
+<CODE><BR>
+-e&nbsp;Exists?<BR>
+-f&nbsp;Is&nbsp;this&nbsp;a&nbsp;file?<BR>
+-d&nbsp;Is&nbsp;this&nbsp;a&nbsp;directory?<BR>
+-z&nbsp;Is&nbsp;the&nbsp;size&nbsp;zero?<BR>
+-s&nbsp;Is&nbsp;the&nbsp;file&nbsp;of&nbsp;non-zero&nbsp;size,&nbsp;if&nbsp;yes&nbsp;return&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;file.<BR>
+-r&nbsp;Readable?<BR>
+-w&nbsp;Writeable?<BR>
+-x&nbsp;Executable?<BR>
+-o&nbsp;Owner?<BR>
+</CODE>	<BR>
+<BR>
+# Example<BR>
+<CODE><BR>
+If&nbsp;(-e&nbsp;?access.log?)&nbsp;<BR>
+{<BR>
+&nbsp;&nbsp;#&nbsp;"access.log"&nbsp;exists,&nbsp;do&nbsp;something...<BR>
+}<BR>
+<BR>
+</CODE><BR>
+<BR>
+<BR>
+<font class=stayblue># Renaming a file</font><BR>
+<CODE><BR>
+rename($filename1,$filename2);<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Getting Current Working Directory.."</font><BR>
+<CODE><BR>
+use&nbsp;Cwd;&nbsp;&nbsp;&nbsp;#&nbsp;Required!<BR>
+my&nbsp;$dir&nbsp;=&nbsp;getcwd();&nbsp;<BR>
+print&nbsp;$dir;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<font class=stayblue># Getting files of some type in a directory.</font><BR>
+<CODE><BR>
+my&nbsp;@filelisting&nbsp;=&nbsp;glob("readme*");<BR>
+print&nbsp;"\n",'Any&nbsp;files&nbsp;of&nbsp;type&nbsp;readme*&nbsp;in&nbsp;the&nbsp;curdir&nbsp;using&nbsp;glob()\n\n",&nbsp;"@filelisting","\n\n";<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Output</font><BR>
+<CODE><BR>
+readme.txt<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+	<BR>
+<font class=stayblue># Reading directories.</font><BR>
+<CODE><BR>
+opendir&nbsp;DH,&nbsp;"."&nbsp;or&nbsp;die&nbsp;"Could&nbsp;not&nbsp;get&nbsp;handle&nbsp;to&nbsp;CWD!";<BR>
+while&nbsp;($_&nbsp;=&nbsp;readdir(DH))<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;'$_&nbsp;->&nbsp;',&nbsp;"$_\n";<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Change directory..</font><BR>
+<CODE><BR>
+chdir&nbsp;$tmp_dir<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Deleting a file..</font><BR>
+<CODE><BR>
+unlink&nbsp;$snapshot_manifest_file&nbsp;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Creating directories...</font><BR>
+<CODE><BR>
+eval&nbsp;{mkpath("$ENV{NEWLOG}",&nbsp;0,&nbsp;0755)};<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Changing permissions...</font><BR>
+<CODE><BR>
+chmod&nbsp;0755,&nbsp;$utility_name;&nbsp;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Copying files....</font><BR>
+<CODE>&nbsp;<BR>
+copy&nbsp;("$copyfrom_dir/readme.txt",&nbsp;"$NEWBIN/readme.txt");<BR>
+if($?&nbsp;!=&nbsp;0)<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;"Copying&nbsp;failed!";<BR>
+&nbsp;&nbsp;exit&nbsp;1;<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Creating a directory...</font><BR>
+<CODE><BR>
+mkdir($nondb_admin_lock,0755));<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Deleting a directory tree..</font><BR>
+<CODE><BR>
+eval{rmtree($nondb_admin_lock,&nbsp;0,&nbsp;1)};<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Recursively process all files in a directory use File::Find; </font><BR>
+<CODE><BR>
+find(\&d,&nbsp;$dir1);&nbsp;<BR>
+sub&nbsp;d&nbsp;<BR>
+{&nbsp;<BR>
+&nbsp;&nbsp;my&nbsp;$file&nbsp;=&nbsp;$File::Find::name;&nbsp;<BR>
+&nbsp;&nbsp;#&nbsp;Process&nbsp;the&nbsp;file<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Get complete file into a string..</font><BR>
+<CODE><BR>
+Open&nbsp;F1,&nbsp;"abc.txt";<BR>
+@lines&nbsp;=&nbsp;&lt;F1>;<BR>
+Close&nbsp;(F1);<BR>
+$file&nbsp;=&nbsp;join(??,@lines);<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># The "glob()" function...</font><BR>
+<CODE><BR>
+my&nbsp;@old_files&nbsp;=&nbsp;glob&nbsp;"$my_dir/*.txt";<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Some useful File APIs</font><BR>
+<CODE><BR>
+#&nbsp;use&nbsp;File::Spec;<BR>
+canonpath($path)<BR>
+catdir($directory1,&nbsp;$directory2);<BR>
+catfile($directory,&nbsp;$file);<BR>
+tmpdir();<BR>
+splitpath($path);<BR>
+splitdir($path);<BR>
+path();<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# References in Perl<BR>
+# <BR>
+# The arrow -> notation<BR>
+# <BR>
+# When you want to access an element from a referenced array or hash, or <BR>
+# to call a subroutine, Perl offers additional syntax which often looks <BR>
+# cleaner. If $ref is a reference to an array or hash or subroutine, then <BR>
+# <BR>
+#     $ref->[n]           	accesses the nth element of an array, <BR>
+#     $ref->{'key'}       	accesses the value of 'key' in a hash, and <BR>
+#     $ref->('Hello')     	calls a subroutine with the argument 'Hello'. <BR>
+# <BR>
+# <BR>
+# So each of the expressions on the following lines are also equivalent: <BR>
+# <BR>
+#     $marray[0]       	${$ref2marray}[0]        $ref2marray->[0]   <BR>
+#     $mhash{'ky'}	${$ref2mhash}{'ky'}      $ref2mhash->{'ky'}<BR>
+#     &msub(1,2)       	&{$ref2msub}(1,2)        $ref2msub->(1,2)<BR>
+# <BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+my&nbsp;$scalar&nbsp;=&nbsp;3;<BR>
+my&nbsp;$scalar_r&nbsp;=&nbsp;\$scalar;&nbsp;&nbsp;&nbsp;#&nbsp;Creating&nbsp;a&nbsp;reference&nbsp;(similar&nbsp;to&nbsp;a&nbsp;pointer)<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Converting two lists into a hash..</font><BR>
+<CODE><BR>
+my&nbsp;@myarr1&nbsp;=&nbsp;qw(one&nbsp;two&nbsp;three&nbsp;four&nbsp;five&nbsp;six);<BR>
+my&nbsp;@myarr2&nbsp;=&nbsp;qw(1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6);<BR>
+%myhash&nbsp;=&nbsp;(myarr1&nbsp;=>&nbsp;\@myarr1,&nbsp;myarr2&nbsp;=>&nbsp;\@myarr2);<BR>
+my&nbsp;$myhash_r&nbsp;=&nbsp;\%myhash;<BR>
+<BR>
+for&nbsp;(keys&nbsp;%{$myhash_r})<BR>
+{<BR>
+&nbsp;&nbsp;print&nbsp;"$_\n";&nbsp;#Prints&nbsp;myarr1&nbsp;and&nbsp;myarr2;<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Arrays inside arrays</font><BR>
+<CODE><BR>
+my&nbsp;@array1&nbsp;=&nbsp;(10,&nbsp;20,&nbsp;30,&nbsp;40,&nbsp;50);<BR>
+my&nbsp;@array2&nbsp;=&nbsp;(1,&nbsp;2,&nbsp;\@array&nbsp;,3&nbsp;,4);<BR>
+my&nbsp;@array3&nbsp;=&nbsp;(2,&nbsp;4,&nbsp;\@array2,&nbsp;6,&nbsp;8);<BR>
+my&nbsp;@array4&nbsp;=&nbsp;(100,&nbsp;200,&nbsp;\@array3,&nbsp;300,&nbsp;400);<BR>
+</CODE><BR>
+	<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue><BR>
+# Anonymous references<BR>
+# For referencing an array anonymously use brackets []<BR>
+# For referencing an array anonymously use brackets {}<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+my&nbsp;@array&nbsp;=&nbsp;(1,&nbsp;2,&nbsp;3,&nbsp;4);<BR>
+my&nbsp;$array_r&nbsp;=&nbsp;\@array;<BR>
+OR<BR>
+my&nbsp;$array_r&nbsp;=&nbsp;[1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5];<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue><BR>
+# Dereferencing values<BR>
+# RULE : TO DEREFERENCE DATA, PUT THE REFERENCE IN CURLY BRACES <BR>
+# WHENEVER YOU WOULD NORMAllY USE A VARIABLE'S NAME.<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+my&nbsp;@array&nbsp;=&nbsp;(1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5);<BR>
+my&nbsp;$array_r&nbsp;=&nbsp;\@array;<BR>
+my&nbsp;@array2&nbsp;=&nbsp;@{$array_r};<BR>
+</CODE><BR>
+<BR>
+	<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Linked lists</font><BR>
+<CODE><BR>
+friends&nbsp;=>&nbsp;{"Baba&nbsp;Oreilly"&nbsp;=>&nbsp;$addressbook("Baba&nbsp;Orielly"),<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Mick&nbsp;ZYXZ"&nbsp;&nbsp;&nbsp;&nbsp;=>&nbsp;$addressbook("Mick&nbsp;XYC")}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Subroutines in Perl<BR>
+# <BR>
+# > Subroutine definitions can be anywhere in program text.<BR>
+# > Subroutine definitions are global (For two subroutines <BR>
+#   with same name, the latter one overrides the former one).<BR>
+# > By default, any variable reference inside a subroutine is global.<BR>
+#   Variables can be localized using my<BR>
+# <BR>
+# Example<BR>
+# <BR>
+# sub hello<BR>
+# {<BR>
+#   my ($arg1, $arg2) = @_; 	# Receiving arguments<BR>
+#   print ?$arg1 \t $arg2 \n?;   <BR>
+#  }<BR>
+# <BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<BR>
+<font class=stayblue>#Prototypes</font><BR>
+<CODE><BR>
+sub&nbsp;mysubroutine($$$$);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Takes&nbsp;three&nbsp;args,&nbsp;and&nbsp;one&nbsp;reference<BR>
+my&nbsp;@myvar&nbsp;=&nbsp;(10000,&nbsp;20000,&nbsp;30000);<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Pass arrays and hashes as references to prevent flattening!</font><BR>
+<CODE><BR>
+my&nbsp;($retval1,&nbsp;$retval2,&nbsp;$retval3,&nbsp;$retval4);<BR>
+print&nbsp;"\n\nSUBROUTINES\n\nCalling&nbsp;mysubroutine()...\n";<BR>
+($retval1,&nbsp;$retval2,&nbsp;$retval3)&nbsp;=&nbsp;mysubroutine(1,2,3,\@myvar);<BR>
+<BR>
+print&nbsp;"Return&nbsp;values&nbsp;:&nbsp;[",&nbsp;$retval1,&nbsp;",&nbsp;",&nbsp;$retval2,&nbsp;",&nbsp;",$retval3,&nbsp;"]\n";<BR>
+<BR>
+	<BR>
+sub&nbsp;mysubroutine<BR>
+{<BR>
+&nbsp;&nbsp;#&nbsp;Try&nbsp;not&nbsp;to&nbsp;use&nbsp;@_&nbsp;directly<BR>
+<BR>
+&nbsp;&nbsp;my&nbsp;@myargsarray&nbsp;=&nbsp;@_;<BR>
+&nbsp;&nbsp;my&nbsp;$myrefvar&nbsp;=&nbsp;$myargsarray[3];<BR>
+<BR>
+&nbsp;&nbsp;print&nbsp;"\nEntered&nbsp;mysubroutine()";<BR>
+&nbsp;&nbsp;print&nbsp;"\n",'@_&nbsp;:&nbsp;[',&nbsp;@myargsarray,&nbsp;"]";<BR>
+<BR>
+&nbsp;&nbsp;if(wantarray)<BR>
+&nbsp;&nbsp;{	<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;"\nCaller&nbsp;wants&nbsp;an&nbsp;array&nbsp;back";<BR>
+&nbsp;&nbsp;}<BR>
+<BR>
+&nbsp;&nbsp;&nbsp;print&nbsp;"\n&nbsp;Reference&nbsp;(4th&nbsp;paramater)&nbsp;:&nbsp;[",&nbsp;"@{$myrefvar}",&nbsp;"]\n";<BR>
+&nbsp;&nbsp;&nbsp;print&nbsp;'@{$myrefvar}[2]&nbsp;:&nbsp;[',&nbsp;@{$myrefvar}[2],&nbsp;"]\n";<BR>
+&nbsp;&nbsp;&nbsp;print&nbsp;"\nExiting&nbsp;mysubroutine()";<BR>
+&nbsp;&nbsp;&nbsp;return(1,2,3);			<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Passing file handles</font><BR>
+<CODE><BR>
+sub&nbsp;say_hello<BR>
+{<BR>
+&nbsp;&nbsp;my&nbsp;$fh&nbsp;=&nbsp;shift;<BR>
+&nbsp;&nbsp;print&nbsp;$fh&nbsp;"Hi&nbsp;there!\n";<BR>
+}<BR>
+<BR>
+sub&nbsp;get_line<BR>
+{<BR>
+&nbsp;&nbsp;my&nbsp;$fh&nbsp;=&nbsp;shift;<BR>
+&nbsp;&nbsp;my&nbsp;$response&nbsp;=&nbsp;&lt;$fh>;<BR>
+&nbsp;&nbsp;chomp&nbsp;$response;<BR>
+&nbsp;&nbsp;$response&nbsp;=~&nbsp;s/^\s+//;<BR>
+&nbsp;&nbsp;return&nbsp;$response;<BR>
+}<BR>
+<BR>
+say_hello(*STDOUT);<BR>
+get_line(*STDIN);<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Giving default values to parameters..</font><BR>
+<CODE><BR>
+sub&nbsp;log<BR>
+{<BR>
+&nbsp;&nbsp;my&nbsp;$message&nbsp;=&nbsp;shift&nbsp;||&nbsp;"somethings&nbsp;wrong!";<BR>
+&nbsp;&nbsp;my&nbsp;$time&nbsp;=&nbsp;shift&nbsp;||&nbsp;localtime;<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue><BR>
+# Recursion example (finding permutations).<BR>
+# Check out the beautiful use of permutations in this example...<BR>
+</font><BR>
+<BR>
+<BR>
+<CODE><BR>
+my&nbsp;@mypermutearray&nbsp;=&nbsp;("a",&nbsp;"b",&nbsp;"c",&nbsp;"d");<BR>
+sub&nbsp;permute(@$$);<BR>
+permute(\@mypermutearray,0,4);<BR>
+<BR>
+sub&nbsp;permute<BR>
+{<BR>
+<BR>
+&nbsp;&nbsp;my&nbsp;$myarray_r&nbsp;=&nbsp;shift;<BR>
+&nbsp;&nbsp;my&nbsp;@myarray&nbsp;=&nbsp;@{$myarray_r};	<BR>
+&nbsp;&nbsp;my&nbsp;$k&nbsp;=&nbsp;shift;<BR>
+&nbsp;&nbsp;my&nbsp;$m&nbsp;=&nbsp;shift;<BR>
+<BR>
+<BR>
+&nbsp;&nbsp;if($k==$m)<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;"[@myarray]\n";<BR>
+&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;else<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;$i;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;for($i=$k;&nbsp;$i&lt;$m;$i++)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;($myarray[$i],$myarray[$m-1])&nbsp;=&nbsp;($myarray[$m-1],$myarray[$i]);<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;permute(\@myarray,$k,($m-1));<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;($myarray[$i],$myarray[$m-1])&nbsp;=&nbsp;($myarray[$m-1],$myarray[$i]);<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;}<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Spawning commands<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<font class=stayblue># Spawning something..</font><BR>
+<CODE><BR>
+my&nbsp;$exit_status&nbsp;=&nbsp;system($cmd);<BR>
+<BR>
+if&nbsp;($exit_status&nbsp;!=&nbsp;0)<BR>
+{<BR>
+&nbsp;&nbsp;die&nbsp;"$prgname&nbsp;error:&nbsp;Error&nbsp;while&nbsp;running&nbsp;\"${cmd}\"\n\n";<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Another example of spawning a command..</font><BR>
+<CODE><BR>
+$cmdline&nbsp;=&nbsp;"move&nbsp;"&nbsp;.&nbsp;$ARGV[0]&nbsp;.&nbsp;"&nbsp;"&nbsp;.&nbsp;$ARGV[0]&nbsp;.&nbsp;".org";<BR>
+`$cmdline`;<BR>
+$cmdline&nbsp;=&nbsp;"move&nbsp;"&nbsp;.&nbsp;$ARGV[0]&nbsp;.&nbsp;".tmp&nbsp;"&nbsp;.&nbsp;$ARGV[0];<BR>
+`$cmdline`;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># The "eval" statement...</font><BR>
+<CODE><BR>
+eval&nbsp;'exec&nbsp;perl&nbsp;-S&nbsp;$0&nbsp;"$@"'<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Exit with some error code...</font><BR>
+<CODE><BR>
+exit&nbsp;$BASE_ERROR&nbsp;+&nbsp;2;&nbsp;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Playing with environment variables<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Getting environment variables..</font><BR>
+<CODE><BR>
+my&nbsp;$appltop&nbsp;=&nbsp;$ENV{PRODUCT_TOP}&nbsp;||&nbsp;die&nbsp;"$progname&nbsp;error:&nbsp;APPL_TOP&nbsp;is&nbsp;not&nbsp;set.\n\n\n";<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Setting environment variables...</font><BR>
+<CODE><BR>
+$ENV{'PRODUCT_TOP'}&nbsp;=&nbsp;"C:\\MyFolder\";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Get the hostname of the machine..</font><BR>
+<CODE><BR>
+my&nbsp;$node_name&nbsp;=&nbsp;hostname();<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Date functions<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<BR>
+<font class=stayblue># Date</font><BR>
+<CODE><BR>
+my&nbsp;$date_val&nbsp;=&nbsp;strftime&nbsp;"%a&nbsp;%b&nbsp;%e&nbsp;%H:%M:%S&nbsp;%Y",&nbsp;localtime;&nbsp;&nbsp;<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Parse arguments...<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<BR>
+<font class=stayblue># Simple program to process arguments passed to a function...</font><BR>
+<BR>
+<CODE><BR>
+$bad_args=0;<BR>
+for&nbsp;my&nbsp;$param(@ARGV)<BR>
+{<BR>
+&nbsp;&nbsp;if($param&nbsp;=~&nbsp;/restart=(\w+)/i)<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;The&nbsp;program&nbsp;was&nbsp;passed&nbsp;with&nbsp;an&nbsp;argument&nbsp;"restart=&lt;something>"<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;$restart=$1;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;$restart=uc($restart);<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if($restart&nbsp;eq&nbsp;"")<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$bad_args=1;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;elsif($param&nbsp;=~&nbsp;/locator=(.*)/)<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;The&nbsp;program&nbsp;was&nbsp;also&nbsp;passed&nbsp;with&nbsp;an&nbsp;argument&nbsp;"locator=&lt;something>"<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;$locator=$1;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if($locator&nbsp;eq&nbsp;"")<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$bad_args=1;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;}<BR>
+&nbsp;<BR>
+&nbsp;&nbsp;#&nbsp;Process&nbsp;for&nbsp;other&nbsp;possible&nbsp;arguments&nbsp;in&nbsp;similar&nbsp;fashion...&nbsp;&nbsp;<BR>
+<BR>
+&nbsp;&nbsp;if($bad_args&nbsp;!=&nbsp;0)<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;"\nError:&nbsp;Invalid&nbsp;argument:&nbsp;$param\n";<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exit&nbsp;1;<BR>
+&nbsp;&nbsp;&nbsp;}<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# String functions<BR>
+#########################################################################<BR>
+</font><BR>
+<CODE><BR>
+chomp&nbsp;LIST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes&nbsp;line&nbsp;endings&nbsp;from&nbsp;all&nbsp;elements&nbsp;of&nbsp;the&nbsp;list;&nbsp;		<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns&nbsp;the&nbsp;(total)&nbsp;number&nbsp;of&nbsp;characters&nbsp;removed.&nbsp;<BR>
+<BR>
+chop&nbsp;LIST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chops&nbsp;off&nbsp;the&nbsp;last&nbsp;character&nbsp;on&nbsp;all&nbsp;elements&nbsp;of&nbsp;the&nbsp;		<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list;&nbsp;returns&nbsp;the&nbsp;last&nbsp;chopped&nbsp;character.&nbsp;<BR>
+<BR>
+eval&nbsp;EXPR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXPR&nbsp;is&nbsp;parsed&nbsp;and&nbsp;executed&nbsp;as&nbsp;if&nbsp;it&nbsp;were&nbsp;a&nbsp;Perl&nbsp;			<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;program.&nbsp;The&nbsp;value&nbsp;returned&nbsp;is&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;last&nbsp;		<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression&nbsp;evaluated.&nbsp;If&nbsp;there&nbsp;is&nbsp;a&nbsp;syntax&nbsp;error&nbsp;or&nbsp;			<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runtime&nbsp;error,&nbsp;an&nbsp;undefined&nbsp;string&nbsp;is&nbsp;returned&nbsp;by&nbsp;eval,&nbsp;		<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;$@&nbsp;is&nbsp;set&nbsp;to&nbsp;the&nbsp;error&nbsp;message.&nbsp;<BR>
+<BR>
+index&nbsp;STR,&nbsp;SUBSTR&nbsp;[&nbsp;,&nbsp;OFFSET&nbsp;]&nbsp;&nbsp;&nbsp;Returns&nbsp;the&nbsp;position&nbsp;of&nbsp;SUBSTR&nbsp;in&nbsp;STR&nbsp;at&nbsp;or&nbsp;after&nbsp;			<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OFFSET.&nbsp;If&nbsp;the&nbsp;substring&nbsp;is&nbsp;not&nbsp;found,&nbsp;returns&nbsp;-1&nbsp;(but&nbsp;		<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;see&nbsp;$[&nbsp;in&nbsp;section&nbsp;Special&nbsp;Variables).&nbsp;<BR>
+<BR>
+length&nbsp;EXPR&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns&nbsp;the&nbsp;length&nbsp;in&nbsp;characters&nbsp;of&nbsp;the&nbsp;value&nbsp;of&nbsp;			<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXPR.&nbsp;<BR>
+<BR>
+lc&nbsp;EXPR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns&nbsp;a&nbsp;lowercase&nbsp;version&nbsp;of&nbsp;EXPR.&nbsp;<BR>
+<BR>
+lcfirst&nbsp;EXPR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns&nbsp;EXPR&nbsp;with&nbsp;the&nbsp;first&nbsp;character&nbsp;lowercase.&nbsp;<BR>
+<BR>
+rindex&nbsp;STR,&nbsp;SUBSTR&nbsp;[&nbsp;,&nbsp;OFFSET&nbsp;]&nbsp;&nbsp;Returns&nbsp;the&nbsp;position&nbsp;of&nbsp;the&nbsp;last&nbsp;SUBSTR&nbsp;in&nbsp;STR&nbsp;		<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;or&nbsp;before&nbsp;OFFSET.&nbsp;<BR>
+<BR>
+substr&nbsp;EXPR,&nbsp;OFFSET&nbsp;[&nbsp;,&nbsp;LEN&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;Extracts&nbsp;a&nbsp;substring&nbsp;of&nbsp;length&nbsp;LEN&nbsp;out&nbsp;of&nbsp;EXPR&nbsp;		<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;returns&nbsp;it.&nbsp;If&nbsp;OFFSET&nbsp;is&nbsp;negative,&nbsp;counts<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;string.&nbsp;May&nbsp;be&nbsp;assigned&nbsp;to.&nbsp;<BR>
+uc&nbsp;EXPR&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns&nbsp;an&nbsp;uppercased&nbsp;version&nbsp;of&nbsp;EXPR.<BR>
+&nbsp;<BR>
+ucfirst&nbsp;EXPR&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns&nbsp;EXPR&nbsp;with&nbsp;the&nbsp;first&nbsp;character&nbsp;			<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uppercased<BR>
+<BR>
+<BR>
+</CODE><BR>
+<BR>
+<font class=stayblue># Convert to lowercase...</font><BR>
+<CODE><BR>
+$utility&nbsp;=&nbsp;lc($1);<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Substring...</font><BR>
+<CODE><BR>
+substr($CONTEXT,0,"$actual_buf_size&nbsp;-&nbsp;2");<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=stayblue># Length of a string...</font><BR>
+<CODE><BR>
+my&nbsp;$start_dir_len&nbsp;&nbsp;=&nbsp;length($START_DIR);<BR>
+my&nbsp;$content_length&nbsp;=&nbsp;length(&nbsp;$content&nbsp;);<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Perl packages<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+# Access variables<BR>
+# $Package_name::variable_name<BR>
+#<BR>
+# To set the default package, <BR>
+# package Package_name;<BR>
+#<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Perl modules<BR>
+# <BR>
+# Definition of Module:<BR>
+# <BR>
+# The unit of software reuse in PERL is the  module, a file that has a <BR>
+# collection of related functions designed to be used by other programs <BR>
+# and library modules.<BR>
+# <BR>
+# Every module has a<BR>
+# <BR>
+#  > Public interface<BR>
+#  > Set of variables<BR>
+#  > Functions<BR>
+# <BR>
+# <BR>
+# All Perl module files will have the extension ".pm". <BR>
+# Perl will search for modules in each of the directories listed in the @INC array.<BR>
+# <BR>
+# <BR>
+# Creating a Perl Module<BR>
+# <BR>
+#   Sample Module<BR>
+#   package Poker;<BR>
+# <BR>
+#   use Exporter;<BR>
+#   @ISA = (?Exporter?);<BR>
+#   @EXPORT = qw(&shuffle @card_deck);<BR>
+# <BR>
+#   @card_deck = ( );<BR>
+#   sub shuffle { }<BR>
+#   1;<BR>
+# <BR>
+# <BR>
+# Using a Perl Module<BR>
+# <BR>
+# <BR>
+#   use Poker;<BR>
+#    or<BR>
+#   require Poker;<BR>
+#    or<BR>
+#   use ?Poker.pm?;<BR>
+# <BR>
+#  Modules included with use are processed at compile time, but require <BR>
+#  processing happens at run time. Use performs an implicit import on the <BR>
+#  included module?s package.<BR>
+# <BR>
+# <BR>
+# Perl Classes<BR>
+# <BR>
+#   package Person; <BR>
+# <BR>
+#   sub new <BR>
+#   { <BR>
+#     my $class = shift; <BR>
+#     my $self = { }; <BR>
+#     return bless $self, $class; <BR>
+#   }<BR>
+#  <BR>
+#   sub name <BR>
+#   { <BR>
+#     my $self = shift; <BR>
+#     $self->{NAME} = shift if @_; <BR>
+#     return $self->{NAME}; <BR>
+#   } <BR>
+# <BR>
+# <BR>
+#   use Person; <BR>
+#  <BR>
+#   my $dude = Person->new(); <BR>
+#                         <BR>
+#   $dude->name("Jason"); <BR>
+# <BR>
+#   printf ?Name: %s \n", $dude->name; <BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+ <BR>
+# A module is a package within a file<BR>
+#<BR>
+# Including other files<BR>
+# <BR>
+# do:<BR>
+# 	do "printit.pl";<BR>
+# 	Wont be able to see lexical vars from the main program once we are <BR>
+#	the additional code.<BR>
+#	<BR>
+# <BR>
+# require:<BR>
+#	require Monty::Python;<BR>
+#	Looks for Python.pm under @INC under directory called Monty.<BR>
+#	require will "do" only once.<BR>
+#	<BR>
+# use:<BR>
+#<BR>
+#	use MyProgram::Graphical;<BR>
+#	Like require, except that perl apples it before anything else in the program<BR>
+#	starts. "use" takes place at compile time and not run time.<BR>
+#<BR>
+# Add things to @INC<BR>
+#<BR>
+#	sub BEGIN<BR>
+#       {<BR>
+#		push @INC, "my/module/directory";<BR>
+#	}	<BR>
+#	use Wibble;<BR>
+#<BR>
+# OR<BR>
+#<BR>
+#	use lib "my/module/directory";<BR>
+#	use Wibble;<BR>
+#<BR>
+#<BR>
+#<BR>
+<BR>
+<BR>
+#Example<BR>
+<CODE><BR>
+use&nbsp;File::Spec::Functions;<BR>
+foreach&nbsp;(path())<BR>
+{<BR>
+&nbsp;&nbsp;my&nbsp;$test&nbsp;=&nbsp;catfile($_,"dir");<BR>
+&nbsp;&nbsp;print&nbsp;"Yes,&nbsp;it&nbsp;exists!";<BR>
+&nbsp;&nbsp;exit;<BR>
+}<BR>
+print&nbsp;"dir&nbsp;was&nbsp;not&nbsp;found!";<BR>
+</CODE> <BR>
+<BR>
+<BR>
+<font class=announcelink><BR>
+#########################################################################<BR>
+# Socket programming<BR>
+#########################################################################<BR>
+</font><BR>
+<BR>
+<CODE><BR>
+use&nbsp;IO::Socket;<BR>
+<BR>
+my&nbsp;$server&nbsp;=&nbsp;"my-server";<BR>
+my&nbsp;$port&nbsp;&nbsp;&nbsp;=&nbsp;5000;<BR>
+<BR>
+while&nbsp;(1)&nbsp;<BR>
+{<BR>
+&nbsp;&nbsp;for&nbsp;($i=2000;&nbsp;$i&lt;320000;&nbsp;$i&nbsp;+=&nbsp;int&nbsp;(rand(1000)))&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;{<BR>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;"Opening&nbsp;$server:$port&nbsp;->&nbsp;";<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(($socks&nbsp;=&nbsp;IO::Socket::INET->new(Protocol&nbsp;=>&nbsp;"tcp",&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PeerAddr&nbsp;=>&nbsp;$server,&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PeerPort&nbsp;=>&nbsp;$port,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TimeOut&nbsp;=>&nbsp;5)))&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf&nbsp;"The&nbsp;local&nbsp;port&nbsp;is&nbsp;[%s],&nbsp;sending&nbsp;[%d]&nbsp;bytes\r",&nbsp;$socks->sockport(),&nbsp;$i;			<BR>
+<BR>
+	$socks->send("crap"&nbsp;x&nbsp;$i);<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+	print&nbsp;"\nCan't&nbsp;open&nbsp;port\n";<BR>
+	last;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+<BR>
+&nbsp;&nbsp;}#&nbsp;For&nbsp;loop<BR>
+}&nbsp;#&nbsp;While&nbsp;loop<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink>Important links</font><BR>
+<UL><BR>
+ <LI><A HREF="../../../../"  webstripperwas="http://people.iiita.ac.in/~ssagrwal_02/www.perldoc.com/perl5.6/pod/perlfunc.html" >www.perldoc.com</A><BR>
+ <LI><A HREF="../../../../"  webstripperwas="http://www.cpan.org/" >www.cpan.org</A><BR>
+ <LI><A HREF="../../../../"  webstripperwas="http://www.perl.org/" >www.perl.org</A><BR>
+</UL> 
+<BR><BR>
+<!--END-->
+</font><BR></TD></TR>
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%><CENTRE><font class=notelink><A HREF="30_0.html"  webstripperwas="30_0.html" >PREV</A></font></CENTRE></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=90%%><center><font class=notelink><A href="mailto:cracktheinterview@gmail.com?subject=Comments [Introduction to perl ]&Body=Question : [Introduction to perl ]"><font class=announcelink>COMMENTS</A></font>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<font class=notelink><A HREF="../adfaqpublish.html"  webstripperwas="../adfaqpublish.html" >INDEX</A></font>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<font class=notelink><a href="#" >PRINT</a></font></center></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%><CENTRE><font class=notelink><A HREF="../adfaqpublish.html"  webstripperwas="../adfaqpublish.html" >NEXT</A></font></CENTRE></TD></TR>
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  COLSPAN=3 width=700 align=left>
+<BR><BR><BR><font class=notelink>
+Last updated:
+
+November 3, 2005<BR><BR>
+<a href="../index.html"  webstripperwas="../index.html" >www.cracktheinterview.com</a> - Your destination for the most common IT interview questions, answers, frequently asked interview questions (FAQ), C Programs, C Datastructures for technical interviews conducted by the top IT companies around the world!<br><BR>
+
+</TD>
+</TR>
+</TABLE>
+
+
+
+
+<!--END-->
+
+
+</TD>
+
+
+
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=10%% valign="top">
+
+
+<!--START:ADS1-->
+
+
+<script type="text/javascript">
+<!--
+google_ad_client = "pub-4208362929074433";
+google_alternate_color = "CCCCCC";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666.html";
+google_color_text = "333333";
+//-->
+</script>
+<script type="text/javascript" webstripperattrwas="src"  webstripperlinkwas="../../pagead2.googlesyndication.com/pagead/show_ads.js" >
+</script>
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+<script type="text/javascript">
+<!--
+google_ad_client = "pub-4208362929074433";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666.html";
+google_color_text = "333333";
+//-->
+</script>
+<script type="text/javascript"  webstripperattrwas="src"  webstripperlinkwas="../../pagead2.googlesyndication.com/pagead/show_ads.js" >
+</script>
+
+
+
+<!--END-->
+
+</TD>
+</TR>
+
+
+
+
+
+</TABLE>
+
+
+
+</BODY>
+
+<!-- Mirrored from www.cracktheinterview.com/pages/31_0.html by HTTrack Website Copier/3.x [XR&CO'2005], Tue, 27 Dec 2005 17:52:44 GMT -->
+</HTML>
+
+

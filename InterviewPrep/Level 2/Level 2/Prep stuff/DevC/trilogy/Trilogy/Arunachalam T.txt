@@ -1,0 +1,44 @@
+I Interview (Kapil):
+
+1.What is the output of the following program?
+
+foo(node *head)
+{
+	node *temp=head;
+	head=head->next;
+	free(temp);
+}
+
+main()
+{
+	node *head;
+	//head points to a list 1->2->3
+	foo(head);
+	print(head);//a fn that prints the list
+}
+
+2. Given a binary tree as input (not a binary search tree), WAP that prints any one path from the root to one of the leaves that sums up to the given "sum".
+
+3. Given n Sets A,B,C,... print their cartesian product.
+i.e., if A is {a1,a2,a3}
+	B is {b1,b2}
+	C is {c1,c2,c3,c4}
+	then A x B x C which is {a1*b1*c1, a1*b1*c2, ... a3*b2*c4} should be printed.
+
+4. Given inorder and preorder construct the binary tree.
+
+5. Given n print all permutations of numbers from 1 to n.
+
+II Interview (Dharma):
+
+6. Given a binary search tree, and two nodes in it find the common ancestor nearest to them.
+
+7. Given an array of size n in random order, find all pairs of numbers that sums up to the given "sum".
+
+8. How will you effectively remove duplicates from an unsorted array?
+
+9. Given two binary search trees, how will you merge them effectively.
+
+10. WAP to construct a binary tree from a sorted array.
+
+11. WAP to print a binary tree in its tree structure. Assume that a fn print(value, x, y) prints the value in the position (x,y) on the screen.

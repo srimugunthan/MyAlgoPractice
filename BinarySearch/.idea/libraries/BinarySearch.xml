@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="BinarySearch">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/BinarySearch.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,144 @@
+
+      how are you all doing?
+I hope you have seen my previous questions and the answers..
+Here are somemore questions..
+These questions are really interesting and the prerequisite for solving
+them is nothing..(but a simple logical reasoning capability)
+I hope you all to try those and come with the better solutions.. 
+Questions:
+
+// these are the questions that i have prepared(by myself ) before the interview..
+
+// try preparing questions like this of your own so that you can master the stragies easily...
+
+1. You are having the array of infinite length and they (first n places) contains some n numbers in sorted order...
+
+and the remaining places are filled with infinity's ...
+
+The problem is to search for a given element x in the array ....
+
+But the main thing is that you don't know the value of n....
+
+Clue:
+
+The solution is obvious in order of n....(perform the linear search from the beginning ...)
+
+The problem is to give an algorithm that searches in O(log n)..( atmost 2logn)
+
+Clue: Binary search requires the initial and also the final indexes to be passed into it...)
+
+2. Write an algorithm that prints all the combinations( of all length) of an array of numbers ..
+
+Try to take care about the order of the solution..
+
+The typical order of the combination problem is sum of ( nCr ) where r ranges from 1 to n..
+
+Clue:
+
+Simulate the array for small length and then go for the solution.....
+
+Recursion is the easy tool for solving the most difficult problems...
+
+3. Try to find the solution that computes the value of power(x,p) in logp multiplications....
+
+Normally we perform p -1 multiplications....
+
+Clue:
+
+Try to think the problem in terms of the binary numbers....
+
+4. The problem is to find an optimal method for storing the tree in a secondary storage ....
+
+and then you should be capable of the retrieving the tree back to the program...
+
+clue:
+
+here storing the tree in secondary storage implies writing the tree into a file...
+
+If you try to write the tree as the same structure then the address of the nodes ( these are
+
+actually main memory addresses..) are different when we load the same nodes in a program 
+
+again.. so this is not a good method...
+
+Try to find the representaiton of a tree that uniquely identifies it....
+
+5. You are given two numbers (distinct ) and you have to find the maximum of the two
+
+numbers using a C program without using any relational operators...
+
+Clue:
+
+this is one easy solution there using arithmetic operators...
+
+try to find a solution without using the four operators ( +,-,*,/).. use some other operator...
+
+6. You are given two numbers A and B (distinct).. you have to print "A is bigger" if A> B
+
+else print "B is bigger" you shouldnot use any relational operators or if ( and also while and for) constructs....
+
+You can use the four arithmetic operators +,-,*,/ ----------------->( C program)
+
+7. You are given some set of n elements(any order) and you can store them in any form..(the order of insertion of
+
+the n elements should be atmost O(square(n))...
+
+The problem is that given a rank r then you should be able to retrieve the element with that rank in the order
+
+of logn...
+
+(rank of an element is the position of the element when we sort all the elements...)
+
+8. You are given an array of numbers in any order ... given a number in that array you have to find the rank of 
+
+that element ....
+
+Clue:
+
+the order of (nlogn) is an obvious solution..(sort the array then return the index of that element...)
+
+the problem is to find the solution of order n...
+
+9. Write an algorithm that prints all the permutations of an array..
+
+clue:
+
+Same as the combination problem ...
+
+10. A very interesting problem to end the set...
+
+We all know the inorder traversal algorithm ( recursive ) for a tree..
+
+inorder(T)
+
+{
+
+if( T!=null )
+
+{
+
+inorder( left(T) ); // first recursive call
+
+Write(T);
+
+inorder( right(T) ); // second recursive call
+
+}
+
+}
+
+The above algorithm contains two recursive calls... but the modern ACM standard will not allow
+
+these two calls . So your job is to alter the above algorithm to eliminate that second resursive call..
+
+The above problem has a most elegant solution..
+
+( I am wondering abt myself how i found that elegant solution during the interview...)
+
+Clue: 
+
+the number of lines in the algorithm remains the same after modification...
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+I will mail the answers for these questions soon..

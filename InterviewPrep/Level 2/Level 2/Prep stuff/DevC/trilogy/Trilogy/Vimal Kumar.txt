@@ -1,0 +1,45 @@
+Hi,
+
+In the first interview (Dharma + Manikandan), I was
+asked the following questions
+1) You have an array of integers and you are given
+with a number 'x', you need to find a pair of numbers
+in the array which sums up to 'x'. Give an 0(n)
+algorithm. (Algo)
+2) Merge two binary trees in 0(n) time.(Code)
+3) An algorithm that is supposed to find the largest
+even length palindrome in a string is given. You have
+to find the flaw in the algo.
+ALGORITHM:
+    You have two indices, initially pointing to the
+first and second element of the string. Compare the
+elements at the indices. If they are not equal,
+advance both the indices(pointers). If they are equal,
+spread the indices on both directions as long as the
+elements at the indices are equal.
+   For example,
+   consider the string "abccba...."
+   If the indices are pointing the char c in the
+string, move the first pointer backward and the second
+pointer forward. If the elts at the indices are equal,
+do the above thing.
+   If you cannot move the pointers (may be because you
+hit one end of the string or the elts at the indices
+are not equal), store both the indices as the
+substring (index1, index2) will be a palindrome and
+place the first index(index1) after the second one and
+follow the above procedure.
+   Here, the order of the indices(i.e., first and
+second) is based on which one is to the left of other.
+And beyond that, they don't serve any special purpose.
+
+In the second interview:
+Two warm up questions( same as asked for prasanna
+srinivasan)
+1) Code to delete a node in the binary search tree.
+2) Code to print all the unique permutations of a
+given string even if the string contains some
+duplicate chars like in the string "aab".
+
+Bye.
+Vimal.

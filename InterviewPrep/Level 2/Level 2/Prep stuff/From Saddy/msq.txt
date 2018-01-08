@@ -1,0 +1,748 @@
+(i)Given Finite numbers of sets  say S1 , S2 , S3 .... SM . Design an algorithm Find the element such that , it is a member of largest number of sets 
+ 
+ 
+(ii)Design a data structure for which Insertion , Deletion and Searching Takes O(1) time . The Data Structure must be such that it holds at the most N Keys. It must throw exception FUll() when there is no more space .(Dont assume anything about type,values... etc of  keys ) 
+----------------------------------------------------------
+How will you remove duplicates from an unsorted array? 
+------------------------------------------ 
+ 
+Find the median of 2 n-element  arrays in O(log n) 
+----------------------------------------
+1.How will you implement a doubly linked list using a single Linked List ?(Structure is {data,next pointer} 
+ 
+2.What is the time efficient way to implement a stack using  queues? 
+ 
+3.Implement inorder,preorder and postorder traversals in a binary tree 
+ 
+  a) without using recursion(explicit stack allowed) 
+ 
+  b)without using recursion(explicit stack not   allowed) 
+-----------------------------------------------
+this is recursive problem of sort out the min and max number from array 
+
+Given any arbitrary array of size n containing random no.s .How will u find the longest monotonically increasing sequence . A monotonically sequence is one which may not  
+be contiguous and can contain any arbitrary increasing seq. 
+----------------------------------------
+Given 2  strings of length m and n ( assume n >= m) 
+how to find the longest common substring ? 
+-----------------------------------
+
+you are given an array of n numbers and each element is equal to the value of numbers less than that number in right hand side of the original array we have to find the original array 
+for ex. if the original array is 4,1,3,2 
+     then we would we given the array 3,0,1,0 
+and we have to find the original array ,it is given that the numbers in the original array is from 1 to n. 
+ex no 2. original array 2,3,1,4 
+  given array  1,1,0,0 
+ex no. 3  original array 5,2,1,3,4 
+   given array   4,1,0,0,0 
+
+----------------------------------------
+There is an infinite array  
+ 
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ... 
+1 1 2 3 3 4 4 4 5   5   5   6   6   6   6   7 
+ 
+initially a[1]=1 is the assumption 
+after that for any 'i' if a[i]=k , repeatedly fill  
+the array with i 'k' times for i=1,2,3,4.... (i.e a[1]=1 so fill the next index with 1, now a[2]=1 fill next index with 2, a[3]=2 ,so add 2 3's and so on.) Now for any number 'x' what will be a[x]. 
+
+
+The Given Singly Linked list May contain a loop of the Shape six or nine  
+( 6 or 9 ) 
+
+ 
+you are required to write a function  
+ 
+bool find_loop ( Head , Node1 , Node2 ); 
+ 
+Head Points to header node of the linked list ( or first node ). After execution of the function Node1 and Node2 Points to Nodes involved in the Loop and returns true ( else returns false , Node1 and Node2 may point to any of the nodes ) 
+ 
+( How to use  [img][/img] tags guys , i mean how will u insert images using these tags )
+
+--------------------------------
+write some code in the change function so that output of printf in main function is 23 not 6 
+ 
+ 
+void main()  
+{  
+int i=5;  
+change(&i);  
+i=6;  
+printf("%d",i);//it should print 23 instead of 6  
+}  
+  
+ 
+  
+ 
+void change(int *i)  
+{  
+ 
+   *i=23;  
+ 
+//write some code here so that output of printf in main will be 23 not 6  
+}  
+ 
+-------------------------------------
+
+1)Is it possible to perform a BFS on a binary tree without using any extra space  
+ 
+2)Convert a binary tree into a binary search tree. 
+ 
+3)Merge two binary trees resulting in an optimal height tree in O(n) 
+---------------------------------
+An array of (N+1) have N/2 pairs(duplicates) of random numbers. Only one element is unique. Find that element in O(N) time without extra spaces". Plz help me to solve this problem 
+------------------------------
+Three million men with distinct  names were seated east to west. Each participant was given a slip of paper on which he wrote his name and the name of the participant immediately following to his west.The last person i.e to the extreme west did not what to do and so he threw his slip .All these slips were collected and shuffled. What is the most  efficient way to recover the original sequence of the participants. 
+------------------
+This is an interesting one. We are given an array of size N with random numbers between any range and give a number x.  
+ 
+ 
+Find in O(n) time and O(1) space a pair of numbers form the array whose sum is equal to x.  
+ 
+this was asked to a friend of mine in Amazon Interview. O(n^2) solution is easy...but O(n) solution is what is needed. 
+--------------------------------
+Given a binary tree of N nodes , in how many ways u can create trees such that their post order traversal is the same as reverse of preorder   
+ 
+Give algorithm to do the same.  
+----------------------------------
+This time, there is a set S of  N known integers from the interval 1 .. M, where M > 2N. 
+ 
+Device an algorithm to find whether a given integer is in S with O(N) space and O(1) time in the worst case. 
+---------------------------
+How will you sort a linked list in O(n log n) ? (Only rearrangement of links is permitted and the data part of the nodes should not be swapped) 
+-----------------------------
+A Set M can be constructed from any 2 given elements as follows 
+ 
+M1 = M1 ( first given element ) 
+M2 = M2 ( second given element ) 
+M3 = (M1+M2)/2 
+M4 = (M2+M3)/2 
+M5 = (M3+M4)/2 
+ 
+Give an algorithm to check whether there exists two elements in the set such that their sum is equal to a given value K. u can assume that set is infinite. 
+ 
+ 
+Note: I Dont know whether  we can assume M1 and M2 to be positive ,  so make your own assumptions About values of M1 and M2 
+ 
+This one is From Trilogy Interview 
+---------------------------------
+reverse a link list using recursion 
+---------------------------------
+Write a routine that gets characters from an input stream one by one, e.g. with getchar(), and returns as soon as the characters acquired so far form a palindrome (::of length 2 or more to avoid "smart alec" solutions::).  What is the most space and time-efficient way to do it? 
+----------------------------------
+In a Group of N people how will u identify 
+ 
+(i)a person who knows all others 
+ 
+(ii)a person who is known to everyone 
+ 
+(iii)a person who knows everyone and who is known to everyone     
+ 
+(iv)a person who does not know  anyone and no one knows him 
+ 
+The only Function you can use is  
+bool IsKnown(i,j)  which returns true if i knows j else false 
+(Edit 2 :- This function Takes O(1) Time ) 
+ 
+you are required to find O(n) algorithm 
+ 
+ 
+EDIT:: 
+(v) Person who is known to everyone , But who does not know anyone 
+ 
+(vi) Person who knows everyone , but no one knows him 
+----------------------------------
+Can any body tell me how to print first 100 fibonnaci numbers recursively. 
+   It is easy to write recursive function for finding nth fibonnaci num, but my problem is to print first 100 fibonnaci's.  
+---------------------------------------
+Assume an array of colors of length N. We need to find out which color is repeated maximum number of times. Given that one of the color is repeated at least N/2 + 1 times (obviously that is the max repeated color). Interviewer said this can be done in O(N) time. 
+
+------------------------------------
+What is the time complexity of a program which finds the sum of cubes of the first 'n' natural numbers ('n' will be supplied by the user) 
+--------------------------------
+A majority element in an array , A of size N is an element that appears more than N/2 times ( thus , there is at the most one )  
+ 
+for example , the array 
+  3 , 3 , 4 , 2 , 4 , 4 , 2 , 4 , 4 has a majority element(4) , where as the array 
+ 3 , 3 , 4 , 2 , 4 , 4, 2 , 4 does not 
+ 
+write an O(N) algorithm to find the majority element if it exists , u can use only constant space 
+code:
+
+arr.element_type element; 
+unsigned counter = 0; 
+for (unsigned i=0; i < arr.size(); i++) 
+{ 
+  if (counter) 
+    if (arr[i] == element)  counter ++; else counter --; 
+  else 
+    element = arr[i], counter++; 
+} 
+return element;  
+------------------------------------
+Given an array of size n and populated with consecutive integers from 1 to n i.e. [1, 2...n-1, n] in random order.  Two integers are removed, meaning zero is placed in their places. Give O (n) efficient algorithm to find them? 
+----------------------------------
+You r given an array of N elements ( not in sorted order ) and a number K 
+(i) o(n^2logn ) algorithm to find 4 numbers such that their sum is K 
+(ii) find o(n^2) algorithm to find 3 numbers such that their sum is K 
+------------------------------------
+An Array of N elements contains all numbers from 1 to N  
+(i) Sort the numbers in O(N) 
+[hide][/hide]  
+This is not the solution 
+ 
+for(i=0;i<n;i++)a[i]=i+1; 
+ 
+(ii) if the array elements are fractions , each of whose numerators and denominators between 1 to N
+----------------------------------------
+
+How will you merge two heaps? 
+ 
+a)when the heaps are maintained in seperate arrays. 
+(with as minimal time complexity as possible). 
+Is in place merging possible in this case? 
+ 
+b)when the heaps are maintained using a dynamic list /linked structure representation.(in O(log n),without using any extra space.) 
+
+----------------------------------------
+The Binary Search tree implemented using linked structure . 
+that is 
+ struct node 
+  { 
+     int data ;  
+     struct node*left , *right ; 
+   } 
+(i) 
+write a function MinGap(Root , Node1 , Node2); After execution of function , Node1 and Node2 must point to Nodes Whose Difference is Minimum . what is time and Space complexity of your algorithm 
+(Root points to Root of the tree ) 
+ 
+(ii)How will u modify the binary Search Tree , Such that ,function  MinGap()  will return Minimum Difference between Two nodes in O(1) Time .  
+(note that , here u need not find the actual nodes ) 
+----------------------------------
+
+ It would be be better if someone can come up with a program, that can perform classification tasks in problem 1. 
+(you have to use AI(Artificial Intelligence) techniques). 
+ 
+The pseudo code for this, can be given using any language...But LISP or PROLOG is preferrable. 
+ 
+1) Here, the first 13 letters of the alphabet are divided into 4 categories. 
+Can you predict in which of the 4 categories, each of the remaining 13 letters should be placed in? 
+ 
+categories: 
+ 
+1. A,M 
+ 
+2. B,C,D,E,K 
+ 
+3.F,G,J,L 
+ 
+4.H,I 
+ 
+ 
+2)Each of these puzzles is really a mathematical expression, that encodes a grammatically complete english sentence.Can you break the codes and tell what message is to be found on each sign? 
+ 
+ 
+Puzzle #1: 
+        
+Stand     Take      Mine   Standing 
+-------    ------    -------  ------------ 
+   I           You      2        My 
+ 
+ 
+Puzzle #2: 
+ 
+ 
+10  20  04  18  0 
+---------------------------------------
+(i)Given a String , Find the largest and Smallest substring of the form XX , i.e; 
+ 
+For Example  
+Input :  "121232132115991599" 
+Output1 :"15991599" ( largest ) 
+Output2 :"99" or "11" (smallest )  
+ 
+ 
+ 
+(ii) Given 2 strings of same length write an algorithm to find if one string is cyclic shift of  
+another , u also need to find where cycle is present . Give an O(N) algorithm to this; 
+ 
+for example : 
+ 
+X: "my name starts from a" 
+Y: "name starts from a my" 
+ 
+here  x is a cyclic shift of y and position of cycle is 3 (Including Blank spaces ) 
+ 
+ 
+ 
+(iii) How do u find whether a of given matrix occurs in a larger matrix , the goal is to minimize the number of comparisons;   
+Eg: 
+ 
+1 1 1 0 
+0 0 1 0 
+0 0 0 1 
+0 1 0 1 
+ 
+ 
+1 1 1 1 1 0 
+0 0 0 0 1 0 
+1 0 0 0 0 1 
+0 1 0 0 0 1 
+0 1 0 1 0 1 
+0 1 0 1 0 1 
+ 
+here the smaller matrix occurs in the larger matrix , starts at (1 ,3  ) , first row , third column 
+------------------------------------------------
+All of us know about the left rotation and right rotation operations that are used to maintain balance in the AVL trees. 
+ 
+You are given a fully skewed binary Search tree... 
+ 
+Design an algorithm to convert the skewed BST 
+into a minimal Skewed tree using only the rotation operations. 
+ ****************************************
+As usual minimize the time & space complexity to the extent possible and also try to reduce the number of rotations required... 
+-----------------------------------------------
+1) Given a Binary Search Tree containing +ve and -ve integers and a number K, 
+Find 2 numbers a and b in the BST such that a+b=k 
+in O(n) and the extra space allowed is only O(log n) 
+ 
+2)Given a Binary Search tree which has the following structure{info,left child,right child},find the least common ancestor of two given tree nodes. 
+ 
+3)Given a BST or a Binary Tree, convert the tree into a doubly Linked List in O(n) without using any extra space. 
+-------------------------------------------------
+problem(i) 
+How to modify Binary search tree so as to support 
+finding Kth minimum element which takes O(Log N )  average time, 
+without sacrificing the time bounds of any other operation. 
+ 
+ 
+ 
+problem(ii) 
+write an O(K+LogN ) average time algorithm to print all keys between K1 and K2 (including K1 and K2 if exists) in a binary search tree , where K is the number of keys between K1 and K2 . U can use only constant extra space. 
+ 
+ 
+ 
+problem(iii) 
+Can anybody give efficient algorithm to delete all nodes between two keys say K1 and K2 , i.e; to delete all keys K such that  K1<= K <= K2 
+-----------------------------------------------
+There are n people. A majority of them always speak the truth (call them good). The rest are unpredictable (call them bad). 
+ 
+You want to separate the truth tellers out from the group. For that you have an interrogation room in which you can call two people in and ask each guy: "Is the other guy good?" 
+ 
+Give a procedure using which you can separate the good from the bad. Try to minimize the the number of usages of the interrogation room. 
+ 
+Apologies if this preoblem has appeared before. 
+
+
+-----------------------------------
+There are 'n' gas stations(p1,p2,...pn); each can provide us with a petrol of l1,l2,...,ln litres. 
+You are given a motor cycle whose mileage is 'm' km/litre. The distances between the gas stations are also known.The problem is, you have to start at a gas station 's' and after visiting all the gas stations, you have to reach the same gas station 's' without running out of gas inbetween the gas stations. 
+ 
+ 
+You can visit each gas station except 's' only once.Can you think of an algorithm to solve this problem with a minimal time complexity? 
+ 
+ 
+2)As a bonus puzzle, try to figure out the next 4 numbers in the following sequence: 
+ 
+12,1,1,1,2,1,... 
+------------------------------------
+1)You are given with a Binary Tree in which each node has an associated weight with it. 
+Frame an algorithm (with as minimal time complexity as possible) to print all the paths from the root to the leaf nodes such that the sum of the node weights on the path is equal to a given weight.Can you still reduce the complexity of the algorithm that you frame for a Binary Search Tree? 
+ 
+2)You are given with a pointer to the BST's root node; Can you write a routine in C/C++ to display the tree in its Tree structure? 
+-----------------------------
+u r given a set which has N elements ( integers ) 
+now u have to divide the given set into 2 sets such that  difference between the sum of elements of the sets must have minimum absolute(interms of sign) value 
+ 
+the set is not sorted and can contain positive , zero , and negative values . the set also may have duplicates. 
+--------------------------------
+You r given an array of N elements ( not in sorted order ) and a number K 
+(i) o(n^2logn ) algorithm to find 4 numbers such that their sum is K 
+(ii) find o(n^2) algorithm to find 3 numbers such that their sum is K 
+---------------------------------
+Here is a nice problem I heard recently. A[1..n] is an array with integers from 1..n in no particular order. There is exactly one repetition and one missing. For example, if n = 4, one possible array could be { 1, 2, 3, 3 }. 3 is repeated and 4 is missing. Give an algorithm which will find the repeated number (or the missing one). Clarifications on a need-to-know basis!  
+  IP Logged 
+ 
+-------------------------------------
+Write a procedure to count the number of bits set in an int. 
+---------------
+
+stoneweights{ 
+     int stones[n]={.....} //undefined number of stones. 
+ 
+     int totalweight(); //returns total weight  
+     int maxweight(); //returns max stone weight 
+     stoneweights add();//adds a stone 
+     stoneweights remove();//removes all stones of same weight 
+ 
+} 
+ 
+There is another 'split' function which tells you whether or not the stones can be divided into two subsets of equal weights.  As in, returns either true or false.  
+ 
+Now, using the above 4 functions and the 'split' function you have to specify whether a weight 'k' can be weighed by a subset of the stones array.  
+ 
+The catch... you can't use loops/recursion  
+--------------------------------------
+given a string x... find the biggest polyndrom within the string efficiently
+----------------------
+You are given two integers p, q. Device an algorithm to check if the difference of their squares is also a square. There is one restriction: the squares of p, q may become too big to fit into a machine word, and you don't have at your disposal the special software to manipulate "long integers". 
+ 
+Examples:  
+ 
+is_square(5,4) should return 1 
+is_square(3,2) should return 0 
+---------------------------
+Given an array containing nos. 1 to n. Find the frequency of each no. in O(n) and using no extra space.
+----------------------------
+You are given a string of open/closed parenetheses of a single type. It's fairly easy to implement the parentheses matching (PM) procedure using a single counter with the set of operations (reset, ++, --). 
+ 
+Is it possible to implement PM given 2 different types of parentheses and using 2 counters? 
+ 
+What about general case of n different types of parentheses? 
+----------------------------------
+ was asked to solve this problem in 4th round of trilogy interview for which I was not able to find an efficient solution. I'd be glag if you guys can help. 
+ 
+We are given an empty array of 'n' elements and a random number generator which will generake one of the 'k' possible results where 'k>n'. the generator may generate Repetitions. The task is to fill the array without Repetitions with maximum time and space efficiency. (No use of Hash tables  
+----------------------------------
+There is a tree, not binary tree, each node can have several children. Each node on the tree is associated with a value which is an integer which can be negative, 0, or positive. The weight of a subtree is the sum of all values of nodes in that subtree. Find the heaviest subtree. The heaviest subtree is the subtree with largest weight. 
+Derive an efficient algorithm to find the heaviest tree. 
+------------------------------------
+Find three ways to make the program below to print 20 copies of the dash character '-' by changing/adding one character: 
+ 
+int i, n=20; 
+for (i=0; i < n; i--) {printf("-");}; 
+ 
+Wrong solutions: 
+ 
+    * Changing "n=20" into "n=-20" won't work. 
+    * Changing "i--" into "i++" doesn't satisfy the one character condition. 
+    * Changing "i=0" into "i=40" won't work. 
+    * Changing "i < n" into "i < -n" wont' work.  
+-----------------------------------------
+there are several cities with different amount of fuel available in each of them. your car uses 1 lt of fuel for 1 km. write a program which will tell if there is a city from which i start so that i can touch all those cities and come back to the starting city. you are free to chose the data structure you want to use. 
+------------------------------
+Got an interview question like this: How would you implement "incremental search for a string within a text file (loaded in memory)"---just like what Emacs does? What data structures would you use?  
+ 
+I don't think you are supposed to use the "string pattern match" algorithm in textbook. Thanks for any input! 
+---------------------------------------------
+got this in a trilogy interview.  
+Given an array of integers in sorted order(ascending/descending),  and given another integer K, find if the array contains 2 numbers whose sum equals K. 
+ 
+well...i first thought nLogn is the best we could reach...!! 
+-----------------------------------------
+Given a array of integers. The array is not sorted and there is no range for the elements of the array. 
+ 
+We can assume that there can be no duplicates in the array.  
+ 
+How will you find all the combinations of the array elements whose sum also lie in that array 
+--------------------------
+An array of size k contains integers between 1 and n. You are given an additional scratch array of size n. Compress the original array by removing duplicates in it. What if k << n?  
+ 
+Can be done in O(k) time i.e. without initializing the auxiliary array!  
+
+-----------------------------
+1. Count the no. of anagrams in an array of strings. 
+ 
+2. Write a program to efficiently store a string that contains some elements that have consecutive repititions 
+ 
+3. Write a program to copy a DAG. You are given a pointer to the given DAG’s root node. Write the code and tell the time complexity. 
+--------------------------------
+you want to implement that in a function: int cond(int x, int y, int z); using only ~, !, ^, &, +, |, <<, >> no if statements, or loops or anything else, just those operators, and the function should correctly return y or z based on the value of x. You may use constants, but only 8 bit constants. You can cast all you want. You're not supposed to use extra variables, but in the end, it won't really matter, using vars just makes things cleaner. You should be able to reduce your solution to a single line in the end though that requires no extra vars.  
+---------------------------------
+you have four balls, and four different colors, as a solution. The user tries to guess the solution. If they guess the right color for the right spot, it counts as a 'hit'. If it's the right color, but the wrong spot, it counts as a psuedo-hit. For example: if the solution is 'RGGB' and the user guesses 'YRGB' they have 2 hits and one pseudo hit. Write a program to, given a solution and a guess, calculate the number of hits and pseudo hits. 
+------------------------------------
+You have two binary trees(need not be height balanced) frame an algorithm to merge these two trees and to form a height balanced binary tree.. 
+ 
+Space and time both seems to be precious... 
+-----------------------
+You have an array of integers (both positive and negative). Find the continuous sequence with the largest sum. (ie, if the array was {1,-8, 3, -2, 4} then you'd want to return {3,-2, 4}) 
+----------------------
+Implement 3 stacks in one array. No stack should overflow till there is any space in the array. 
+-----------------------------
+http://graphics.stanford.edu/~seander/bithacks.html 
+------------------------------------
+how would you sort an array of 2 Gb with 1 Gb of RAM, 
+reading from the hard disk here is very expensive so try to make hd accesses absolutely minimal.. 
+ 
+can do this with external mergesort in 2 passes but the number of hd accesses still come out to be 4N, because not using sequential reading. I guess, an algorithm is needed that pulls as large chunks of data as possible.  
+
+----------------------------------
+You are given the inorder and the preorder traversal of a BST . Construct the BST out of it. 
+----------------------------------
+given a pointer to a node say x(it is not the root of the linked list) 
+how do i delete the node. 
+ 
+plz note it is a standard singly linked list 
+
+Just swap the elements of the node x and the x->next node. 
+Now delete the x->next node .  
+ 
+ 
+
+slow_ptr=x; 
+if(x->next) fast_ptr=x->next; 
+ 
+while(fast_ptr) 
+ { 
+     slow_ptr->data=fast_ptr->data; 
+     fast_ptr=fast_ptr->next; 
+     if(fast_ptr)   
+        slow_ptr=fast_ptr; 
+  } 
+free(slow_ptr->next); 
+slow_ptr>next=NULL; 
+--------------------------------------------------------------------------------
+You have two sorted integer arrays and the larger array has room for the second. Merge the smaller array into the larger one, in O(n) time and O(1) space. 
+any thoughts? 
+There is another *cute* solution, which involves going the smaller array and swapping with  its elelments with larger array e's lements that are  larger - and then copy the smaller array at the end of larger.  
+int A[n+m]; // larger array. 
+int B[m]; // smaller array. 
+int ia = n-1; // current index in A. 
+int ib = m-1; // current index in B. 
+int i; // current index in the result. 
+for (i = n+m-1; i >= 0; --i) { 
+  if (ib == -1 || (ia >= 0 && A[ia] > B[ib])) 
+    A[i] = A[ia--]; 
+  else 
+    A[i] = B[ib--]; 
+} 
+
+--------------------------------------------------------------------------------
+
+#1.  Given an n X m grid of characters. You are supposed to search for a string with in this maze. The characters in the string need not be alligned in a straight line. They just need to be holding adjusent positiong.  
+ 
+eg 
+ 
+if this is a maze 
+ 
+  a  b  d  e  f 
+  r   n  a  j  u 
+  g  y  m  r   l 
+  e  t   i   y  u 
+ 
+The string namit should return a found(True "2,2 2,3 3,3 4,3 4,2" They hold adjucent positions). 
+ 
+Frame an efficient algorithm for this 
+ 
+ 
+#2. Given a word of 'n' characters and another word of 'm' characters where n>m. the task is to find if all the characters in the second word exists in the first. Frame an efficient algorithm. 
+ 
+#3. Given a url string "http://bla bla bla/bla bla bla". you need to replace the spaces with the string "2%0". The first string has exactly enough free space towards the end to accomedate the extra characters which may needed while inserting the new string. 
+ 
+eg if the first string is "http\\b n" this string will have 2 spaces extra towards the end so that replacing the space between 'b' and 'n' does not need reallocation of memory for the string. No use of extra memory is allowed. Frame an efficient algorithm for this. 
+
+#3 - The trick is: start from the end. 
+Code:void space_to_20(char *p) 
+{ 
+ char *q; 
+ while( *p ){ 
+  if( *p++==' ' ) n++; 
+ } 
+ q = p+n+n; 
+ *q = 0; 
+ while( n ){ 
+  if( *--p==' ' ){ 
+   *--q = '0'; 
+   *--q = '2'; 
+   *--q = '%'; 
+   n--; 
+  } else { 
+   *--q = *p; 
+  } 
+ } 
+} 
+ 
+ 
+
+
+
+
+
+--------------------------------------------------------------------------------
+You have a binary tree  
+struct Node  
+{ 
+   Node *left;  // can be NULL if no child 
+   Node *right; // can be NULL if no child 
+   int val; 
+}; 
+ 
+class Tree { 
+public: 
+  // ... 
+  Node *find (int i) const; 
+private: 
+  // ... 
+  Node *root; 
+}; 
+ 
+ 
+The tree is constructed such that for any Node *n, if n->left is non-NULL, then n->left->val <= n->val. Similarly, if n->right is non-NULL, then n->right->val > n->val.  
+Write the function find(int i), which will look for a Node in the tree whose val field is equal to i. If one such node is found, it should be returned. If none are found, NULL should be returned. If more than one are found, then find will chose one of the equal nodes randomly, with uniform distribution, and return it.  
+ 
+Can you do it with only one pass, and with O(1) memory utilization.  
+
+
+
+
+
+--------------------------------------------------------------------------------
+DataStructure -----------------Insert---------|lookUp    
+-------------------------------|------------|---------|  
+Sorted Array   -----------------|O(nlgn)------|O(lgn)---| 
+Unsorted Array ----------------|O(n^2)------|O(n)----|   
+Sorted Link List (sl)------------ |O(n)--------|O(n)-----| 
+Unsorted LinkList(sl)----------- |O(n)---------|O(n)-----| 
+Balance Binary Tree------------|O(nlgn)------|O(lgn)---| 
+Hash Table --------------------|O(1)--------|O(1)-----|   
+----------------------------------------------------------- 
+sl=singular link list 
+
+
+--------------------------------------------------------------------------------
+You have 4 GB of numbers on hard disk and you have 1 GB of RAM on your computer.Give an efficient algorithm to sort these numbers. 
+
+--------------------------------------------------------------------------------
+You have a read-only array A[1..n] which is populated by numbers from 1..n-1, which implies atleast one repetition. However, there can be more. Find any one repeated number in linear time using constant space. 
+
+--------------------------------------------------------------------------------
+you're  given an Array with X elements find n largest elements in the array where n<X, without sorting.
+--------------------------------------------------------------------------------
+There is an array A[1 to N] with elements ranging from X to X-N+1 ( X>N). Exactly one element is repeating itself twice (occurs twice) and exactly one element is missing. They are randomly placed in the array. Give an algorithm to find X if such an array is given. 
+
+--------------------------------------------------------------------------------
+Q1:-Given a doubly linked list sorted in ascending 
+order, Write a function to create a balanced binary 
+search tree by modifying the links. The condition is 
+you should not use extra space, and algorithm should 
+work in-place. write time complexity and space 
+complexity of your algorithm. 
+ 
+Q2:-An array has one element repeated n/2 times, find 
+that element. 
+ 
+Q3:-find the median of the two sorted arrays each of 
+length n. 
+ 
+Q4:-In a matrix, 
+* All rows are in ascending order 
+* All columns are in ascending order 
+* Each element is unique. 
+Write a program to search for a given element in 
+the matrix. 
+ 
+Q5:-An array of N elements contains an arbitrary 
+permutation of the numbers from X to X+N-1 of which 
+one number is missing and another one is repeating. 
+Find out X, the missing and repeating numbers. 
+ 
+Q6:-write a funcion which does the same work as the command 'tail'  
+      in UNIX/Linux.  
+tail is a utility which prints the last 'n' lines of a file which  we can specify. the value n also we can say.   so, i had to take in one file descriptor and the value of n.  and as output, i can return the offset from the beginning of  the file to the point from whic the last n line starts. 
+ 
+Q7:-Reverse the order of words in a sentence.  
+  Ex: This_is__a_tree.  
+   becomes      tree_a__is_This. 
+   _ is a space here and what I want to convey is that number of 
+spaces between any two words must be preserved. 
+ 
+ 
+I have some more Qns from that interview. Pls help me to get answer of these Qns. The only condition is that they required answer with minimum space and time complexity. 
+
+--------------------------------------------------------------------------------
+ Generate permutations of a given string. Some of the elements of the string might be repeated. Generate only unique permutation.  
+i already know a solution but it computes all the permutations and checks if the string is already present. 
+can we save on some work, by not computing a string, identical to any of the already computed ones. 
+ 
+
+--------------------------------------------------------------------------------
+
+Incrementing without + or -
+unsigned Increment(unsigned n) 
+{ 
+   for (unsigned nLoop = 1; n & nLoop; nLoop <<= 1) 
+   { 
+     n &= ~nLoop; 
+   } 
+ 
+   n |= nLoop; 
+ 
+   return n; 
+} 
+ 
+ 
+
+ 
+Basic algorithm: starting from the least significant bit, turn off set bits until you encounter the first unset bet, which you turn on. 
+ 
+Can anyone think of a more elegant solution? 
+
+--------------------------------------------------------------------------------
+An array {A1,A2,A3,....,An,B1,B2,......,Bn} is given and we have to rearrange it as {A1,B1,A2,B2......} .give an algo with minimum time and space complexity. 
+
+--------------------------------------------------------------------------------
+First, reverse the order of the elements in the whole list: 
+{xn, xn-1, ..., x1} 
+ 
+Then reverse the sublist containing the last k-1 elements, and then also the sublist containing the other n-k+1 elements: 
+ 
+{xk, xk+1, ..., xn, x1, ..., xk-1} 
+ 
+To illustrate rotating a list of n=5 elements so that k=4 is first: 
+ 
+1 2 3 4 5 
+reverse list: 
+5 4 3 2 1 
+break into sublists and reverse: 
+5 4    3 2 1 
+4 5    1 2 3 
+ 
+Each reversal is clearly O(n) and the swapping requires some small constant amount of storage. 
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Write a C program to print "Hello World" 2004 times.  
+ 
+The program should fit in an 80x25 page and must not use the letters f,o,w,?, & and | (last three are question mark, ampersand and pipe). 
+be declared as well. 
+ 
+int cnt = 2004; 
+void (*ar[2])(); 
+void recurse() 
+{ 
+ cnt--; 
+ puts("Hello World"); 
+ (*ar[cnt && 1])(); 
+} 
+void stp() 
+{ 
+} 
+int main() 
+{ 
+ ar[0] = &stp; 
+ ar[1] = &recurse; 
+ (*ar[cnt && 1])(); 
+ return 0; 
+} 
+--------------------------------------------------------------------------------
+How would you write a C program, that prints something, without using a semicolon?
+void main() 
+{ 
+    if (printf("Hello World\n")){ 
+    } 
+} 
+
+--------------------------------------------------------------------------------
+You are given 2 pointers to two nodes (p1, p2) in a binary search tree1. Devise an algorithm to find the distance between p1 and p2 (i.e. the length of the shortest path between them). 
+You may use O(1)2 additional memory and you must not change the structure of the tree. 
+
+Devise an algorithm to the same problem when the tree is ("just") binary (i.e. not a binary search tree).
+
+1 A binary search tree is a binary tree which each node of it has the following properties:  
+(-) For every nodes y in left subtree of x, key[y] < key[x]  
+(-) For every nodes y in right subtree of x, key[y] > key[x] 
+2 O(1) additional memory indicates that a constant amount of additional memory can be used (e.g. memory consumption that is dependent on the size of the tree (or on the distance between the pointers) is not legal). 
+
+--------------------------------------------------------------------------------
+Find nth element from end of a SLL  
+keep 2 pointers.  The first starts at the head and the second starts at the nth element.  Then keep traversing with both one element at a time until the second falls of the end. 
+

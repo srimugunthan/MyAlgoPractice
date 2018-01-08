@@ -1,0 +1,58 @@
+hi
+ 
+The following are the questions I was asked in the intvs.
+ 
+intv1: ( Our seniors Dharma and Manikandan)
+
+1) Given a binary tree. Rearrange it into a max heap.
+ 
+2)Construct a min skewed tree from the inorder squence.
+Note: There can be many trees having the same inorder sequence. The Q is
+to construct the one that is minimally skewed.
+ 
+3)Merge 2 heaps
+ 
+4)Merge 2 bin search trees
+ 
+5)Find the maximum palindrome in a given string.
+ 
+6)they asked me to debug their version of the above program.
+ 
+-------------------------
+intv2:(Mr.Jim and another senior )
+
+1) Given any number of stks. Implement a queue using them. 
+I told the trivial soln first. Then they made me optimize it to reduce the
+number of pushes n pops done  for an insertion n deletion.
+ 
+2)A few foo Qs from Java  based on virtual functions, static members etc.
+ 
+3)Another foo Q from C++ (similar to the one spfd by prasanna srinivasan- the call by value one)
+ 
+4)generate all possible permutations of a string.
+ 
+5)Give the code for
+i) the inorder sequence of a binary tree.
+ii) without  tail recursion.
+ii) without any recursion.
+-------------------------
+ 
+intv 3) (Mr.Nitin)
+ 
+1) Give the code for flattening a tree. i.e Convert a tree into a list such that the order of the nodes in the list is similar to the horizontal traversing of the tree. My first solution used extra locations. Then  i was asked to write without the use of extra space(by rearranging the tree).
+ 
+2)Given a DAG( directed acyclic graph)with a max out degree of 2 . In a DAG, the left and the right link of a node may point  backwards, ie a hierarchical relationship need not be maintained between the nodes. ( Propose an effective data structure so that the copy operation can be done easily. Because the max outdegree is 2 , I told the array representation, where it is easier to detect backwards links by just checking if the A[child] > A[parent]. He agreed and then asked me for another representation using links.I told him to add a visited flag to  the usual node structure. He then asked me to write the code. He was not comfortable with the structure of my program .So I wrote the same in the form that he wanted.
+
+3) Given a linked list Write a code to return another linked list having the last n elements. Kept askin me to refine the algo till I got the optimal one.
+ 
+--------------------------
+informal( Mr. Adam):
+
+ I still dont know if it was an informal intv or a simple chat. Any way he asked me abt my rank,  my oncampus placement, youth parliament(it was there in the cv) , family etc. I had included french in my cv as one of the langs, so he asked how good I was in it. When I said that I dont remember anything, he taught me few things in french and asked me to translate a few things for him in Hindi, tamil and swahili.. 
+ 
+Hope this mail helped..
+ 
+bye
+harini.kp
+ 
+ 

@@ -1,0 +1,131 @@
+hai friends,
+               i have sent the questions in my previous mail..
+(please read the mail on the order of arrival in case you haven't cheked the mail for a long time...)
+ 
+The answers for the questions are given in this mail...
+ 
+Solutions:
+
+1. The solution for this is given after the solution for the first problem..
+
+2. The problem is to find the maximum palindrome...
+
+suppose consider a string.... eg..cdababacd 
+
+The solution(algorithm) is ...
+
+have two pointers left and right..
+
+first initialize them to the left most positionand then try to expand them from there ...
+
+that is move the left pointer to left once (if can't then do the right pointer to right once)
+
+and if they are same then move both the pointers and expand like this similarly ...
+
+(if they are not same then move right pointer to right once (if left you have moved the left
+
+pointer early) or the left pointer (if that is the opposite case before) and see whether you
+
+can get a match between the values of the two pointers..and if they are same then spread 
+
+to two directions until you get a mismatch... and if get a mismatch then store the 
+
+palindrome substring you got so far in some place and also its length..)..
+
+If you get a mismatch at the first comparison itself then move both the pointers to the next 
+
+position and repeat the above process.. if you get a palindrome substring again and if its length
+
+is more than the already existing palindrome then replace .. else leave it..
+
+Finally you can get the maximum palindrome ...
+
+Simulate the above solution for the above example then you can get the resulting palindrome 
+
+as the substring ..aba
+
+If there is no palindrome then the above algo will return the first character as the result string...
+
+3. The simplicity of this problem is that you are given the whole array and use the n-binary 
+
+algorithm for this solution..
+
+Binary_sorted_insert(a,low,high)
+
+{
+
+// Take care of the basis step (termination) of recursion here...
+
+// Declare T as ptr to tree to be constructed..
+
+Binary_tree_insert(T,a[(low+high)/2]);
+
+Binary_sorted_insert(a,low,(low+high)/2);
+
+Binary_sorted_insert(a,(low+high)/2,high);
+
+}
+
+Assume that Binary_sorted_insert is an ordinary insertion algorithm into a binary tree..
+
+Normally binary tree construction of n elements is of order(avarage case ) square(n)..
+
+But we use the property of this to get the order of O(nlogn)... in this case...
+
+And also in this case the tree is perfectly balanced...
+
+(sridhar has sent the solution already.....for the above question..)
+
+4. The solution for the third problem is straight forward...
+
+Find the solution of the existing array and subtract it from the sum of n numbers
+
+(You can found using formula n(n+1)/2 ) then the result will be the missing number..
+
+Solution for the first problem....
+
+This solution is the little extension.. if you find the difference same as before then
+
+it will not give the missing number(as the above problem) rather it will give the value of
+
+x-y where x = replacing number --- (1)
+
+y = missing number
+
+But you get both x and y from x-y ....
+
+So..
+
+find the sum of squares of all the numbers of the existing array and then subtract the 
+
+value of sum of n numbers (using the formula n(n+1)(2n+1)/6 ) then the result will give the
+
+value of (x+y)*(x-y) ---- (2)
+
+( How????
+
+assume the original array is ... a ... b... sum of squares= k + square(a) + square(b)
+
+then replacing b by a we get ... a ... a... sum of squares= k + square(a) + square(a)
+
+and so the difference will be square(a)-square(b) or (a+b)*(a-b) )
+
+from (1) and (2) we can get the value of x and y...
+
+5. The data structure used is a hashing table and start processing the linked list from the 
+
+left .. ( have an appropriate hashing function ....) and if a element comes then make a new
+
+entry in the table and then store the address of the element in the table's field and if an element
+
+comes that is already existing then the hash function will store the value of the element in the
+
+already existing place( so no change will happen ..)
+
+Finally the duplicates get removed...
+
+( sridhar has solved this also....)
+
+ 
+Waiting for the reply,
+Sadeesh kumar D

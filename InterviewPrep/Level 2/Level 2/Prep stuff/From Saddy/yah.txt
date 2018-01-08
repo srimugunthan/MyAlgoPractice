@@ -1,0 +1,45 @@
+I had a telephonic interview initially. It had some
+standard questions. DS probs like
+
+1. A array has 1 to n elem and one duplicate element.
+What is that duplicate element? 
+2. Traversing(Inorder) binary tree without recursion
+3. one bridge crossing puzzle
+4. Reversing the sentence. words shld not be reversed.
+
+
+Then i had some 4-5 rounds direct interview.
+
+1. data structures
+
+print the elements of linked list in reverse order.
+dont remember 2 more questions
+
+2. c++
+
+vtable, vptr
+
+3. one probablity question
+4. about my projects and web development.
+5. DNS server 
+6. Few questions in networks 
+
+********************************************************************
+ had 5 levels of inteview.
+1) General Aps
+2) Algo solving
+3) Tech Interview
+4)  HR
+5) Lab exam
+
+1) There were no questions from RS Agarwal,  many were puzzles. SOme 
+questions 
+from DS and C++ too.
+2) 3 sums were given to solve. Cant remember them
+3) Virtual functions, tables, destructor, etc were asked. They were 
+impressed 
+with the publication. 
+4) Summa, for fun
+5) Asked to implement Inner Join outer join on two files (which will be 
+like 
+tables).

@@ -1,0 +1,250 @@
+/*****************************************************************/
+GokulNath Babu interview questions
+
+Hi friends,
+My interview questions are as follows.
+Interview 1. (Jim and Sudhakeran - pool side interview)
+1. Some java language speific questions.
+2. Code to delete a node from the binary search tree.
+3. Reverse the words in the sentence. eg. john is a boy - boy a is john.
+4. In a binary tree, the right & left pointers in the leaf nodes points to the ancestors. Remove them.
+Interview 2. (Dharma & Manikandan)
+All the questions are the repetition of earlier mailed questions.
+bye.
+friendly,
+gokul.
+
+/*******************************************************************/
+
+Harini questions
+
+hi
+ 
+The following are the questions I was asked in the intvs.
+ 
+intv1: ( Our seniors Dharma and Manikandan)
+
+1) Given a binary tree. Rearrange it into a max heap.
+ 
+2)Construct a min skewed tree from the inorder squence.
+Note: There can be many trees having the same inorder sequence. The Q is
+to construct the one that is minimally skewed.
+ 
+3)Merge 2 heaps
+ 
+4)Merge 2 bin search trees
+ 
+5)Find the maximum palindrome in a given string.
+ 
+6)they asked me to debug their version of the above program.
+ 
+-------------------------
+intv2:(Mr.Jim and another senior )
+
+1) Given any number of stks. Implement a queue using them. 
+I told the trivial soln first. Then they made me optimize it to reduce the
+number of pushes n pops done  for an insertion n deletion.
+ 
+2)A few foo Qs from Java  based on virtual functions, static members etc.
+ 
+3)Another foo Q from C++ (similar to the one spfd by prasanna srinivasan- the call by value one)
+ 
+4)generate all possible permutations of a string.
+ 
+5)Give the code for
+i) the inorder sequence of a binary tree.
+ii) without  tail recursion.
+ii) without any recursion.
+-------------------------
+ 
+intv 3) (Mr.Nitin)
+ 
+1) Give the code for flattening a tree. i.e Convert a tree into a list such that the order of the nodes in the list is similar to the horizontal traversing of the tree. My first solution used extra locations. Then  i was asked to write without the use of extra space(by rearranging the tree).
+ 
+2)Given a DAG( directed acyclic graph)with a max out degree of 2 . In a DAG, the left and the right link of a node may point  backwards, ie a hierarchical relationship need not be maintained between the nodes. ( Propose an effective data structure so that the copy operation can be done easily. Because the max outdegree is 2 , I told the array representation, where it is easier to detect backwards links by just checking if the A[child] > A[parent]. He agreed and then asked me for another representation using links.I told him to add a visited flag to  the usual node structure. He then asked me to write the code. He was not comfortable with the structure of my program .So I wrote the same in the form that he wanted.
+
+3) Given a linked list Write a code to return another linked list having the last n elements. Kept askin me to refine the algo till I got the optimal one.
+ 
+--------------------------
+informal( Mr. Adam):
+
+ I still dont know if it was an informal intv or a simple chat. Any way he asked me abt my rank,  my oncampus placement, youth parliament(it was there in the cv) , family etc. I had included french in my cv as one of the langs, so he asked how good I was in it. When I said that I dont remember anything, he taught me few things in french and asked me to translate a few things for him in Hindi, tamil and swahili.. 
+ 
+Hope this mail helped..
+ 
+bye
+harini.kp
+ 
+/*******************************************************************/
+
+Praveen DS questions
+
+Hi,
+  The questions asked in Trilogy for me:
+Round 1:(Sudhakiran- popularly called 'Meesai'):
+1.  You are given an implementatio of a stack.  You can use any no of stacks you want.  Give me an optimal implementation (with less push and pops) of a queue(enque and deque).
+2.  You are given an array of size n ( 0 to n-1).  You have to populate the array with numbers(0 to n-1) using a rand(i,j) function, which when given integers i,j returns an integer from i to j.  One constraint is that array[i] should not be equal to i.  Give me  a solution.  (it should be complete, please note that a rand func neednot give all distinct numbers from 0 to n-1).
+3.  There is an n-ary Tree.  I am asked to give optimal implementations for having a write lock and read lock with some constraints.
+ 
+4.  One on binary tree asking to swap links and stuff.
+ 
+Round 2:(Dharma-Author of 'How to work with Microsoft for 21 days'-just kidding):
+ 
+1. An array is given.   a sum 'S' is given.  Return any pair (a,b) from the array such that a+b =s in 0(n)time.  If needed you can use extra space.
+ 
+2. Write code for merging two binary search trees in 0(n) time.
+/*****************************************************************/
+Arunachalam Questions
+
+I Interview (Kapil):
+ 
+1.What is the output of the following program?
+foo(node *head)
+{
+ node *temp=head;
+ head=head->next;
+ free(temp);
+}
+ 
+main()
+{
+ node *head;
+ //head points to a list 1->2->3
+ foo(head);
+ print(head);//a fn that prints the list
+}
+ 
+2. Given a binary tree as input (not a binary search tree), WAP that prints any one path from the root to one of the leaves that sums up to the given "sum".
+ 
+3. Given n Sets A,B,C,... print their cartesian product.
+i.e., if A is {a1,a2,a3}
+ B is {b1,b2}
+ C is {c1,c2,c3,c4}
+ then A x B x C which is {a1*b1*c1, a1*b1*c2, ... a3*b2*c4} should be printed.
+ 
+4. Given inorder and preorder construct the binary tree.
+ 
+5. Given n print all permutations of numbers from 1 to n.
+ 
+II Interview (Dharma):
+ 
+6. Given a binary search tree, and two nodes in it find the common ancestor nearest to them.
+ 
+7. Given an array of size n in random order, find all pairs of numbers that sums up to the given "sum".
+ 
+8. How will you effectively remove duplicates from an unsorted array?
+ 
+9. Given two binary search trees, how will you merge them effectively.
+ 
+10. WAP to construct a binary tree from a sorted array.
+ 
+11. WAP to print a binary tree in its tree structure. Assume that a fn print(value, x, y) prints the value in the position (x,y) on the screen.
+ 
+Friendly,
+Arunachalam.T
+ 
+/*********************************************************************/
+
+Raghuram questions
+
+Hi all,
+
+Interview 1:(Kapil)
+1) Write a C code to print the height of each node as you traverse the entire tree.
+2) Write a C code to reverse a linked list
+3) Given a number say 'x' , find the path from root to any leaf in a binary search tree and print the path.
+
+Interview 2:(Dharma anna)
+1) Given an array of integers, and a number say 'x' find the pair of integers in the array a,b such that a+b = x;
+I was asked to do this in 0(n*n),then 0(nlogn) and finally 0(n).
+
+2) How will you remove duplicates from an array in o(n).
+3) Merge 2 binary trees. I was asked to do this in 0(nlogn) and then 0(n)
+I was later asked to write the C code for this.
+4) Find the largest palindromic substring in a given string.
+    Solutions in both 0(n*n*n) and 0(n*n)
+5) A debugging question based on finding a palindromic substring
+6) A question regarding fixing key values in a Trie data structure. Took a long time for this. The property of trie is that it's an n-ary tree and this was given as a clue.
+
+7) A question based on graphs. More of an analytical puzzle. As a clue , I was asked to draw a graph and examine it analytically.
+
+Interview 3:(Jim)
+1) the foo question which was asked to all. The code was a mixture of Java, C and C++ but still he expected some output.
+2) Write a string tokeniser.
+
+char * strtok(char *str,char *delim)
+
+returns the first token or string till any char in delim is found.
+If (strtok(str," ") is called it returns John first time.
+A further call say strtok(NULL," ") should return 
+"is" and so on.
+
+3) Write a program to print permutations of  a string
+4) Write a C code to delete a node in a binary tree
+
+All the best for attending other interviews.
+Bye,
+Raghu 
+
+/*****************************************************************/
+
+Ramasamy questions
+
+Hi friends,
+following is the set of non-repeated questions.
+
+Interview 1(Mr Jim singh)
+
+1.A code was gn to be debugged.It had a few problems
+with the pointer manipualtion.
+
+2.Tree deletion
+
+3.Given an array of +ve & -ve integers,find the sub
+array with maximum sum
+
+4.Non recursive in-order traversal.(One recursive call
+was to be eliminated without a stack)
+
+Interview 2:
+(Dharma)
+
+1.Common ancestor of gn 2 nodes in a tree.No extra
+space to be used.Gave default solns immediately.Asked
+to improve upon them.
+
+2.Heaps-their representation & root deletion.
+
+3.Gn a trie,insert a string & retrieve it. The
+insertion shud return a key & the key shud be
+independent of the string being stored.Minimal space
+is to be used.The retrieval shud involve the passing
+of the key.Gave 2 different solns(which either had
+overhead or approximation problems) & finally with a
+few clues,bumped on the optimal soln.
+
+That's it,
+bye,
+Rams.
+ 
+/******************************************************************/
+
+Sai questions
+
+ Interview I (Dharma anna):
+Q1. Given two arrays of size n each, what will be the median of the merged array? When I gave him the obvious solution that I could think of, he wanted me to optimize the algo and bring down the complexity to log n. Did that too.
+Q2. How would you insert a node in a heap? Choose any way of represting the heap and write the code in C. When I gave him the solution, he (at a later point in time) wanted me to tell him as to how I would do away with the swapping of the parent and the child node each time? This apparently reduces the assignments to 1/3 of the original one.
+Q3. You are given a stream of increasing (or perhaps non-decreasing) integers. You have to construct a binary search tree in such a way that the tree isn't skewed. What strategy will you adopt so that the tree you get satisfies all the properties of a binary search tree, is kind of balanced and is amenable to searching for a particular value given to it earlier during input? You shouldn't use and extra storage other than the tree space.
+
+Interview II (Mr. Jim Singh)
+Q1. Some foo question similar to the one given to Prasanna. Had to show the heap and stack areas and the output of the program. Next, he asked me to change the code so that it gave a different result.
+Q2. How would you delete a node from a binary search tree? Write the code in C.
+Q3. The string permutation question that Anto had written about. Same thing I guess with small variations. Basically wanted me to think recursively and had to assess its complexity when done. 
+
+So those were the questions I got. Others who had a different question set, please do mail them to techxperts. 
+
+Have a pleasant day...
+Regards,
+Sai A.
+
+/*****************************************************************/

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eightqueens.iml" filepath="$PROJECT_DIR$/.idea/modules/eightqueens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eightqueens-build.iml" filepath="$PROJECT_DIR$/.idea/modules/eightqueens-build.iml" />
+    </modules>
+  </component>
+</project>

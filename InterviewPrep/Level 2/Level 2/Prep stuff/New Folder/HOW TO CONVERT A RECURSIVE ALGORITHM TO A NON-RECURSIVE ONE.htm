@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0137)file://\\vicp1cvvdsp01\Citrix_Common\Citrix_Download_04\HOW%20TO%20CONVERT%20A%20RECURSIVE%20ALGORITHM%20TO%20A%20NON-RECURSIVE%20ONE.htm -->
+<!-- saved from url=(0056)http://www.cmpe.boun.edu.tr/~akin/cmpe160/recursion.html --><HTML><HEAD><TITLE>HOW TO CONVERT A RECURSIVE ALGORITHM TO A NON-RECURSIVE ONE</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-9">
+<META content="MSHTML 6.00.2800.1529" name=GENERATOR>
+<META content="Mozilla/4.51 [en] (Win98; I) [Netscape]" name=GENERATOR></HEAD>
+<BODY>
+<CENTER>
+<H1><B>HOW TO CONVERT A RECURSIVE ALGORITHM TO A NON-RECURSIVE ONE</B> 
+<HR width="100%">
+</H1></CENTER>( i)&nbsp;&nbsp;&nbsp; At the beginning of the function, code is 
+inserted which declares a stack (called recursion stack) and initializes it to 
+be empty. In the most general case, the stack will be used to hold the values of 
+parameters, local variables, and a return address for each recursive call. We 
+might prefer to use a separate stack for each value. <BR>(ii)&nbsp;&nbsp;&nbsp; 
+The<I> </I>label 1 is attached to the first executable statement. 
+<BR>(iii)&nbsp;&nbsp;&nbsp; If this is a value returning function, then replace 
+all appearances of the function name on the left hand side of assignment 
+statements by a new variable, say z, of the same type as the function. 
+<OL></OL>Now, each recursive call is replaced by a set of instructions which do 
+the following: 
+<P>(iv)&nbsp;&nbsp;&nbsp; Store the values of all pass by value parameters and 
+local variables in the stack. The pointer to the top of the stack can be treated 
+as global. <BR>(v)&nbsp;&nbsp;&nbsp; Create the i-th new label, i, and 'store i 
+in the stack. The value i of this label will be<B> </B>used as the return<B> 
+</B>address. This label is placed in the program as described in rule (vii). 
+<BR>(vi)&nbsp;&nbsp;&nbsp; Evaluate the arguments of this call that correspond 
+to pass by value parameters (they may be expressions) and assign these values to 
+the appropriate formal parameters. <BR>(vii)&nbsp;&nbsp;&nbsp; Insert an 
+unconditional branch to the beginning of the function. 
+<BR>(viii)&nbsp;&nbsp;&nbsp; If this is a void function, add the label created 
+in (v) to the statement immediately following the unconditional branch. In case 
+this statement already has a label, change it and all references to it to the 
+label created in (v). If this is a value returning function then follow the 
+unconditional branch by code to use the value of the variable z in the same way 
+the function value was used earlier. The first statement of this code is given 
+the label that was created in (v). </P>
+<P>These steps are sufficient to remove all recursive calls from the procedure 
+or function. Finally, we need to precede the last end statement of the function 
+by code to do the following: </P>
+<P>(ix)&nbsp;&nbsp;&nbsp; If the recursion stack is empty, then assign the value 
+of z to the function name and execute a normal end of function in case this is a 
+value returning function. In the case' of a void function, we simply execute a 
+normal end of function. <BR>(x)&nbsp;&nbsp;&nbsp; If the stack is not empty, 
+then restore the value of all pass by value parameters and of all local 
+variables. These are at the top of' the stack. Use the return label from the top 
+of the stack and execute a branch to this label. This can be done using a case 
+statement.<BR>(xi)&nbsp;&nbsp;&nbsp; In addition, the label (if any) attached to 
+the end of procedure or function statement is moved to the first statement of 
+the code for (ix) and, (x). </P></BODY></HTML>

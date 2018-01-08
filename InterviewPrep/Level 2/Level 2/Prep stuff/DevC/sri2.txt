@@ -1,0 +1,62 @@
+--- Sadeesh Kumar <sadeesh_au@yahoo.co.in> wrote:
+> hai friends,
+>     The answers for the questions(sent in the
+> previous
+> 
+> mail ) are given below..
+> 
+> Answers:
+> 
+
+> 6.   C program:
+>       void main( )
+>       {
+>             char str[2][12] = {"A is bigger","B is bigger"};
+>             int A,B;
+>             int i;  
+>             scanf( "%d %d",&A,&B);
+>             i = A - B;                  //     sign bit is set
+> in i if A is less not set if B is less
+>             i>>15;                      //     extract that
+> sign
+> bit
+>             printf("%s",str[i]);
+>       }
+  You got it wrong!  What is that magic number 15??
+(Is Turbo C++ there in Trilogy? ;)
+In 32 bit chips, integer is 32 bits in size ..!! I
+have got a platform independent solution ..
+&((~0)^(~0>>1))
+
+  printf(str[(B-A)&((~0)^(~0>>1))])
+
+  How's that.
+
+  (Note to sadeesh: the answer I sent was wrong, this
+is the correct one. Update your database)
+
+> 
+> 
+> 10.  Solution:
+>       inorder(T)
+>       {
+>             while( T!=null )               // if replaced by
+> while----------------------change 1
+>             {
+>                   inorder( left(T) );     // first  recursive call
+>                   Write(T);
+>                   T = right(T);          // second recursive call
+> eliminated by this statement...-------change 2
+>             }
+>       }
+> 
+
+  If you're expecting this specific answer, then the
+question should be reframed to include the term `tail
+recursion` in that.  Otherwise (due to ambiguity of
+question) there can exist many solutions.
+
+=====
+---
+Sridhar R
+WWW: http://cs.annauniv.edu/~rsridhar

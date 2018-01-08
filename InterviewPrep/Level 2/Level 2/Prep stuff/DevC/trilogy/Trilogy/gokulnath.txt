@@ -1,0 +1,24 @@
+Hi friends,
+
+My interview questions are as follows.
+
+Interview 1. (Jim and Sudhakeran - pool side interview)
+
+1.  Some java language speific questions.
+
+2.  Code to delete a node from the binary search tree.
+
+3.  Reverse the words in the sentence.  eg. john is a boy - boy a is john.
+
+4.  In a binary tree, the right & left pointers in the leaf nodes points to the ancestors.  Remove them.
+
+Interview 2. (Dharma & Manikandan)
+
+All the questions are the repetition of earlier mailed questions.
+
+bye.
+
+friendly,
+
+gokul.
+

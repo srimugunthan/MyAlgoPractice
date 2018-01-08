@@ -1,0 +1,59 @@
+lets these mail ambugal from each side stop
+with this mail..
+(leave it ..enna vitruda ..)
+
+
+
+
+
+
+--- Sridhar R <sridharinfinity@yahoo.com> wrote: > 
+> --- Sadeesh Kumar <sadeesh_au@yahoo.co.in> wrote:
+> > To sridhar,
+> > (dei enda torture panre)
+> We're learning not torturing others. Take it easy.
+> 
+> > 
+> > 6.i havent said that your answers are wrong..
+>   
+>   Of course my answer for this question was wrong,
+> but
+> I have given the correct solution in my previous
+> mail.
+> 
+> > The magic number 15 can be eliminated by using the
+> >                 sizeof(int)
+> >  (from this we can get the number of bits of  the 
+> > platform)..
+> 
+>   A byte should not necessarily contain only 8 bits.
+> 
+> It can even be 9 bits.  To verify this u should
+> check
+> out the source code of GCC or see this page
+>
+http://gcc.gnu.org/ml/gcc-patches/2001-04/msg00246.html
+> 
+>   Also see
+>
+http://whatis.techtarget.com/definition/0,,sid9_gci213816,00.html
+> 
+> HTH
+> 
+> 
+> =====
+> ---
+> Sridhar R
+> WWW: http://cs.annauniv.edu/~rsridhar
+> 
+> 
+>       
+>             
+> __________________________________
+> Do you Yahoo!?
+> Friends.  Fun.  Try the all-new Yahoo! Messenger.
+> http://messenger.yahoo.com/  
+
+=====
+enjoy every moments of life
+              saddy

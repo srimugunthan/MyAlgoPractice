@@ -2,6 +2,7 @@ package com.test.practice;
 
 import java.util.concurrent.*;
 
+//http://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples/
 public class Main {
 
     public static void main(String[] args) throws InterruptedException, ExecutionException{

@@ -1,0 +1,91 @@
+Hi all,
+Questions asked to me in the two interviews follows.
+
+Bye,
+Prasanna Srinivasan V
+
+Trilogy Interview Questions.
+
+There were two technical interviews and one informal
+HR interview (so informal that I didn't know she was
+interviewing me until the end).
+
+1st Technical Interview
+
+1. What will be the output?
+
+Integer foo (Integer X)
+{
+	X = new Integer (7);
+
+	return X;
+}
+
+p s v m ()
+{
+	Integer Y = new Integer (3);
+	foo (Y);
+	S. O. P (Y);
+}
+
+If it were a C++ code, and values are passed by
+reference, what will be the output? Draw the heap &
+explain.
+
+2. Write a code for strcmp ();
+
+3. Given a 2D char array of order n and a fn taking
+char[] as arg and returning true if it is a valid
+dictionary word, find all the
+words in the 2D array. The words can be the rows of
+the array, cols or diagonals and all their substrings.
+for eg.
+a v r
+b c l
+m a t
+Then ur code shd chk for all the rows and their
+substrings i.e. avr, bcl, mat, av, vr, bc, cl, ma, at 
+all the cols and their substrings abm, vca, rlt etc. 
+and all diagonals and their substrings act, ct, ba,
+vl, vb, la, rcm, rc, cm.
+
+4. Given a binary tree (not search tree) with threads
+from some of the leaf node's right link to any node to
+its right. Remove these unwanted links.
+
+2nd Technical Interview
+
+1. There are 100 floors in a building, u r given 2
+glass balls. If a ball is dropped from rth floor and
+it breaks, it will break from all
+the floors from r+1 to 100. Find the first such floor.
+i.e., the floor r such that if dropped from 1 to r -1
+it doesn't break and from r to 100, it breaks.
+Algo shd be optimal.
+
+2. Convert a tree to a doubly linked list. order not
+important.
+
+3. Write a TreeIterator class with next fn returning
+the next node in pre-order traversal.
+
+4. Change it do in-order traversal
+
+Semi-formal HR Interview
+
+1. Describe urself
+
+2. where were u placed?
+
+3. What work u wud do at Juno?
+
+4. If selected, what work wud u do in Trilogy?
+
+5. Have u been to b'lore?
+
+6. Do u have any girl friends?
+
+7. What u expect in Trilogy?
+
+In between I asked her many questions.
+

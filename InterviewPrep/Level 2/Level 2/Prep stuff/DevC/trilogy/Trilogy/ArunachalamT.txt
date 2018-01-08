@@ -1,0 +1,291 @@
+Hi friends,
+here is my(Arunachalam T) algos to some questions asked to Arunachalam T(my favourite senior)
+who is almost similar to me (smiling face,interested in debugging ,poor in studying)
+
+1.It will print some garbage values.
+
+since head is passed by value to foo so that the change head = head-> next
+will not take place in main and head is freed so that in main Now head contains a garbage value.
+so some garbage.
+//But I am getting contradictory results with gcc i.e output is 0 2 3 . I need some clarifications.
+
+2.First do any traversal of binary tree and initialize their distance from
+root . Then again do the same traversal and if the two children are NULL
+pointer then print the value.
+
+An algo would be like
+consider a BTreee like this
+node{
+	int data;
+	int Distance /* this could be eliminated by data structure of your own*/
+	node* lptr;
+	node* rptr;
+}
+
+Algo 
+	Have an array of length n //n is the max.height of the tree
+	i.e int array[n];//assume array is global
+	root->Distance = root->data;
+	call fun initDistance(root,root->value) ;
+	call fun print(root,findVal,0)
+
+fun initDistance(node *ptr,int val){
+	if(ptr == NULL)
+		return;
+	node->Distance = val + node->data;
+	call initDistance(ptr->lptr,node->Distance);
+	call initDistance(ptr->rptr,node->Distance);
+}
+fun print(node *ptr,int findVal,int index)
+{
+	if(ptr == NULL)
+		return;
+	if(ptr->Distance == findVal &&ptr->lptr == NULL &&ptr->rptr == NULL){
+		print array
+		exit 
+	}
+	array[index] = ptr->data;
+	call print(ptr->lptr,findVal,index+1);
+	call print(ptr->rptr,findVal,index+1);
+	
+}
+
+3.This can be easily done using the recursion
+For non recursive solution refer Data Structures and Algos by Tondo and Cruse
+to how to convert Direct recursion into a non recursive Stack Implementation
+
+Algo
+Assume max[n] array contains the maximum of each variable
+ if A is {a1,a2,a3}
+	B is {b1,b2}
+	C is {c1,c2,c3,c4}
+max[1] contains 3
+max[2] contains 2
+
+Assume array[n][]  contains all the data
+Assume value is a global array of length n
+call cartesian
+
+fun cartesian(int num){
+	if(num == n+1)
+		print value;
+	for(index = 1; index <= max[num];index++){
+		value[num] = array[num][index];
+		call cartesian(num+1);
+	}
+}
+
+4.  INORDER TRAVERSAL -  LEFT , DATA , ROOT
+    PREORDER TRAVERSAL - DATA, LEFT ,ROOT	
+	given this here is my algo to construct the tree
+         My algo works only when all the elements are distinct(remember in BTree we insert a element with lesser value as 
+left child and Greater value as right child if equal (?????I don't know) .It is easy to modify this to work
+with repeatetion too there we have to BackTrack.
+
+Algo Construct tree
+	node *root;
+	root = CreateTree(0,n,0,n);
+	
+//Assume this function returns a pointer to node
+//Inorder[n] contains all the elements of inorder traversal
+//Preorder[n] contains all the elements of Preorder traversal
+fun CreateTree(int in_start,int in_end,int pre_start,int pre_end){
+	int temp1,temp2;
+	node *new;
+	if(in_start <= in_end)
+		return NULL;
+	
+	new->data = Preorder[pre_start];
+
+	for(temp1 = in_start;temp1 < in_end; temp1++){
+		if(Inorder[temp1] == Preorder[pre_start])
+			break;
+	}
+	
+	for(temp2 = pre_start;temp2 < pre_end;temp2 ++){
+		if(Preorder[temp2] == Inorder[temp1 - 1])
+			break;
+	}
+	new->lptr = CreateTree(in_start,temp1-1,pre_start+1,temp2);
+	new->rptr = CreateTree(temp1,in_end,temp2,pre_end);
+	
+}
+It is more difficult to understand .But I illustrate it with an example.
+
+		1
+	    /	         \
+	2			3
+    /      \		    /      \
+4		5	6		7
+
+For the above BTree  Inorder Traversal - 4 2 5 1 6 3 7
+		    Preorder Traversal - 1 2 4 5 3 6 7
+length 7;
+
+1) root = CreateTree(0,7,0,7);
+
+In create tree algo
+	new->data = 1;
+	
+	temp1 = 4;//Index in inoder array which has the value equal to Preorder[start];
+	temp2 = 4;//Index in Preorder array which marks the end of left subtree 
+	 	  //Value equal to Inorder[temp1 - 1];
+	Now call CreateTree(0, 3, 1, 4) // Which will consider This left subtree as a Btree creates this tree
+					// and returns the Pointer to the root of this Btree
+	Now call CreateTree(4, 7 , 4, 7) //Which will consider This right subtree as a Btree creates this tree
+					//and returns the Pointer to the root of this Btree.
+
+
+
+
+5.Permutation is more or less similar to algo 3
+Here is the algo given in SAHNI
+
+Assume : str[n] contains the string to be permuted
+	n is a global variable
+
+Algo Permute
+	call (str,0)
+fun Permute(String str,int num){
+	int i;
+	if(num == n)
+		Print str
+	for(i = num;i < n ;i ++){
+		swap(str,i,num);
+		Permute(str,num+1);
+		swap(str,i,num;
+	}
+}
+
+Here is my program(I had done it long back to create permutation without repetition)
+int proc[100];
+int main()
+{
+	int permute(char *,int ,int,int);
+	char str[10];
+	int i,j;
+	fprintf(stderr,"\n ENTER THE STRING TO BE PERMUTED\n");
+	fflush(stderr);
+	scanf("%s",str);
+	permute(str,0,strlen(str),0);
+	return 0;
+}
+
+int permute(char *a,int k,int n,int top)
+{
+	int start,tos;
+	start = tos = top;
+	if(k == n-1)
+			printf("%s\n",a);
+	else
+	{
+		int i,temp,ans;
+		int l;
+		for(i=k;i<n;i++)
+		{
+			ans = 0;
+			for(l = start;l < tos;l++)
+			{
+				if(proc[l] == a[i] )
+				{
+					ans = 1;
+					break;
+				}						
+			}
+			if(ans)
+				continue;
+			proc[tos++]=a[i];
+			temp = a[i];
+			a[i] = a[k];
+			a[k] = temp;
+			permute(a,k+1,n,tos);
+			temp = a[i];
+			a[i] = a[k];
+			a[k] = temp;
+			
+		}
+	}
+}
+// this code is taken from my permutation program which generetes non repeative permutation
+
+6.
+algo
+Traverse upto the root and store them
+then print the value that is last equal.
+In this problem assume that each node contains a link to the parent node.(other wise the problem is tedious
+Any how we can solve it  by traversing in Inorder and poping the stack when we found it).
+		1
+	    /	         \
+	2			3
+    /      \		    /      \
+4		5	6		7
+
+Assume for 6 the data structure contains 6 3 1
+for 7 it contains 7 3 1
+
+so traverse till they are equal
+i.e  1 and 3
+
+and print 3
+
+7.Algo
+	Sort the array
+	Remove Duplicates
+	Have a front pointer and back pointer 
+	 	i.e front = 0;
+		     back = n-1;
+	//This loop will print all the elements that sum up to x
+	int add;
+	while(front < back){
+		add = array[front] + array[back];
+		if(add == x)
+			print elements;front++,back--;
+		else
+		if(add < x)
+			front ++;
+		else
+			back --;
+		
+	}
+
+8.
+Algo remove Duplicates
+	Sort the array
+	int first = 0;
+	int second = 1;
+	for(; second < n;second ++){
+		if(array[first] == array[second])
+			second ++;
+		else
+			array[++first] == array[second ++];
+	}
+
+9.I don't even Know what is Binary search Tree. So I don't know the answer to this question.
+
+10.I can't understand this question clearly .What are the restrictions to create this binary tree. I think it would be heap.
+
+11.
+Algo
+	//Assume maxlen  is the maximum length of the screen
+	call printTree(root,0,maxlen/2);
+
+fun printTree(node *ptr,int x,int y){
+	if(ptr == NULL)
+		return;
+	print(node->data,x,y);
+	printTree(node->lptr,x+1,y-1);
+	printTree(node->rptr,x+1,y+1);
+}
+
+Next time I will send u all the c codes for the above problems
+
+My solutions are correct but not optimal(Hope so.If u found a bug please report it a2zaruna@yahoo.co.in).
+But optimal solutions are hard to understand(something like Pirama's theory).
+
+I request someone like Pirama,Ashok ,Jegan,Bhuvanesh to comeup with optimal solutions and with some explanations
+that is easier to understand even for students like me.
+
+Prepare well for ur Campus
+
+with regards
+a2zaruna

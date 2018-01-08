@@ -1,0 +1,807 @@
+
+<HTML>
+
+<!-- Mirrored from www.cracktheinterview.com/pages/0_2.html by HTTrack Website Copier/3.x [XR&CO'2005], Tue, 27 Dec 2005 17:49:15 GMT -->
+<HEAD>
+<TITLE>CRACK THE INTERVIEW - How do you sort a linked list? Write a C program to sort a linked list.  (www.cracktheinterview.com)</TITLE><style type="text/css">
+<!--
+.breakhere     {page-break-before: always}
+
+A:link         {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:9pt; color:#996633} 
+A:active       {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:9pt; color:#000000} 
+A:visited      {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:9pt; color:#996633} 
+
+H1             {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:12pt; font-weight:bold; color:#336699} 
+H2             {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:small; font-weight:bold} 
+.normal        {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:9pt; color:#000000} 
+.announce      {font-family:Verdana, Arial, Helvetica, Geneva,
+                sans-serif; color:#000000} 
+.announceLink  {font-family:Verdana, Arial, Helvetica, Geneva,
+                sans-serif; color:#336699} 
+.note          {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:8pt ! important; font-weight:normal} 
+.system        {font-family:Courier New, Courier; font-size:x-small;
+                font-weight:normal} 
+.stayblue      {color:#336699 ! important}
+.title         {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:larger ! important} 
+.error         {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:small; color:#aa0000; font-weight:bold} 
+.notelink      {font-family:Arial, Helvetica, Geneva, sans-serif;
+                color:#336699 ! important; font-weight:normal;
+                font-size:9pt ! important} 
+.tableHeader   {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:10pt; color:#336699; font-weight: bold;
+                background-color:#3284FF} 
+.tableHeaderSmall {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:8pt; color:#336699; font-weight: bold;
+                background-color:#3284FF} 
+.tableRow      {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:10pt; color:black; font-weight: normal;
+                background-color:#f7f7e7} 
+.tableBlank    {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:10pt; color:black; font-weight: normal;
+                background-color:#ffffff} 
+.hardlink      {font-family:Arial, Helvetica, Geneva, sans-serif;
+                color:#336699 ! important; font-weight:bold;
+                font-size:8pt ! important} 
+.boxlink       {font-family:Arial, Helvetica, Geneva, sans-serif;
+                color:#000000 ! important; font-weight:normal;
+                font-size:8pt ! important} 
+.hardnote      {font-family:Arial, Helvetica, Geneva, sans-serif;
+                color:black ! important; font-weight:normal;
+                font-size:8pt ! important} 
+.tableRowSmall {font-family:Verdana, Arial, Helvetica, Geneva,
+                sans-serif; font-size:8pt; color:black; font-weight:
+                normal} 
+.tableRowSmallBold {font-family:Verdana, Arial, Helvetica, Geneva,
+                sans-serif; font-size:8pt; color:black; font-weight:
+                bold} 
+.blueHeading   {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:12pt! important; font-weight:bold;
+                color:#336699! important} 
+.blueHeadingLarge {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:16pt! important; font-weight:normal;
+                color:#336699} 
+.blueHeadingMid {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:12pt! important; font-weight:normal;
+                color:#336699}
+.blueHeadingSmall {font-family:Arial, Helvetica, Geneva, sans-serif;
+                font-size:10pt! important; font-weight:bold;
+                color:#336699} 
+.tableHeaderV  {font-family:Verdana,Arial, Helvetica, Geneva, sans-serif;
+                font-size:8pt; color:#336699; font-weight: bold;
+                background-color:#3284FF} 
+.tableRowV     {font-family:Verdana,Arial, Helvetica, Geneva,
+                sans-serif; font-size:8pt; color:black; font-weight:
+                normal; background-color:#f7f7e7} 
+.just          {text-align: justify}
+-->
+</style>
+
+<META NAME="keywords" CONTENT="interview,C,sort,linked list">
+<META NAME="description" CONTENT="How do you sort a linked list? Write a C program to sort a linked list. ">
+<META NAME="robots" CONTENT="FOLLOW,INDEX">
+<META HTTP-EQUIV="no-cache">
+<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT">
+
+</HEAD>
+<BODY background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  >
+<TABLE background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  BORDER=0 cellpadding=10>
+
+
+
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=100%% valign=top colspan=2><CENTER><A HREF="../index.html"  webstripperwas="../index.html" ><IMG SRC="../images/logo2.jpg"  webstripperwas="../images/logo2.jpg" border=0></img></A></CENTER></TD>
+
+
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=100%% valign=top colspan=2>
+<CENTER>
+
+
+<!--START:ADS0-->
+
+<script type="text/javascript">
+<!--
+google_ad_client = "pub-4208362929074433";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666.html";
+google_color_text = "333333";
+//-->
+</script>
+<script type="text/javascript"
+  webstripperattrwas="src"  webstripperlinkwas="../../pagead2.googlesyndication.com/pagead/show_ads.js" >
+</script>
+
+
+
+<!--END-->
+
+
+</CENTER>
+</TD>
+</TR>
+
+
+
+
+
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=100%% valign=top colspan=2><CENTER>
+
+<!--START:LINKS-->
+
+
+<TABLE background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  BORDER=0 cellpadding=10>
+<TR><TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A HREF="../index.html"  webstripperwas="../index.html" target="_top"><font class=announcelink>Home</font></A><BR>
+</TD>
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A HREF="../adfaqpublish.html"  webstripperwas="../adfaqpublish.html" target="_top"><font class=announcelink>Questions</font></A><BR>
+</TD>
+
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A href="Dial Protected"  webstripperwas="../search.html"  onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../search.html?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../search.html'}else{href='javascript:void(0)'}" onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../search.html?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../WebStripper/protected.html#link=http://profile.iiita.ac.in/kvenkateswa_is04/search.html'}else{href='javascript:void(0)'}" onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../search.html?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../WebStripper/protected.html#link=http://profile.iiita.ac.in/kvenkateswa_is04/search.html'}else{href='javascript:void(0)'}" onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../search.html?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../WebStripper/protected.html#link=http://profile.iiita.ac.in/kvenkateswa_is04/search.html'}else{href='javascript:void(0)'}" onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../search.html?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../WebStripper/protected.html#link=http://profile.iiita.ac.in/kvenkateswa_is04/search.html'}else{href='javascript:void(0)'}" target="_top"><font class=announcelink>Search</font></A><BR>
+</TD>
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A HREF="Dial Protected"  webstripperwas="../forum/index.html"  onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../forum/index.html?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../forum/index.html'}else{href='javascript:void(0)'}" onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../forum/index.html?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../WebStripper/protected.html#link=http://profile.iiita.ac.in/kvenkateswa_is04/forum/index.html'}else{href='javascript:void(0)'}" onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../forum/index.html?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../WebStripper/protected.html#link=http://profile.iiita.ac.in/kvenkateswa_is04/forum/index.html'}else{href='javascript:void(0)'}" onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../forum/index.html?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../WebStripper/protected.html#link=http://profile.iiita.ac.in/kvenkateswa_is04/forum/index.html'}else{href='javascript:void(0)'}" onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../forum/index.html?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../WebStripper/protected.html#link=http://profile.iiita.ac.in/kvenkateswa_is04/forum/index.html'}else{href='javascript:void(0)'}" target="_top"><font class=announcelink>Forum</font></A><BR>
+</TD>
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A href="mailto:cracktheinterview@gmail.com?subject=Hi!"><font class=announcelink>Contact</font></A><BR>
+</TD>
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A href="Dial Protected"  webstripperwas="../forum/viewforum12a312a3.html?f=2"  onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../forum/viewforum12a312a3.html?f=2?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../forum/viewforum12a312a3.html?f=2'}else{href='javascript:void(0)'}" onclick="if(confirm('2?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='2'}else{href='javascript:void(0)'}" onclick="if(confirm('2?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='2'}else{href='javascript:void(0)'}" onclick="if(confirm('2?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='2'}else{href='javascript:void(0)'}" onclick="if(confirm('2?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='2'}else{href='javascript:void(0)'}" target="_top"><font class=announcelink>Guest Book</font></A><BR>
+</TD>
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A href="Dial Protected"  webstripperwas="../forum/viewforum4d6b4d6b.html?f=3"  onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../forum/viewforum4d6b4d6b.html?f=3?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../forum/viewforum4d6b4d6b.html?f=3'}else{href='javascript:void(0)'}" onclick="if(confirm('3?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='3'}else{href='javascript:void(0)'}" onclick="if(confirm('3?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='3'}else{href='javascript:void(0)'}" onclick="if(confirm('3?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='3'}else{href='javascript:void(0)'}" onclick="if(confirm('3?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='3'}else{href='javascript:void(0)'}" target="_top"><font class=announcelink>Polls!</font></A><BR>
+</TD>
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  NOWRAP>
+<A href="Dial Protected"  webstripperwas="../forum/viewforum31e631e6.html?f=4"  onclick="if(confirm('WebStripper Dial Protection\n\nAre you sure you want to open the page ../forum/viewforum31e631e6.html?f=4?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='../forum/viewforum31e631e6.html?f=4'}else{href='javascript:void(0)'}" onclick="if(confirm('4?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='4'}else{href='javascript:void(0)'}" onclick="if(confirm('4?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='4'}else{href='javascript:void(0)'}" onclick="if(confirm('4?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='4'}else{href='javascript:void(0)'}" onclick="if(confirm('4?\n\n(To alter dial protection settings open Options|options in WebStripper)')) {href='4'}else{href='javascript:void(0)'}" target="_top"><font class=announcelink>Got a Question?</font></A><BR>
+</TD>
+
+</TABLE>
+
+<!--END-->
+
+</CENTER></TD>
+</TR>
+
+
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=100%% valign=top colspan=2><CENTER> &nbsp; </CENTER></TD>
+</TR>
+
+
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=90%% valign=top>
+
+
+
+
+
+<!--START : DATA-->
+
+
+
+<TABLE background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  BORDER=0>
+
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%><CENTRE><font class=notelink><A HREF="0_1.html"  webstripperwas="0_1.html" >PREV</A></font></CENTRE></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=90%%><center><font class=blueHeading>Linked Lists</font></center></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%><CENTRE><font class=notelink><A HREF="0_3.html"  webstripperwas="0_3.html" >NEXT</A></font></CENTRE></TD></TR>
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%><CENTRE>&nbsp;</CENTRE></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=90%%><CENTER><font class=blueHeading>(3 / 301)</font></center></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%><CENTRE>&nbsp;</CENTRE></TD></TR>
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=90%%><center>&nbsp;</center></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%></TD></TR>
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  COLSPAN=3 width=700 align=left>
+<font class=announceLink><BR><BR><BR>
+<!--THE QUESTION-->
+
+How do you sort a linked list? Write a C program to sort a linked list. <BR>
+<!--END-->
+<BR></font></TD></TR>
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  COLSPAN=3 width=700 align=left>
+<font class=normal>
+<!--THE ANSWER--><BR>
+<!--META:START--><!--interview,C,sort,linked list--><!--META:END--><BR>
+<BR>
+<!--UPDATED--><BR>
+<BR>
+<font class=announcelink>This is a very popular interview question</font>, which most people go wrong. The ideal solution to this problem is to keep the linked list sorted <font class=announcelink>as you build it</font>. Another question on this website teaches you how to insert elements into a linked list in the sorted order. This really saves a lot of time which would have been required to sort it. <BR>
+<BR>
+<BR>
+However, you need to <font class=announcelink>Get That Job</font>....<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink>Method1 (Usual method)</font><BR>
+<BR>
+The general idea is to decide upon a sorting algorithm (say bubble sort). Then, one needs to come up with different scenarios to swap two nodes in the linked list when they are not in the required order. The different scenarios would be something like<BR>
+<BR>
+<CODE><BR>
+1.&nbsp;When&nbsp;the&nbsp;nodes&nbsp;being&nbsp;compared&nbsp;are&nbsp;not&nbsp;adjacent&nbsp;and&nbsp;one&nbsp;of&nbsp;them&nbsp;is&nbsp;the&nbsp;first&nbsp;node.<BR>
+2.&nbsp;When&nbsp;the&nbsp;nodes&nbsp;being&nbsp;compared&nbsp;are&nbsp;not&nbsp;adjacent&nbsp;and&nbsp;none&nbsp;of&nbsp;them&nbsp;is&nbsp;the&nbsp;first&nbsp;node<BR>
+3.&nbsp;When&nbsp;the&nbsp;nodes&nbsp;being&nbsp;compared&nbsp;are&nbsp;adjacent&nbsp;and&nbsp;one&nbsp;of&nbsp;them&nbsp;is&nbsp;the&nbsp;first&nbsp;node.<BR>
+4.&nbsp;When&nbsp;the&nbsp;nodes&nbsp;being&nbsp;compared&nbsp;are&nbsp;adjacent&nbsp;and&nbsp;none&nbsp;of&nbsp;them&nbsp;is&nbsp;the&nbsp;first&nbsp;node.<BR>
+</CODE><BR>
+<BR>
+One example bubble sort for a linked list goes like this (working C code!)....<BR>
+<BR>
+<BR>
+<BR>
+<CODE><BR>
+#include&lt;stdio.h><BR>
+#include&lt;ctype.h><BR>
+<BR>
+typedef&nbsp;struct&nbsp;node<BR>
+{<BR>
+&nbsp;&nbsp;int&nbsp;value;<BR>
+&nbsp;&nbsp;struct&nbsp;node&nbsp;*next;<BR>
+&nbsp;&nbsp;struct&nbsp;node&nbsp;*prev;<BR>
+}mynode&nbsp;;<BR>
+<BR>
+void&nbsp;add_node(struct&nbsp;node&nbsp;**head,&nbsp;int&nbsp;*count,&nbsp;int&nbsp;value);<BR>
+void&nbsp;print_list(char&nbsp;*listName,&nbsp;struct&nbsp;node&nbsp;*head);<BR>
+mynode&nbsp;*bubbleSort(mynode&nbsp;*head,&nbsp;int&nbsp;count);<BR>
+<BR>
+<BR>
+int&nbsp;main()<BR>
+{<BR>
+&nbsp;mynode&nbsp;*head;<BR>
+&nbsp;int&nbsp;count&nbsp;=&nbsp;0;<BR>
+&nbsp;<BR>
+&nbsp;head&nbsp;=&nbsp;(struct&nbsp;node&nbsp;*)NULL;<BR>
+&nbsp;<BR>
+&nbsp;add_node(&head,&nbsp;&count,&nbsp;100);<BR>
+&nbsp;add_node(&head,&nbsp;&count,&nbsp;3);<BR>
+&nbsp;add_node(&head,&nbsp;&count,&nbsp;90);<BR>
+&nbsp;add_node(&head,&nbsp;&count,&nbsp;7);<BR>
+&nbsp;add_node(&head,&nbsp;&count,&nbsp;9);<BR>
+<BR>
+&nbsp;print_list("myList(BEFORE)",&nbsp;head);<BR>
+&nbsp;head&nbsp;=&nbsp;bubbleSort(head,&nbsp;count);<BR>
+&nbsp;print_list("myList(AFTER)&nbsp;",&nbsp;head);<BR>
+<BR>
+<BR>
+&nbsp;getch();<BR>
+&nbsp;return(0);<BR>
+<BR>
+}<BR>
+<BR>
+<BR>
+mynode&nbsp;*bubbleSort(mynode&nbsp;*head,&nbsp;int&nbsp;count)<BR>
+{<BR>
+&nbsp;&nbsp;int&nbsp;i,&nbsp;j;<BR>
+&nbsp;&nbsp;mynode&nbsp;*p0,&nbsp;*p1,&nbsp;*p2,&nbsp;*p3;<BR>
+&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;for(i&nbsp;=&nbsp;1;&nbsp;i&nbsp;<&nbsp;count;&nbsp;i++)<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;p0&nbsp;=&nbsp;(struct&nbsp;node&nbsp;*)NULL;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;p1&nbsp;=&nbsp;head;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;p2&nbsp;=&nbsp;head->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;p3&nbsp;=&nbsp;p2->next;<BR>
+&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;for(j&nbsp;=&nbsp;1;&nbsp;j&nbsp;&lt;=&nbsp;(count&nbsp;-&nbsp;i);&nbsp;j++)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(p1->value&nbsp;>&nbsp;p2->value)&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Adjust&nbsp;the&nbsp;pointers...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p1->next&nbsp;=&nbsp;p3;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p2->next&nbsp;=&nbsp;p1;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(p0)p0->next=p2;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Set&nbsp;the&nbsp;head&nbsp;pointer&nbsp;if&nbsp;it&nbsp;was&nbsp;changed...<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(head&nbsp;==&nbsp;p1)head=p2;<BR>
+<BR>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Progress&nbsp;the&nbsp;pointers<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p0&nbsp;=&nbsp;p2;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p2&nbsp;=&nbsp;p1->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p3&nbsp;=&nbsp;p3->next!=(struct&nbsp;node&nbsp;*)NULL?p3->next:&nbsp;(struct&nbsp;node&nbsp;*)NULL;<BR>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Nothing&nbsp;to&nbsp;swap,&nbsp;just&nbsp;progress&nbsp;the&nbsp;pointers...<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p0&nbsp;=&nbsp;p1;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p1&nbsp;=&nbsp;p2;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p2&nbsp;=&nbsp;p3;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p3&nbsp;=&nbsp;p3->next!=(struct&nbsp;node&nbsp;*)NULL?p3->next:&nbsp;(struct&nbsp;node&nbsp;*)NULL;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;}<BR>
+<BR>
+&nbsp;&nbsp;return(head);<BR>
+}<BR>
+<BR>
+<BR>
+void&nbsp;add_node(struct&nbsp;node&nbsp;**head,&nbsp;int&nbsp;*count,&nbsp;int&nbsp;value)<BR>
+{<BR>
+&nbsp;&nbsp;mynode&nbsp;*temp,&nbsp;*cur;<BR>
+&nbsp;&nbsp;temp&nbsp;=&nbsp;(mynode&nbsp;*)malloc(sizeof(mynode));<BR>
+&nbsp;&nbsp;temp->next=NULL;<BR>
+&nbsp;&nbsp;temp->prev=NULL;<BR>
+<BR>
+&nbsp;&nbsp;if(*head&nbsp;==&nbsp;NULL)<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*head=temp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp->value=value;<BR>
+&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;else<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;for(cur=*head;cur->next!=NULL;cur=cur->next);<BR>
+&nbsp;&nbsp;&nbsp;cur->next=temp;<BR>
+&nbsp;&nbsp;&nbsp;temp->prev=cur;<BR>
+&nbsp;&nbsp;&nbsp;temp->value=value;<BR>
+&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;*count&nbsp;=&nbsp;*count&nbsp;+&nbsp;1;<BR>
+}<BR>
+<BR>
+<BR>
+void&nbsp;print_list(char&nbsp;*listName,&nbsp;struct&nbsp;node&nbsp;*head)<BR>
+{<BR>
+&nbsp;&nbsp;mynode&nbsp;*temp;<BR>
+<BR>
+&nbsp;&nbsp;printf("\n[%s]&nbsp;->&nbsp;",&nbsp;listName);<BR>
+&nbsp;&nbsp;for(temp=head;temp!=NULL;temp=temp->next)<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;printf("[%d]->",temp->value);<BR>
+&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;printf("NULL\n");<BR>
+<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+As you can see, the code becomes quite <font class=announcelink>messy</font> because of the pointer logic. Thats why I have not elaborated too much on the code, nor on variations such as sorting a doubly linked list. You have to do it yourself once to understand it.<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<font class=announcelink>Method2 (Divide and Conquer using Merge Sort)</font> <BR>
+<BR>
+<BR>
+Here is some cool working C code...<BR>
+<BR>
+<BR>
+<CODE><BR>
+#include&lt;stdio.h><BR>
+#include&lt;ctype.h><BR>
+<BR>
+typedef&nbsp;struct&nbsp;node<BR>
+{<BR>
+&nbsp;&nbsp;int&nbsp;value;<BR>
+&nbsp;&nbsp;struct&nbsp;node&nbsp;*next;<BR>
+&nbsp;&nbsp;struct&nbsp;node&nbsp;*prev;<BR>
+}mynode&nbsp;;<BR>
+<BR>
+<BR>
+<BR>
+void&nbsp;add_node(struct&nbsp;node&nbsp;**head,&nbsp;int&nbsp;value);<BR>
+void&nbsp;print_list(char&nbsp;*listName,&nbsp;struct&nbsp;node&nbsp;*head);<BR>
+void&nbsp;mergeSort(struct&nbsp;node**&nbsp;headRef);<BR>
+struct&nbsp;node&nbsp;*merge2SortedLLs(struct&nbsp;node&nbsp;*head1,&nbsp;struct&nbsp;node&nbsp;*head2);<BR>
+void&nbsp;splitLLInto2(struct&nbsp;node*&nbsp;source,&nbsp;struct&nbsp;node**&nbsp;frontRef,&nbsp;struct&nbsp;node**&nbsp;backRef);<BR>
+<BR>
+<BR>
+//&nbsp;The&nbsp;main&nbsp;function..<BR>
+int&nbsp;main()<BR>
+{<BR>
+&nbsp;&nbsp;&nbsp;mynode&nbsp;*head;<BR>
+&nbsp;&nbsp;&nbsp;head&nbsp;=&nbsp;(struct&nbsp;node&nbsp;*)NULL;<BR>
+&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;add_node(&head,&nbsp;1);<BR>
+&nbsp;&nbsp;&nbsp;add_node(&head,&nbsp;10);<BR>
+&nbsp;&nbsp;&nbsp;add_node(&head,&nbsp;5);<BR>
+&nbsp;&nbsp;&nbsp;add_node(&head,&nbsp;70);<BR>
+&nbsp;&nbsp;&nbsp;add_node(&head,&nbsp;9);<BR>
+&nbsp;&nbsp;&nbsp;add_node(&head,&nbsp;-99);<BR>
+&nbsp;&nbsp;&nbsp;add_node(&head,&nbsp;0);<BR>
+<BR>
+&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;print_list("myList",&nbsp;head);<BR>
+&nbsp;&nbsp;&nbsp;mergeSort(&head);<BR>
+&nbsp;&nbsp;&nbsp;print_list("myList",&nbsp;head);<BR>
+<BR>
+&nbsp;&nbsp;&nbsp;getch();<BR>
+&nbsp;&nbsp;&nbsp;return(0);<BR>
+}<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+//&nbsp;This&nbsp;is&nbsp;a&nbsp;recursive&nbsp;mergeSort&nbsp;function...<BR>
+void&nbsp;mergeSort(struct&nbsp;node**&nbsp;headRef)&nbsp;<BR>
+{<BR>
+&nbsp;&nbsp;struct&nbsp;node*&nbsp;head&nbsp;=&nbsp;*headRef;<BR>
+&nbsp;&nbsp;struct&nbsp;node*&nbsp;a;<BR>
+&nbsp;&nbsp;struct&nbsp;node*&nbsp;b;<BR>
+<BR>
+&nbsp;&nbsp;//&nbsp;Base&nbsp;case&nbsp;--&nbsp;length&nbsp;0&nbsp;or&nbsp;1<BR>
+&nbsp;&nbsp;if&nbsp;((head&nbsp;==&nbsp;NULL)&nbsp;||&nbsp;(head->next&nbsp;==&nbsp;NULL))&nbsp;<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;return;<BR>
+&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;//&nbsp;Split&nbsp;head&nbsp;into&nbsp;'a'&nbsp;and&nbsp;'b'&nbsp;sublists<BR>
+&nbsp;&nbsp;splitLLInto2(head,&nbsp;&a,&nbsp;&b);&nbsp;<BR>
+<BR>
+&nbsp;&nbsp;//&nbsp;Recursively&nbsp;sort&nbsp;the&nbsp;sublists<BR>
+&nbsp;&nbsp;mergeSort(&a);&nbsp;<BR>
+&nbsp;&nbsp;mergeSort(&b);<BR>
+<BR>
+&nbsp;&nbsp;//&nbsp;Merge&nbsp;the&nbsp;two&nbsp;sorted&nbsp;lists&nbsp;together<BR>
+&nbsp;&nbsp;*headRef&nbsp;=&nbsp;merge2SortedLLs(a,&nbsp;b);&nbsp;<BR>
+}<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+//&nbsp;This&nbsp;is&nbsp;an&nbsp;iterative&nbsp;function&nbsp;that&nbsp;joins&nbsp;two&nbsp;already&nbsp;sorted&nbsp;<BR>
+//&nbsp;Linked&nbsp;lists...<BR>
+struct&nbsp;node&nbsp;*merge2SortedLLs(struct&nbsp;node&nbsp;*head1,&nbsp;struct&nbsp;node&nbsp;*head2)<BR>
+{<BR>
+&nbsp;&nbsp;&nbsp;struct&nbsp;node&nbsp;*a,&nbsp;*b,&nbsp;*c,&nbsp;*newHead,&nbsp;*temp;<BR>
+&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;a&nbsp;=&nbsp;head1;<BR>
+&nbsp;&nbsp;&nbsp;b&nbsp;=&nbsp;head2;<BR>
+&nbsp;&nbsp;&nbsp;c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;(struct&nbsp;node&nbsp;*)NULL;<BR>
+&nbsp;&nbsp;&nbsp;newHead&nbsp;=&nbsp;(struct&nbsp;node*)NULL;<BR>
+&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;if(a==NULL)return(b);<BR>
+&nbsp;&nbsp;&nbsp;else&nbsp;if(b==NULL)return(a);<BR>
+&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;while(a!=NULL&nbsp;&&&nbsp;b!=NULL)<BR>
+&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(a->value&nbsp;<&nbsp;b->value)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//printf("\na->value&nbsp;<&nbsp;b->value\n");<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(c==NULL)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;&nbsp;=&nbsp;a;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c->next&nbsp;=&nbsp;a;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;=&nbsp;c->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;&nbsp;=&nbsp;a->next;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;if(a->value&nbsp;>&nbsp;b->value)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//printf("\na->value&nbsp;>&nbsp;b->value\n");<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(c==NULL)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;&nbsp;=&nbsp;b;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c->next&nbsp;=&nbsp;b;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;=&nbsp;c->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;&nbsp;=&nbsp;b->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Both&nbsp;are&nbsp;equal.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Arbitraritly&nbsp;chose&nbsp;to&nbsp;add&nbsp;one&nbsp;of&nbsp;them&nbsp;and&nbsp;make<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;sure&nbsp;you&nbsp;skip&nbsp;both!<BR>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(c&nbsp;==&nbsp;NULL)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;&nbsp;=&nbsp;a;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c->next&nbsp;=&nbsp;a;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;=&nbsp;c->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;&nbsp;=&nbsp;a->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;&nbsp;=&nbsp;b->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Make&nbsp;sure&nbsp;the&nbsp;new&nbsp;head&nbsp;is&nbsp;set...<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(newHead&nbsp;==&nbsp;NULL)&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newHead&nbsp;=&nbsp;c;<BR>
+&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;if(a==NULL&nbsp;&&&nbsp;b==NULL)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return(newHead);<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;if(a==NULL)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c->next&nbsp;=&nbsp;b;<BR>
+&nbsp;&nbsp;&nbsp;else&nbsp;if(b==NULL)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c->next&nbsp;=&nbsp;a;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;return(newHead);<BR>
+&nbsp;&nbsp;&nbsp;<BR>
+}<BR>
+<BR>
+<BR>
+//&nbsp;Uses&nbsp;the&nbsp;fast/slow&nbsp;pointer&nbsp;strategy<BR>
+//<BR>
+//&nbsp;This&nbsp;efficient&nbsp;code&nbsp;splits&nbsp;a&nbsp;linked&nbsp;list&nbsp;into&nbsp;two&nbsp;using<BR>
+//&nbsp;the&nbsp;same&nbsp;technique&nbsp;as&nbsp;the&nbsp;one&nbsp;used&nbsp;to&nbsp;find&nbsp;the&nbsp;<BR>
+//&nbsp;middle&nbsp;of&nbsp;a&nbsp;linked&nbsp;list!<BR>
+<BR>
+void&nbsp;splitLLInto2(struct&nbsp;node*&nbsp;source,&nbsp;struct&nbsp;node**&nbsp;frontRef,&nbsp;struct&nbsp;node**&nbsp;backRef)&nbsp;<BR>
+{<BR>
+&nbsp;&nbsp;struct&nbsp;node*&nbsp;fast;<BR>
+&nbsp;&nbsp;struct&nbsp;node*&nbsp;slow;<BR>
+&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;if&nbsp;(source==NULL&nbsp;||&nbsp;source->next==NULL)&nbsp;<BR>
+&nbsp;&nbsp;{&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;length&nbsp;<&nbsp;2&nbsp;cases<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;*frontRef&nbsp;=&nbsp;source;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;*backRef&nbsp;=&nbsp;NULL;<BR>
+&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;else&nbsp;<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;slow&nbsp;=&nbsp;source;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;fast&nbsp;=&nbsp;source->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Advance&nbsp;'fast'&nbsp;two&nbsp;nodes,&nbsp;and&nbsp;advance&nbsp;'slow'&nbsp;one&nbsp;node<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;while&nbsp;(fast&nbsp;!=&nbsp;NULL)&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fast&nbsp;=&nbsp;fast->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(fast&nbsp;!=&nbsp;NULL)&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;slow&nbsp;=&nbsp;slow->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fast&nbsp;=&nbsp;fast->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;'slow'&nbsp;is&nbsp;before&nbsp;the&nbsp;midpoint&nbsp;in&nbsp;the&nbsp;list,&nbsp;so&nbsp;split&nbsp;it&nbsp;in&nbsp;two<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;at&nbsp;that&nbsp;point.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;*frontRef&nbsp;=&nbsp;source;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;*backRef&nbsp;=&nbsp;slow->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;slow->next&nbsp;=&nbsp;NULL;<BR>
+&nbsp;&nbsp;}<BR>
+}<BR>
+<BR>
+<BR>
+void&nbsp;add_node(struct&nbsp;node&nbsp;**head,&nbsp;int&nbsp;value)<BR>
+{<BR>
+&nbsp;&nbsp;mynode&nbsp;*temp,&nbsp;*cur;<BR>
+&nbsp;&nbsp;temp&nbsp;=&nbsp;(mynode&nbsp;*)malloc(sizeof(mynode));<BR>
+&nbsp;&nbsp;temp->next=NULL;<BR>
+&nbsp;&nbsp;temp->prev=NULL;<BR>
+<BR>
+&nbsp;&nbsp;if(*head&nbsp;==&nbsp;NULL)<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*head=temp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp->value=value;<BR>
+&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;else<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;for(cur=*head;cur->next!=NULL;cur=cur->next);<BR>
+&nbsp;&nbsp;&nbsp;cur->next=temp;<BR>
+&nbsp;&nbsp;&nbsp;temp->prev=cur;<BR>
+&nbsp;&nbsp;&nbsp;temp->value=value;<BR>
+&nbsp;&nbsp;}<BR>
+}<BR>
+<BR>
+<BR>
+void&nbsp;print_list(char&nbsp;*listName,&nbsp;struct&nbsp;node&nbsp;*head)<BR>
+{<BR>
+&nbsp;&nbsp;mynode&nbsp;*temp;<BR>
+<BR>
+&nbsp;&nbsp;printf("\n[%s]&nbsp;->&nbsp;",&nbsp;listName);<BR>
+&nbsp;&nbsp;for(temp=head;temp!=NULL;temp=temp->next)<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;printf("[%d]->",temp->value);<BR>
+&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;printf("NULL\n");<BR>
+<BR>
+}<BR>
+</CODE> <BR>
+<BR>
+<BR>
+The code to merge <font class=announcelink>two already sorted</font> sub-linked lists into a sorted linked list could be either <font class=announcelink>iterative or recursive</font>. You already saw the iterative version above. Here is a <font class=announcelink>recursive</font> version of the same...<BR>
+<BR>
+<BR>
+<font class=announcelink>Recursive solution to merge two already sorted linked lists into a single linked list</font><BR>
+<BR>
+<BR>
+<BR>
+<CODE><BR>
+struct&nbsp;node*&nbsp;sortedMergeRecursive(struct&nbsp;node*&nbsp;a,&nbsp;struct&nbsp;node*&nbsp;b)&nbsp;<BR>
+{<BR>
+&nbsp;&nbsp;struct&nbsp;node*&nbsp;result&nbsp;=&nbsp;NULL;<BR>
+<BR>
+&nbsp;&nbsp;if&nbsp;(a==NULL)&nbsp;return(b);<BR>
+&nbsp;&nbsp;else&nbsp;if&nbsp;(b==NULL)&nbsp;return(a);<BR>
+<BR>
+&nbsp;&nbsp;//&nbsp;Pick&nbsp;either&nbsp;a&nbsp;or&nbsp;b,&nbsp;and&nbsp;recur<BR>
+&nbsp;&nbsp;if&nbsp;(a->data&nbsp;&lt;=&nbsp;b->data)&nbsp;<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;a;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result->next&nbsp;=&nbsp;sortedMergeRecursive(a->next,&nbsp;b);<BR>
+&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;else&nbsp;<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;b;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result->next&nbsp;=&nbsp;sortedMergeRecursive(a,&nbsp;b->next);<BR>
+&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;return(result);<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+<BR>
+Also, see how the <font class=announcelink>splitLLInto2()</font> function uses the same technique used to find the middle of a linked list to split a linked list into two <font class=announcelink>without</font> having to keep a count of the number of nodes in the linkes list!<BR>
+<BR>
+Here is another solution (not that great, though) to split a linked list into two. It used the count of the number of nodes to decide where to split<BR>
+<BR>
+<CODE><BR>
+void&nbsp;splitLLInto2(struct&nbsp;node*&nbsp;source,struct&nbsp;node**&nbsp;frontRef,&nbsp;struct&nbsp;node**&nbsp;backRef)&nbsp;<BR>
+{<BR>
+&nbsp;&nbsp;int&nbsp;len&nbsp;=&nbsp;Length(source);&nbsp;//Get&nbsp;the&nbsp;length&nbsp;of&nbsp;the&nbsp;original&nbsp;LL..<BR>
+&nbsp;&nbsp;int&nbsp;i;<BR>
+&nbsp;&nbsp;struct&nbsp;node*&nbsp;current&nbsp;=&nbsp;source;<BR>
+&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;if&nbsp;(len&nbsp;<&nbsp;2)&nbsp;<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;*frontRef&nbsp;=&nbsp;source;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;*backRef&nbsp;=&nbsp;NULL;<BR>
+&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;else&nbsp;<BR>
+&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;hopCount&nbsp;=&nbsp;(len-1)/2;&nbsp;<BR>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(i&nbsp;=&nbsp;0;&nbsp;i&lt;hopCount;&nbsp;i++)&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current&nbsp;=&nbsp;current->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Now&nbsp;cut&nbsp;at&nbsp;current<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;*frontRef&nbsp;=&nbsp;source;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;*backRef&nbsp;=&nbsp;current->next;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;current->next&nbsp;=&nbsp;NULL;<BR>
+&nbsp;&nbsp;}<BR>
+}<BR>
+</CODE><BR>
+<BR>
+<BR>
+Using recursive stack space proportional to the length of a list is not recommended. However, the recursion in this case is ok ? it uses stack space which is proportional to the log of the length of the list. For a 1000 node list, the recursion will only go about 10 deep. For a 2000 node list, it will go 11 deep. If you think about it, you can see that doubling the size of the list only increases the depth by 1.<BR>
+<BR>
+<font class=announcelink>Cool, eh?</font> 
+<BR><BR>
+<!--END-->
+</font><BR></TD></TR>
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%><CENTRE><font class=notelink><A HREF="0_1.html"  webstripperwas="0_1.html" >PREV</A></font></CENTRE></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=90%%><center><font class=notelink><A href="mailto:cracktheinterview@gmail.com?subject=Comments [How do you sort a linked list? Write a C program to sort a linked list. ]&Body=Question : [How do you sort a linked list? Write a C program to sort a linked list. ]"><font class=announcelink>COMMENTS</A></font>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<font class=notelink><A HREF="../adfaqpublish.html"  webstripperwas="../adfaqpublish.html" >INDEX</A></font>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<font class=notelink><a href="#" >PRINT</a></font></center></TD>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=5%%><CENTRE><font class=notelink><A HREF="0_3.html"  webstripperwas="0_3.html" >NEXT</A></font></CENTRE></TD></TR>
+<TR>
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  COLSPAN=3 width=700 align=left>
+<BR><BR><BR><font class=notelink>
+Last updated:
+
+November 3, 2005<BR><BR>
+<a href="../index.html"  webstripperwas="../index.html" >www.cracktheinterview.com</a> - Your destination for the most common IT interview questions, answers, frequently asked interview questions (FAQ), C Programs, C Datastructures for technical interviews conducted by the top IT companies around the world!<br><BR>
+
+</TD>
+</TR>
+</TABLE>
+
+
+
+
+<!--END-->
+
+
+</TD>
+
+
+
+
+<TD background="C:\Program Files\Solent\WebStripper\water.gif"  webstrippernew  WIDTH=10%% valign="top">
+
+
+<!--START:ADS1-->
+
+
+<script type="text/javascript">
+<!--
+google_ad_client = "pub-4208362929074433";
+google_alternate_color = "CCCCCC";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666.html";
+google_color_text = "333333";
+//-->
+</script>
+<script type="text/javascript" webstripperattrwas="src"  webstripperlinkwas="../../pagead2.googlesyndication.com/pagead/show_ads.js" >
+</script>
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+<script type="text/javascript">
+<!--
+google_ad_client = "pub-4208362929074433";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666.html";
+google_color_text = "333333";
+//-->
+</script>
+<script type="text/javascript"  webstripperattrwas="src"  webstripperlinkwas="../../pagead2.googlesyndication.com/pagead/show_ads.js" >
+</script>
+
+
+
+<!--END-->
+
+</TD>
+</TR>
+
+
+
+
+
+</TABLE>
+
+
+
+</BODY>
+
+<!-- Mirrored from www.cracktheinterview.com/pages/0_2.html by HTTrack Website Copier/3.x [XR&CO'2005], Tue, 27 Dec 2005 17:49:15 GMT -->
+</HTML>
+
+

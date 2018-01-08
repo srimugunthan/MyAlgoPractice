@@ -1,0 +1,87 @@
+Hai friends,
+  	Just to continue what Prasanna Srini did, i decided
+to write to about the kind of questions that were
+asked during the interview. Before that i got to share
+with you something that one of our senior told me
+during the dinner party. No interview is perfect. So
+the biggest disservice u can do to yourself is to feel
+guilty about flunking the written test or the
+interview. Of course we must find out as objectively
+as possible the area where we lack the required
+expertise. He advised us not to get desparate after
+losing trilogy. He believes there will be plenty of
+companies arround for the off-campus.   One more thing
+i noted was that the reason that trilogy was
+interseted in Anna university as much as they are
+interested in IIT's was because of a few vangaurds we
+had in our college. That was Dharma anna. (Every tree
+no matter how deep it is has only one root) He was a
+2000 passout. He sat for some of the interviews. He
+was the first guy from our college to get to Trilogy.
+It's probably the stellar performance of these people
+that convinced Trilogy about our college's strength.
+One of the Americans (Adam Ward) even said that the
+best guys from anna are in no way inferior to
+graduates from stanford mit and cmu.  He continued on
+and said that anti-outsourcing bill passed in the
+American Senate which could affect the indian
+cost-leaders was a boon to india. He said that if
+americans dont want to do the dirty job why do you
+want to do it. If you are a world class engineer then
+u should'nt be looking at the mundane pay-roll
+processing. You should look at world class work. It's
+high time we start getting paid for our brains and not
+for our sweat. So the next time u say to someone that
+u are from Anna and the dumbo asks if this university
+is in chidambaram, then u can safely choose to ignore
+that guy.
+1) Informal interview:  We never knew about this
+interview. We were just waiting for our turn to be
+called in. Mr.Adam and Ms.Smita introduced themselves.
+We had a very informal chat. We talked about the
+anti-outsourcing bill, b'lore, girlfriends, Anna
+university, Abacus, Abacus website, TechnoTsar event,
+etc. If you think you can talk really well in English
+with Miss Bangalore,well think again.      
+2) Technical interview 1: (Conducted by Mr. Nithin,
+IIT-Rourkee)  a) write a function   Tree *
+copyTree(Tree *t)  which should return a newly
+allocated tree with the same sturcture and data as
+that of the tree passed as argument.  I could write
+the recursive function in no time. He asked me to
+write the non-recursive version. I could make up a
+non-recursive funciton after sometime but i did'nt use
+explicit stack. He said it was correct but he had a
+soln in his mind and that soln had a explicit stack
+simulationg the recursion. After some help from him i
+could write it.  b) Given a doubly linked list, split
+it into two equal dll. (or equivalently write an algo
+to find the middle node in dll.)  First i gave the
+obvious soln then came up with the optimal soln.
+(Incidentally this problem was discussed in our class
+during the comprehension period and arunachalam has
+solved it. But i could'nt capitalize on that)
+3)Technical Interview 2:(Conducted by Mr.Jim)  This
+guy had a heavily american accented english. So i
+asked him to repeat some of the questions.  a) foo
+function stuff which prasanna had earlier mentioned. 
+b) write an algo for inorder traversal. Now rewrite
+the algo without tail recursion.  c) Write an algo to
+print all permutations of a given string.   e.g. given
+abc, we got to print abc, acb, bca,.....  d) Write an
+algo to print all permutations without repetitions
+when given a string which has the multiple occurences
+of the same character.  e.g given aab, he want the
+algo to print aab, aba, baa.  Both the above
+permutation problems can be solved naturally by
+recursion.  La fin.    In almost all of the interview
+questions, the interviewer had a soln in his mind and
+he keeps giving hints until we hit the soln. He asked
+for the complexity for all the intermediate solns.   
+All the best for the rest of the off-campus
+placements. (My prayers for you especially for
+Microsoft.)
+See you buddies,  
+A.J.Anto
+
+ 

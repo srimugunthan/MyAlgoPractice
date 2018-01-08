@@ -1,0 +1,43 @@
+Hi all,
+
+Continuing with Ramasamy, here are the questions which I was asked.
+
+Interview 1:(Kapil)
+1) Write a C code to print the height of each node as you traverse the entire tree.
+2) Write a C code to reverse a linked list
+3) Given a number say 'x' , find the path from root to any leaf in a binary search tree and print the path.
+
+Interview 2:(Dharma anna)
+1) Given an array of integers, and a number say 'x' find the pair of integers in the array a,b such that a+b = x;
+I was asked to do this in 0(n*n),then 0(nlogn) and finally 0(n).
+
+2) How will you remove duplicates from an array in o(n).
+3) Merge 2 binary trees. I was asked to do this in 0(nlogn) and then 0(n)
+I was later asked to write the C code for this.
+4) Find the largest palindromic substring in a given string.
+    Solutions in both 0(n*n*n) and 0(n*n)
+5) A debugging question based on finding a palindromic substring
+6) A question regarding fixing key values in a Trie data structure. Took a long time for this. The property of trie is that it's an n-ary tree and this was given as a clue.
+
+7) A question based on graphs. More of an analytical puzzle. As a clue , I was asked to draw a graph and examine it analytically.
+
+Interview 3:(Jim)
+1) the foo question which was asked to all. The code was a mixture of Java, C and C++ but still he expected some output.
+2) Write a string tokeniser.
+
+char * strtok(char *str,char *delim)
+
+returns the first token or string till any char in delim is found.
+If (strtok(str," ") is called it returns John first time.
+A further call say strtok(NULL," ") should return 
+"is" and so on.
+
+3) Write a program to print permutations of  a string
+4) Write a C code to delete a node in a binary tree
+
+All the best for attending other interviews.
+Bye,
+Raghu 
+
+
+ 

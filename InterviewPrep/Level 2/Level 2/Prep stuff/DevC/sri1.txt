@@ -1,0 +1,227 @@
+
+
+> Questions:
+>
+> ( these are the questions asked for the other
+> interns ...I have collected from them...)
+>
+> 1. You are given an array of numbers in which there
+> are numbers from 1 to n but they are in any order...
+>
+> I that array one number is removed and the number is
+> replaced with the existing numbers in the array.
+>
+> ( the replacing number exists two times in the
+> array)...
+>
+> The problem is to find and replacing number and also
+> the missing number...
+
+  Ok. if you can use a temporary `extra` array of size
+n, then it goes ...
+  Scan the orig array. Set extra[orig[i]]++.  If
+extra[orig[i]] is 2, set
+repl = orig[i]
+  If extra[orig[i](+/-)1] == 0, set miss =
+orig[i](+/-)1
+
+  Then missing number is `miss`
+       replacing number is `repl`
+
+  NB: (+/-) is plus or minus
+
+  O(n)
+
+  But I am looking for an algo without using
+temporaries
+
+>
+>
+> It is an obvious solution to find the missing number
+> by explicit comparisons ( O(square(n)))...
+>
+> Another alternative is to sort the array and find
+> the numbers....(order O(logn)...)
+
+  How can that be O(lg n)?
+
+>
+> But the Problem is to reduce this order to ..O(n)...
+>
+> So search for a better solution...
+>
+> Clue:
+>
+> Use the property of the sum of the numbers...
+>
+> (solve the 4th problem first..and then use can solve
+> it easily..)
+>
+> 2. You are given a string of characters and your job
+> is to find the maximum palindrome in that string ..)
+
+ Do you mean largest substring which is palindrome?
+
+>
+> (in this case it is obvious that the order goes to
+> square(n) .....If you get a better algorithm than
+> O(square (n))
+>
+> then send that to the groups..)
+>
+> Write an algorithm for finding this....
+
+  will comment on this later
+
+>
+> Clue: Take care of all the boundary conditions.....
+>
+> 3. You are given an array of numbers in the sorted
+> order and write an algorithm to construct a binary
+> search
+>
+> tree from this array...( the tree should be
+> optimal..(optimal in the sense the height should be
+> balanced..) )
+
+   Use recursion.  Input is array.  Take the (appr.)
+middle element as
+subtree root and construct the left and right child
+using left and
+right parts of array recursively.  (just a variation
+of binary search)
+
+>
+> 4. You are given an array numbers from one to n and
+> they are in any order and one number is taken as a
+> ramdom
+>
+> and the place is filled with zero ...You have to
+> find the missing number..
+
+   Missing number = (n*(n-1))>>1 - sum(array)
+
+>
+> 5. You are given Singly linked list of numbers (and
+> the numbers may be any value) and some numbers are
+> repeating ..
+>
+> The problem is to remove the duplicates..and that
+> should be order of n.
+
+  Asking for O(n) algorithm means nothing complex but
+scanning the list
+should be done.  So use hash datastructure with number
+as key and a flag
+(denoting already present) as value.  Then while
+scanning the list, if
+hash[node->data] is 1 remove the node, else set
+hash[node->value] to 1. 
+You're done.
+
+  If the numbers are known to be from fixed (not so
+big) range, then
+arrays can be used instead of hash, with numbers as
+indices.
+
+  Remember complexity for searching for an element in
+hash is O(1), so the
+resulting procedure completes in O(n).
+
+>
+> 6. This is the most interesting problem that i have
+> ever heard so far...
+>
+> I am trying hard for a better solution but i cant
+> get better than what i got so far...
+>
+> The problem is to write an algorithm to the towers
+> of hanoi problem...
+>
+> But this time the problem is somewhat different ..
+> you have to find a method( you can use recursion
+> also) to generate the sequence of moves
+>
+> that will move the n plates and separate them into
+> odd and even plates and place the odd numbered
+> plates in
+>
+> one place and the even numbered plates in the other
+> place ...
+>
+> You are having the n plates initially arranged in
+> the first place ( you are provided with three
+> places..)
+>
+
+ wait, i'll comment on this later.
+
+> ( Dont try to trace the following algo soon after
+> seeing the question.. try for sometime for the
+> solution...)
+>
+>
+>
+>
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+>
+>
+>
+> 6.
+>
+> My Solution:
+>
+> split_tower(N,A,B,C) // our algorithm..
+>
+> {
+>
+> if (n==1) move A -> C;
+>
+> tower(N-1,A,C,B); // order of power(2,n-1) - 1 --
+> this tower is the existing tower function
+>
+> move A -> C; // 1 move
+>
+> tower(N-2,B,C,A); // order of power(2,n-2) - 1
+>
+> split_tower(N-2,A,B,C);
+>
+> }
+>
+> Complexity:
+>
+> power(2,n-1) + 1 + power(2,n-2) + ...
+>
+>
+>
+> so finally the complexity comes to ...
+>
+> power(2,n) + n/2 that is O(power(2,n))..
+>
+> There is still a better solution that we can go upto
+> power(2,n) -1 but i have not found the exact algo so
+> far...
+>
+> Try to find that solution ..(try to eliminate that
+> n/2 part... and try an algorithm without using the
+> existing tower
+>
+> function....)
+>
+> If you have find a better solution then send that
+> solution to the groups....
+>
+>
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+>
+> I will send the solutions of the other questions
+> soon..............
+>
+> Waiting for reply,
+>
+> Sadeesh kumar D
+
+=====
+---
+Sridhar R
+I blog at http://cs.annauniv.edu/~rsridhar/blog
