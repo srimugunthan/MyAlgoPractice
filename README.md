@@ -10,7 +10,7 @@ If you want to use these codes, use at your own risk.
 
 * Lists, Arrays, Stack
 	* ~~Midpoint in list~~
-	* 2-SUM problem
+	* ~~2-SUM problem~~
 	* Queues with Stack
 	* Expression evaluation
 	* ~~SubArraySum and MaxSubArray (Programming pearls chap8)~~
