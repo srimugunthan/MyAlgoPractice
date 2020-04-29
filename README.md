@@ -1,7 +1,7 @@
 # MyAlgoPractice
 
 Warning!!!
-Half of the code maybe WRONG. The solutions are being improved and fixed. 
+Half of the code maybe WRONG. The solutions are being improved and fixed.
 If you want to use these codes, use at your own risk.
 
 
@@ -9,7 +9,7 @@ If you want to use these codes, use at your own risk.
 ## Algorithm and Data structure practice Problems
 
 * Lists, Arrays, Stack
-	* Midpoint in list
+	* ~~Midpoint in list~~
 	* 2-SUM problem
 	* Queues with Stack
 	* Expression evaluation
@@ -107,7 +107,7 @@ If you want to use these codes, use at your own risk.
 	* Fermat's theorem, modular arithmetic, chinese remainder theorem
 
 * State space search
-	* Depth first search, 
+	* Depth first search,
 	* Breadth first, double BFS
 	* A*
 
@@ -126,4 +126,3 @@ If you want to use these codes, use at your own risk.
 
 Links:
 https://www.technotification.com/2018/03/top-10-algorithms-for-programmer.html
-
